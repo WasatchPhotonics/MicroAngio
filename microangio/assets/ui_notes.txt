@@ -1,0 +1,17 @@
+no menubar
+no status bar
+
+top left has microangio icon
+top right has interface brightness control
+4 main areas
+
+top bar has mode switcher, setup->acquire->analyze for the mode
+left area has save controls, full height
+center area is imagery, full height
+right area is imagery specific controls, full height
+
+make the main thing the main thing.
+use consistent qt controls
+then style with qss
+then add custom interface items if required, including transitions with
+    graphicsview
