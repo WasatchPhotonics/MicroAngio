@@ -9,6 +9,7 @@ top bar has mode switcher, setup->acquire->analyze for the mode
 left area has save controls, full height
 center area is imagery, full height
 right area is imagery specific controls, full height
+    has vis camera preview at all times
 
 make the main thing the main thing.
 use consistent qt controls

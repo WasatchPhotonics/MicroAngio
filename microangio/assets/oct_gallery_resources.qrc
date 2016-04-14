@@ -1,0 +1,30 @@
+<RCC>
+  <qresource prefix="website">
+    <file>images/oct_gallery/30layerstape_fullsize11.png</file>
+    <file>images/oct_gallery/angle.jpg</file>
+    <file>images/oct_gallery/anterior-chamber-full.jpg</file>
+    <file>images/oct_gallery/Cat_Fundus_Cropped.png</file>
+    <file>images/oct_gallery/Cat_OCT1.jpg</file>
+    <file>images/oct_gallery/cat1_retina_BV34s.jpg</file>
+    <file>images/oct_gallery/cat1_retina36s.jpg</file>
+    <file>images/oct_gallery/cat2_retina_57s.jpg</file>
+    <file>images/oct_gallery/ciliary-muscle2.jpg</file>
+    <file>images/oct_gallery/cornea.jpg</file>
+    <file>images/oct_gallery/cornea2.jpg</file>
+    <file>images/oct_gallery/Dog_Fundus1.jpg</file>
+    <file>images/oct_gallery/Dog_OCT1.jpg</file>
+    <file>images/oct_gallery/finger_proximal.png</file>
+    <file>images/oct_gallery/Finger1.png</file>
+    <file>images/oct_gallery/fingernail_fullsize.png</file>
+    <file>images/oct_gallery/Index-Finger.png</file>
+    <file>images/oct_gallery/lens1.jpg</file>
+    <file>images/oct_gallery/MF_in.png</file>
+    <file>images/oct_gallery/MF_out1.png</file>
+    <file>images/oct_gallery/Monkey_Fundus1.jpg</file>
+    <file>images/oct_gallery/Monkey_OCT1.jpg</file>
+    <file>images/oct_gallery/monkey_retina_36s.jpg</file>
+    <file>images/oct_gallery/onion11.png</file>
+    <file>images/oct_gallery/Retina2.png</file>
+    <file>images/oct_gallery/Retina11.jpg</file>
+  </qresource>
+</RCC>
