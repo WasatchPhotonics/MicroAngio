@@ -13,7 +13,7 @@ log = logging.getLogger(__name__)
 class BasicWindow(QtGui.QMainWindow):
     """ Load the QT designer created layout based on default qt WIMP controls.
     """
-    def __init__(self, title="BasicWindow", layout=basic_layout,
+    def __init__(self, title="BasicWindow", layout=microangio_layout,
                  geometry=[250, 250, 1000, 700]):
         log.debug("Init of %s", self.__class__.__name__)
         super(BasicWindow, self).__init__()
