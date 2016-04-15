@@ -71,4 +71,4 @@ after_test:
 
 artifacts:
    - path: MicroAngio.zip
-   - path: scripts\windows_installer\*.xe
+   - path: scripts\windows_installer\*.exe
