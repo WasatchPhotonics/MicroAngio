@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="thumbnails">
+    <file>images/colormaps/gray.jpg</file>
+    <file>images/colormaps/hot.jpg</file>
+    <file>images/colormaps/hsv.jpg</file>
+    <file>images/colormaps/jet.jpg</file>
+  </qresource>
+</RCC>

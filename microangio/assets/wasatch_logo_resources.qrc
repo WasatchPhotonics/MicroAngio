@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="logos">
+    <file>images/logos/92x30_wp_angio.png</file>
+    <file>images/logos/110x36_wp_angio.png</file>
+    <file>images/logos/120x39_wp_angio.png</file>
+    <file>images/logos/130x42_wp_angio.png</file>
+    <file>images/logos/140x45_wp_angio.png</file>
+    <file>images/logos/wp_angio.png</file>
+    <file>images/logos/new_wp_with_arch_black_lower_shift.png</file>
+    <file>images/logos/new_wp_with_arch_black.png</file>
+    <file>images/logos/new_wp_with_arch_white_24x27.png</file>
+    <file>images/logos/new_wp_with_arch_white_32x36.png</file>
+    <file>images/logos/new_wp_with_arch_white_36x40.png</file>
+    <file>images/logos/new_wp_with_arch_white.png</file>
+    <file>images/logos/new_wp_with_arch.png</file>
+    <file>images/logos/wasatch_photonics_wp_logo.jpg</file>
+    <file>images/logos/wp.png</file>
+  </qresource>
+</RCC>
