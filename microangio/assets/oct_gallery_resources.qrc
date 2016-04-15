@@ -27,4 +27,5 @@
     <file>images/oct_gallery/Retina2.png</file>
     <file>images/oct_gallery/Retina11.jpg</file>
   </qresource>
+  <qresource prefix="newPrefix"/>
 </RCC>

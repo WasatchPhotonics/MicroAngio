@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="samples">
+    <file>images/vis_gallery/example_vis_camera_13.jpg</file>
+    <file>images/vis_gallery/example_vis_camera_14.jpg</file>
+    <file>images/vis_gallery/example_vis_camera_01.jpg</file>
+  </qresource>
+</RCC>
