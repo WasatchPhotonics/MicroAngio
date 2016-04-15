@@ -4,41 +4,32 @@ from PySide import QtGui, QtCore
 
 from PIL import Image  # for creating placeholder imagery at startup
 import pyqtgraph
-print "startup"
+
 from .assets import microangio_layout
-print "1startup"
 
 import logging
-print "2startup"
 log = logging.getLogger(__name__)
 
-print "3startup"
 class BasicWindow(QtGui.QMainWindow):
     """ Load the QT designer created layout based on default qt WIMP controls.
     """
     def __init__(self, title="BasicWindow", layout=microangio_layout,
                  geometry=[250, 250, 1000, 700]):
-        print "111"
         log.debug("Init of %s", self.__class__.__name__)
         super(BasicWindow, self).__init__()
 
-        print "2111"
         self.ui = layout.Ui_MainWindow()
         self.ui.setupUi(self)
 
-        print "3111"
         self.create_signals()
         # x, y, w, h
         self.setGeometry(geometry[0], geometry[1], geometry[2], geometry[3])
 
-        print "4111"
         #self.load_placeholder_images()
 
         app_icon = QtGui.QIcon(":ui/images/ApplicationIcon.ico")
-        print "5111"
         self.setWindowIcon(app_icon)
         self.setWindowTitle(title)
-        print "111"
         self.show()
 
     def load_placeholder_images(self):
