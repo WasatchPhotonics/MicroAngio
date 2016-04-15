@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/basic_layout.ui'
 #
-# Created: Fri Apr 15 15:03:17 2016
+# Created: Fri Apr 15 15:16:10 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!

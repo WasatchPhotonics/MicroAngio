@@ -26,3 +26,8 @@ class TestBasicMainWindow:
         assert basic_form.width() >= 1000
         assert basic_form.height() >= 700
 
+    def test_form_has_default_setup_long(self, basic_form, qtbot):
+        #assert basic_form.ui.labelStatus.text() == "Pre-initialization"
+        assert basic_form.width() >= 1000
+        assert basic_form.height() >= 700
+        qtbot.wait(10000)
