@@ -13,6 +13,11 @@ if [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
     echo "Windows detected"
     CMD_NAME="C:\Python27\Lib\site-packages\PySide\pyside-rcc.exe"
     UIC_NAME="C:\Python27\Lib\site-packages\PySide\pyside-uic.exe"
+    if [ ! -e $UIC_NAME ]
+    then
+        echo "git-bash pyside-uic.exe with no prefix instead"
+        UIC_NAME="pyside-uic.exe"
+    fi
 fi
 
 echo "Rebuilding resources file"
@@ -29,11 +34,8 @@ for QRC_FILE in */assets/*.qrc;
 
     PREFIX=$(echo $QRC_FILE | cut -d '.' -f 1)
     DEST_RC=${PREFIX}_rc.py
+    $CMD_NAME $QRC_FILE -o $DEST_RC
 
-    echo "rcc $QRC_FILE -o $DEST_RC"
-    $CMD_NAME \
-        $QRC_FILE \
-        -o $DEST_RC
 done
 
 for UIC_FILE in */assets/*.ui;
@@ -41,15 +43,7 @@ for UIC_FILE in */assets/*.ui;
 
     PREFIX=$(echo $UIC_FILE | cut -d '.' -f 1)
     DEST_PY=${PREFIX}.py
+    $UIC_NAME  $UIC_FILE  -o $DEST_PY
 
-    echo "rcc $UIC_FILE -o $DEST_PY"
-    $UIC_NAME \
-        $UIC_FILE \
-        -o $DEST_PY
 done
 
-
-#echo "Rebuilding uic forms"
-#$UIC_NAME \
-#    pysideapp/assets/placeholder_layout.ui\
-#    -o pysideapp/assets/placeholder_layout.py
