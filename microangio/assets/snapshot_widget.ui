@@ -79,7 +79,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>D</string>
+     <string>De</string>
     </property>
     <property name="checkable">
      <bool>true</bool>
@@ -95,7 +95,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>C</string>
+     <string>Cp</string>
     </property>
     <property name="checkable">
      <bool>true</bool>
@@ -111,7 +111,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>E</string>
+     <string>Ev</string>
     </property>
     <property name="checkable">
      <bool>true</bool>
@@ -130,9 +130,103 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/Finger1.png</pixmap>
+     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/fingernail_fullsize.png</pixmap>
     </property>
     <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>270</y>
+     <width>195</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>195</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>195</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Saved configuration</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSnapshotThumbnail_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>161</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/raw_image_pyqtgraph_plot.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>2016-04-18 07:49</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>31</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ren</string>
+    </property>
+    <property name="checkable">
      <bool>true</bool>
     </property>
    </widget>
@@ -140,7 +234,7 @@
  </widget>
  <resources>
   <include location="oct_gallery_resources.qrc"/>
-  <include location="../../../../oct_gallery_resources.qrc"/>
+  <include location="oct_gallery_resources.qrc"/>
  </resources>
  <connections/>
 </ui>
