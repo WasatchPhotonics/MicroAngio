@@ -1555,7 +1555,7 @@ QFrame
     <item row="1" column="0">
      <widget class="QStackedWidget" name="stackedWidget_main">
       <property name="currentIndex">
-       <number>0</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="page_main_hardware_setup">
        <layout class="QGridLayout" name="gridLayout_2">
@@ -3133,7 +3133,7 @@ QFrame
       <widget class="QWidget" name="page_main_oct_capture">
        <layout class="QGridLayout" name="gridLayout_14">
         <item row="0" column="0">
-         <widget class="QFrame" name="frame_33">
+         <widget class="QFrame" name="frame_2">
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
           </property>
@@ -3142,7 +3142,7 @@ QFrame
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_64">
            <item>
-            <widget class="QFrame" name="frame_223">
+            <widget class="QFrame" name="frame_oct_capture_left">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -3155,6 +3155,12 @@ QFrame
                <height>16777215</height>
               </size>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_oct_capture_left {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -3163,7 +3169,7 @@ QFrame
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_42">
               <item>
-               <widget class="QFrame" name="frame_224">
+               <widget class="QFrame" name="frame_8">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -3175,6 +3181,12 @@ QFrame
                   <width>195</width>
                   <height>200</height>
                  </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+  border: none;
+  padding: -4px;
+}</string>
                 </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -3297,12 +3309,18 @@ QFrame
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_225">
+            <widget class="QFrame" name="frame_oct_capture_center">
              <property name="minimumSize">
               <size>
                <width>500</width>
                <height>0</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_oct_capture_center {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -3312,7 +3330,7 @@ QFrame
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_43">
               <item>
-               <widget class="QFrame" name="frame_226">
+               <widget class="QFrame" name="frame_33">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -3349,7 +3367,7 @@ QFrame
                   </spacer>
                  </item>
                  <item>
-                  <widget class="QFrame" name="frame_227">
+                  <widget class="QFrame" name="frame_223">
                    <property name="minimumSize">
                     <size>
                      <width>150</width>
@@ -3527,7 +3545,7 @@ QFrame
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_228">
+               <widget class="QFrame" name="frame_224">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -3574,7 +3592,7 @@ QFrame
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_229">
+            <widget class="QFrame" name="frame_oct_capture_right">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -3587,6 +3605,12 @@ QFrame
                <height>16777215</height>
               </size>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_oct_capture_right {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -3595,7 +3619,7 @@ QFrame
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_44">
               <item>
-               <widget class="QFrame" name="frame_230">
+               <widget class="QFrame" name="frame_225">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -3688,7 +3712,7 @@ QFrame
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_231">
+               <widget class="QFrame" name="frame_226">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -3843,7 +3867,7 @@ QFrame
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_232">
+               <widget class="QFrame" name="frame_227">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -3991,7 +4015,7 @@ QFrame
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_233">
+               <widget class="QFrame" name="frame_228">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -4152,7 +4176,7 @@ QFrame
                </spacer>
               </item>
               <item>
-               <widget class="QFrame" name="frame_234">
+               <widget class="QFrame" name="frame_229">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -4293,7 +4317,7 @@ QFrame
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_235">
+               <widget class="QFrame" name="frame_3">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -5134,7 +5158,7 @@ Variance</string>
       <widget class="QWidget" name="page_main_angio_capture">
        <layout class="QGridLayout" name="gridLayout_16">
         <item row="0" column="0">
-         <widget class="QFrame" name="frame_66">
+         <widget class="QFrame" name="frame_4">
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
           </property>
@@ -5143,7 +5167,7 @@ Variance</string>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_8">
            <item>
-            <widget class="QFrame" name="frame_67">
+            <widget class="QFrame" name="frame_main_angio_capture_left">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -5156,6 +5180,12 @@ Variance</string>
                <height>16777215</height>
               </size>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_main_angio_capture_left  {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -5164,7 +5194,7 @@ Variance</string>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_13">
               <item>
-               <widget class="QFrame" name="frame_68">
+               <widget class="QFrame" name="frame_66">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -5298,12 +5328,18 @@ Variance</string>
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_69">
+            <widget class="QFrame" name="frame_main_angio_capture_center">
              <property name="minimumSize">
               <size>
                <width>500</width>
                <height>0</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_main_angio_capture_center {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -5326,7 +5362,7 @@ Variance</string>
                </spacer>
               </item>
               <item row="0" column="0">
-               <widget class="QFrame" name="frame_70">
+               <widget class="QFrame" name="frame_67">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -5465,7 +5501,7 @@ Variance</string>
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_71">
+            <widget class="QFrame" name="frame_main_angio_capture_right">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -5478,6 +5514,12 @@ Variance</string>
                <height>16777215</height>
               </size>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_main_angio_capture_right {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -5486,7 +5528,7 @@ Variance</string>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_14">
               <item>
-               <widget class="QFrame" name="frame_72">
+               <widget class="QFrame" name="frame_68">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -5579,7 +5621,7 @@ Variance</string>
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_73">
+               <widget class="QFrame" name="frame_69">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -5734,7 +5776,7 @@ Variance</string>
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_74">
+               <widget class="QFrame" name="frame_70">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -5882,7 +5924,7 @@ Variance</string>
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_75">
+               <widget class="QFrame" name="frame_71">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -6043,7 +6085,7 @@ Variance</string>
                </spacer>
               </item>
               <item>
-               <widget class="QFrame" name="frame_76">
+               <widget class="QFrame" name="frame_72">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -6184,7 +6226,7 @@ Variance</string>
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_77">
+               <widget class="QFrame" name="frame_73">
                 <property name="minimumSize">
                  <size>
                   <width>195</width>
@@ -6319,7 +6361,7 @@ Variance</string>
   <include location="wasatch_logo_resources.qrc"/>
   <include location="vis_gallery_resources.qrc"/>
   <include location="colormap_resources.qrc"/>
-  <include location="qdarkstyle/style.qrc"/>
+  <include location="style.qrc"/>
  </resources>
  <connections>
   <connection>

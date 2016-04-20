@@ -24,7 +24,7 @@
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QFrame" name="frame_2">
+       <widget class="QFrame" name="frame_main_angio_capture_left">
         <property name="minimumSize">
          <size>
           <width>200</width>
@@ -36,6 +36,12 @@
           <width>200</width>
           <height>16777215</height>
          </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame#frame_main_angio_capture_left  {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -179,12 +185,18 @@
        </widget>
       </item>
       <item>
-       <widget class="QFrame" name="frame_8">
+       <widget class="QFrame" name="frame_main_angio_capture_center">
         <property name="minimumSize">
          <size>
           <width>500</width>
           <height>0</height>
          </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame#frame_main_angio_capture_center {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -346,7 +358,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QFrame" name="frame_4">
+       <widget class="QFrame" name="frame_main_angio_capture_right">
         <property name="minimumSize">
          <size>
           <width>200</width>
@@ -358,6 +370,12 @@
           <width>200</width>
           <height>16777215</height>
          </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame#frame_main_angio_capture_right {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
