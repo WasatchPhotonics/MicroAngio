@@ -598,22 +598,6 @@
      </widget>
     </item>
     <item>
-     <spacer name="horizontalSpacer_5">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeType">
-       <enum>QSizePolicy::Fixed</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
      <widget class="QComboBox" name="comboBox_mode">
       <property name="currentIndex">
        <number>0</number>
@@ -678,7 +662,7 @@
        </size>
       </property>
       <property name="frameShape">
-       <enum>QFrame::Box</enum>
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="currentIndex">
        <number>0</number>
@@ -723,7 +707,7 @@
           </property>
           <property name="sizeHint" stdset="0">
            <size>
-            <width>210</width>
+            <width>212</width>
             <height>20</height>
            </size>
           </property>
