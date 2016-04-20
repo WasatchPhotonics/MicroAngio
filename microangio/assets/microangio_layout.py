@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/microangio_layout.ui'
 #
-# Created: Fri Apr 15 15:24:09 2016
+# Created: Wed Apr 20 14:11:01 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,1252 +12,8 @@ from PySide import QtCore, QtGui
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(919, 940)
+        MainWindow.resize(975, 940)
         MainWindow.setAutoFillBackground(False)
-        MainWindow.setStyleSheet("/*\n"
-" * The MIT License (MIT)\n"
-" *\n"
-" * Copyright (c) <2013-2014> <Colin Duquesnoy>\n"
-" *\n"
-" * Permission is hereby granted, free of charge, to any person obtaining\n"
-" * a copy\n"
-" * of this software and associated documentation files (the \"Software\"),\n"
-" * to deal\n"
-" * in the Software without restriction, including without limitation the\n"
-" * rights\n"
-" * to use, copy, modify, merge, publish, distribute, sublicense, and/or\n"
-" * sell\n"
-" * copies of the Software, and to permit persons to whom the Software is\n"
-" * furnished to do so, subject to the following conditions:\n"
-"\n"
-" * The above copyright notice and this permission notice shall be\n"
-" * included in\n"
-" * all copies or substantial portions of the Software.\n"
-"\n"
-" * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\n"
-" * EXPRESS OR\n"
-" * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\n"
-" * MERCHANTABILITY,\n"
-" * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT\n"
-" * SHALL THE\n"
-" * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR\n"
-" * OTHER\n"
-" * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\n"
-" * ARISING FROM,\n"
-" * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\n"
-" * DEALINGS IN\n"
-" * THE SOFTWARE.\n"
-" */\n"
-"\n"
-"QProgressBar:horizontal {\n"
-"    border: 1px solid #3A3939;\n"
-"    text-align: center;\n"
-"    padding: 1px;\n"
-"    background: #201F1F;\n"
-"}\n"
-"QProgressBar::chunk:horizontal {\n"
-"    background-color: qlineargradient(spread:reflect, x1:1, y1:0.545,\n"
-"x2:1, y2:0, stop:0 rgba(28, 66, 111, 255), stop:1 rgba(37, 87, 146,\n"
-"255));\n"
-"}\n"
-"\n"
-"QToolTip\n"
-"{\n"
-"    border: 1px solid #3A3939;\n"
-"    background-color: rgb(90, 102, 117);;\n"
-"    color: white;\n"
-"    padding: 1px;\n"
-"    opacity: 200;\n"
-"}\n"
-"\n"
-"QWidget\n"
-"{\n"
-"    color: silver;\n"
-"    background-color: #302F2F;\n"
-"    selection-background-color:#3d8ec9;\n"
-"    selection-color: black;\n"
-"    background-clip: border;\n"
-"    border-image: none;\n"
-"    outline: 0;\n"
-"}\n"
-"\n"
-"QWidget:item:hover\n"
-"{\n"
-"    background-color: #78879b;\n"
-"    color: black;\n"
-"}\n"
-"\n"
-"QWidget:item:selected\n"
-"{\n"
-"    background-color: #3d8ec9;\n"
-"}\n"
-"\n"
-"QCheckBox\n"
-"{\n"
-"    spacing: 5px;\n"
-"    outline: none;\n"
-"    color: #bbb;\n"
-"    margin-bottom: 2px;\n"
-"}\n"
-"\n"
-"QCheckBox:disabled\n"
-"{\n"
-"    color: #777777;\n"
-"}\n"
-"QCheckBox::indicator,\n"
-"QGroupBox::indicator\n"
-"{\n"
-"    width: 18px;\n"
-"    height: 18px;\n"
-"}\n"
-"QGroupBox::indicator\n"
-"{\n"
-"    margin-left: 2px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:unchecked,\n"
-"QCheckBox::indicator:unchecked:hover,\n"
-"QGroupBox::indicator:unchecked,\n"
-"QGroupBox::indicator:unchecked:hover\n"
-"{\n"
-"    image: url(:/qss_icons/rc/checkbox_unchecked.png);\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:unchecked:focus,\n"
-"QCheckBox::indicator:unchecked:pressed,\n"
-"QGroupBox::indicator:unchecked:focus,\n"
-"QGroupBox::indicator:unchecked:pressed\n"
-"{\n"
-"  border: none;\n"
-"    image: url(:/qss_icons/rc/checkbox_unchecked_focus.png);\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked,\n"
-"QCheckBox::indicator:checked:hover,\n"
-"QGroupBox::indicator:checked,\n"
-"QGroupBox::indicator:checked:hover\n"
-"{\n"
-"    image: url(:/qss_icons/rc/checkbox_checked.png);\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked:focus,\n"
-"QCheckBox::indicator:checked:pressed,\n"
-"QGroupBox::indicator:checked:focus,\n"
-"QGroupBox::indicator:checked:pressed\n"
-"{\n"
-"  border: none;\n"
-"    image: url(:/qss_icons/rc/checkbox_checked_focus.png);\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:indeterminate,\n"
-"QCheckBox::indicator:indeterminate:hover,\n"
-"QCheckBox::indicator:indeterminate:pressed\n"
-"QGroupBox::indicator:indeterminate,\n"
-"QGroupBox::indicator:indeterminate:hover,\n"
-"QGroupBox::indicator:indeterminate:pressed\n"
-"{\n"
-"    image: url(:/qss_icons/rc/checkbox_indeterminate.png);\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:indeterminate:focus,\n"
-"QGroupBox::indicator:indeterminate:focus\n"
-"{\n"
-"    image: url(:/qss_icons/rc/checkbox_indeterminate_focus.png);\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked:disabled,\n"
-"QGroupBox::indicator:checked:disabled\n"
-"{\n"
-"    image: url(:/qss_icons/rc/checkbox_checked_disabled.png);\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:unchecked:disabled,\n"
-"QGroupBox::indicator:unchecked:disabled\n"
-"{\n"
-"    image: url(:/qss_icons/rc/checkbox_unchecked_disabled.png);\n"
-"}\n"
-"\n"
-"QRadioButton\n"
-"{\n"
-"    spacing: 5px;\n"
-"    outline: none;\n"
-"    color: #bbb;\n"
-"    margin-bottom: 2px;\n"
-"}\n"
-"\n"
-"QRadioButton:disabled\n"
-"{\n"
-"    color: #777777;\n"
-"}\n"
-"QRadioButton::indicator\n"
-"{\n"
-"    width: 21px;\n"
-"    height: 21px;\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked,\n"
-"QRadioButton::indicator:unchecked:hover\n"
-"{\n"
-"    image: url(:/qss_icons/rc/radio_unchecked.png);\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked:focus,\n"
-"QRadioButton::indicator:unchecked:pressed\n"
-"{\n"
-"  border: none;\n"
-"  outline: none;\n"
-"    image: url(:/qss_icons/rc/radio_unchecked_focus.png);\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked,\n"
-"QRadioButton::indicator:checked:hover\n"
-"{\n"
-"  border: none;\n"
-"  outline: none;\n"
-"    image: url(:/qss_icons/rc/radio_checked.png);\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked:focus,\n"
-"QRadioButton::indicato::menu-arrowr:checked:pressed\n"
-"{\n"
-"  border: none;\n"
-"  outline: none;\n"
-"    image: url(:/qss_icons/rc/radio_checked_focus.png);\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:indeterminate,\n"
-"QRadioButton::indicator:indeterminate:hover,\n"
-"QRadioButton::indicator:indeterminate:pressed\n"
-"{\n"
-"        image: url(:/qss_icons/rc/radio_indeterminate.png);\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:checked:disabled\n"
-"{\n"
-"  outline: none;\n"
-"  image: url(:/qss_icons/rc/radio_checked_disabled.png);\n"
-"}\n"
-"\n"
-"QRadioButton::indicator:unchecked:disabled\n"
-"{\n"
-"    image: url(:/qss_icons/rc/radio_unchecked_disabled.png);\n"
-"}\n"
-"\n"
-"\n"
-"QMenuBar\n"
-"{\n"
-"    background-color: #302F2F;\n"
-"    color: silver;\n"
-"}\n"
-"\n"
-"QMenuBar::item\n"
-"{\n"
-"    background: transparent;\n"
-"}\n"
-"\n"
-"QMenuBar::item:selected\n"
-"{\n"
-"    background: transparent;\n"
-"    border: 1px solid #3A3939;\n"
-"}\n"
-"\n"
-"QMenuBar::item:pressed\n"
-"{\n"
-"    border: 1px solid #3A3939;\n"
-"    background-color: #3d8ec9;\n"
-"    color: black;\n"
-"    margin-bottom:-1px;\n"
-"    padding-bottom:1px;\n"
-"}\n"
-"\n"
-"QMenu\n"
-"{\n"
-"    border: 1px solid #3A3939;\n"
-"    color: silver;\n"
-"    margin: 2px;\n"
-"}\n"
-"\n"
-"QMenu::icon\n"
-"{\n"
-"    margin: 5px;\n"
-"}\n"
-"\n"
-"QMenu::item\n"
-"{\n"
-"    padding: 5px 30px 5px 30px;\n"
-"    margin-left: 5px;\n"
-"    border: 1px solid transparent; /* reserve space for selection border\n"
-"*/\n"
-"}\n"
-"\n"
-"QMenu::item:selected\n"
-"{\n"
-"    color: black;\n"
-"}\n"
-"\n"
-"QMenu::separator {\n"
-"    height: 2px;\n"
-"    background: lightblue;\n"
-"    margin-left: 10px;\n"
-"    margin-right: 5px;\n"
-"}\n"
-"\n"
-"QMenu::indicator {\n"
-"    width: 18px;\n"
-"    height: 18px;\n"
-"}\n"
-"\n"
-"/* non-exclusive indicator = check box style indicator\n"
-"   (see QActionGroup::setExclusive) */\n"
-"QMenu::indicator:non-exclusive:unchecked {\n"
-"    image: url(:/qss_icons/rc/checkbox_unchecked.png);\n"
-"}\n"
-"\n"
-"QMenu::indicator:non-exclusive:unchecked:selected {\n"
-"    image: url(:/qss_icons/rc/checkbox_unchecked_disabled.png);\n"
-"}\n"
-"\n"
-"QMenu::indicator:non-exclusive:checked {\n"
-"    image: url(:/qss_icons/rc/checkbox_checked.png);\n"
-"}\n"
-"\n"
-"QMenu::indicator:non-exclusive:checked:selected {\n"
-"    image: url(:/qss_icons/rc/checkbox_checked_disabled.png);\n"
-"}\n"
-"\n"
-"/* exclusive indicator = radio button style indicator (see\n"
-" * QActionGroup::setExclusive) */\n"
-"QMenu::indicator:exclusive:unchecked {\n"
-"    image: url(:/qss_icons/rc/radio_unchecked.png);\n"
-"}\n"
-"\n"
-"QMenu::indicator:exclusive:unchecked:selected {\n"
-"    image: url(:/qss_icons/rc/radio_unchecked_disabled.png);\n"
-"}\n"
-"\n"
-"QMenu::indicator:exclusive:checked {\n"
-"    image: url(:/qss_icons/rc/radio_checked.png);\n"
-"}\n"
-"\n"
-"QMenu::indicator:exclusive:checked:selected {\n"
-"    image: url(:/qss_icons/rc/radio_checked_disabled.png);\n"
-"}\n"
-"\n"
-"QMenu::right-arrow {\n"
-"    margin: 5px;\n"
-"    image: url(:/qss_icons/rc/right_arrow.png)\n"
-"}\n"
-"\n"
-"\n"
-"QWidget:disabled\n"
-"{\n"
-"    color: #404040;\n"
-"    background-color: #302F2F;\n"
-"}\n"
-"\n"
-"QAbstractItemView\n"
-"{\n"
-"    alternate-background-color: #3A3939;\n"
-"    color: silver;\n"
-"    border: 1px solid 3A3939;\n"
-"    border-radius: 2px;\n"
-"    padding: 1px;\n"
-"}\n"
-"\n"
-"QWidget:focus, QMenuBar:focus\n"
-"{\n"
-"    border: 1px solid #78879b;\n"
-"}\n"
-"\n"
-"QTabWidget:focus, QCheckBox:focus, QRadioButton:focus, QSlider:focus\n"
-"{\n"
-"    border: none;\n"
-"}\n"
-"\n"
-"QLineEdit\n"
-"{\n"
-"    background-color: #201F1F;\n"
-"    padding: 2px;\n"
-"    border-style: solid;\n"
-"    border: 1px solid #3A3939;\n"
-"    border-radius: 2px;\n"
-"    color: silver;\n"
-"}\n"
-"\n"
-"QGroupBox {\n"
-"    border:1px solid #3A3939;\n"
-"    border-radius: 2px;\n"
-"    margin-top: 20px;\n"
-"}\n"
-"\n"
-"QGroupBox::title {\n"
-"    subcontrol-origin: margin;\n"
-"    subcontrol-position: top center;\n"
-"    padding-left: 10px;\n"
-"    padding-right: 10px;\n"
-"    padding-top: 10px;\n"
-"}\n"
-"\n"
-"QAbstractScrollArea\n"
-"{\n"
-"    border-radius: 2px;\n"
-"    border: 1px solid #3A3939;\n"
-"    background-color: transparent;\n"
-"}\n"
-"\n"
-"QScrollBar:horizontal\n"
-"{\n"
-"    height: 15px;\n"
-"    margin: 3px 15px 3px 15px;\n"
-"    border: 1px transparent #2A2929;\n"
-"    border-radius: 4px;\n"
-"    background-color: #2A2929;\n"
-"}\n"
-"\n"
-"QScrollBar::handle:horizontal\n"
-"{\n"
-"    background-color: #605F5F;\n"
-"    min-width: 5px;\n"
-"    border-radius: 4px;\n"
-"}\n"
-"\n"
-"QScrollBar::add-line:horizontal\n"
-"{\n"
-"    margin: 0px 3px 0px 3px;\n"
-"    border-image: url(:/qss_icons/rc/right_arrow_disabled.png);\n"
-"    width: 10px;\n"
-"    height: 10px;\n"
-"    subcontrol-position: right;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"\n"
-"QScrollBar::sub-line:horizontal\n"
-"{\n"
-"    margin: 0px 3px 0px 3px;\n"
-"    border-image: url(:/qss_icons/rc/left_arrow_disabled.png);\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    subcontrol-position: left;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"\n"
-"QScrollBar::add-line:horizontal:hover,QScrollBar::add-line:horizontal:on\n"
-"{\n"
-"    border-image: url(:/qss_icons/rc/right_arrow.png);\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    subcontrol-position: right;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"\n"
-"\n"
-"QScrollBar::sub-line:horizontal:hover,\n"
-"QScrollBar::sub-line:horizontal:on\n"
-"{\n"
-"    border-image: url(:/qss_icons/rc/left_arrow.png);\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    subcontrol-position: left;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"\n"
-"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal\n"
-"{\n"
-"    background: none;\n"
-"}\n"
-"\n"
-"\n"
-"QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal\n"
-"{\n"
-"    background: none;\n"
-"}\n"
-"\n"
-"QScrollBar:vertical\n"
-"{\n"
-"    background-color: #2A2929;\n"
-"    width: 15px;\n"
-"    margin: 15px 3px 15px 3px;\n"
-"    border: 1px transparent #2A2929;\n"
-"    border-radius: 4px;\n"
-"}\n"
-"\n"
-"QScrollBar::handle:vertical\n"
-"{\n"
-"    background-color: #605F5F;\n"
-"    min-height: 5px;\n"
-"    border-radius: 4px;\n"
-"}\n"
-"\n"
-"QScrollBar::sub-line:vertical\n"
-"{\n"
-"    margin: 3px 0px 3px 0px;\n"
-"    border-image: url(:/qss_icons/rc/up_arrow_disabled.png);\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    subcontrol-position: top;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"\n"
-"QScrollBar::add-line:vertical\n"
-"{\n"
-"    margin: 3px 0px 3px 0px;\n"
-"    border-image: url(:/qss_icons/rc/down_arrow_disabled.png);\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    subcontrol-position: bottom;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"\n"
-"QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on\n"
-"{\n"
-"\n"
-"    border-image: url(:/qss_icons/rc/up_arrow.png);\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    subcontrol-position: top;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"\n"
-"\n"
-"QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on\n"
-"{\n"
-"    border-image: url(:/qss_icons/rc/down_arrow.png);\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    subcontrol-position: bottom;\n"
-"    subcontrol-origin: margin;\n"
-"}\n"
-"\n"
-"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical\n"
-"{\n"
-"    background: none;\n"
-"}\n"
-"\n"
-"\n"
-"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical\n"
-"{\n"
-"    background: none;\n"
-"}\n"
-"\n"
-"QTextEdit\n"
-"{\n"
-"    background-color: #201F1F;\n"
-"    color: silver;\n"
-"    border: 1px solid #3A3939;\n"
-"}\n"
-"\n"
-"QPlainTextEdit\n"
-"{\n"
-"    background-color: #201F1F;;\n"
-"    color: silver;\n"
-"    border-radius: 2px;\n"
-"    border: 1px solid #3A3939;\n"
-"}\n"
-"\n"
-"QHeaderView::section\n"
-"{\n"
-"    background-color: #3A3939;\n"
-"    color: silver;\n"
-"    padding-left: 4px;\n"
-"    border: 1px solid #6c6c6c;\n"
-"}\n"
-"\n"
-"QSizeGrip {\n"
-"    image: url(:/qss_icons/rc/sizegrip.png);\n"
-"    width: 12px;\n"
-"    height: 12px;\n"
-"}\n"
-"\n"
-"\n"
-"QMainWindow::separator\n"
-"{\n"
-"    background-color: #302F2F;\n"
-"    color: white;\n"
-"    padding-left: 4px;\n"
-"    spacing: 2px;\n"
-"    border: 1px dashed #3A3939;\n"
-"}\n"
-"\n"
-"QMainWindow::separator:hover\n"
-"{\n"
-"\n"
-"    background-color: #787876;\n"
-"    color: white;\n"
-"    padding-left: 4px;\n"
-"    border: 1px solid #3A3939;\n"
-"    spacing: 2px;\n"
-"}\n"
-"\n"
-"\n"
-"QMenu::separator\n"
-"{\n"
-"    height: 1px;\n"
-"    background-color: #3A3939;\n"
-"    color: white;\n"
-"    padding-left: 4px;\n"
-"    margin-left: 10px;\n"
-"    margin-right: 5px;\n"
-"}\n"
-"\n"
-"\n"
-"QFrame\n"
-"{\n"
-"    border-radius: 2px;\n"
-"    border: 1px solid #444;\n"
-"}\n"
-"\n"
-"QFrame[frameShape=\"0\"]\n"
-"{\n"
-"    border-radius: 2px;\n"
-"    border: 1px transparent #444;\n"
-"}\n"
-"\n"
-"QStackedWidget\n"
-"{\n"
-"    border: 1px transparent black;\n"
-"}\n"
-"\n"
-"QToolBar {\n"
-"    border: 1px transparent #393838;\n"
-"    background: 1px solid #302F2F;\n"
-"    font-weight: bold;\n"
-"}\n"
-"\n"
-"QToolBar::handle:horizontal {\n"
-"    image: url(:/qss_icons/rc/Hmovetoolbar.png);\n"
-"}\n"
-"QToolBar::handle:vertical {\n"
-"    image: url(:/qss_icons/rc/Vmovetoolbar.png);\n"
-"}\n"
-"QToolBar::separator:horizontal {\n"
-"    image: url(:/qss_icons/rc/Hsepartoolbar.png);\n"
-"}\n"
-"QToolBar::separator:vertical {\n"
-"    image: url(:/qss_icons/rc/Vsepartoolbars.png);\n"
-"}\n"
-"\n"
-"QPushButton\n"
-"{\n"
-"    color: silver;\n"
-"    background-color: #302F2F;\n"
-"    border-width: 1px;\n"
-"    border-color: #4A4949;\n"
-"    border-style: solid;\n"
-"    padding-top: 5px;\n"
-"    padding-bottom: 5px;\n"
-"    padding-left: 5px;\n"
-"    padding-right: 5px;\n"
-"    border-radius: 2px;\n"
-"    outline: none;\n"
-"}\n"
-"\n"
-"QPushButton:disabled\n"
-"{\n"
-"    background-color: #302F2F;\n"
-"    border-width: 1px;\n"
-"    border-color: #3A3939;\n"
-"    border-style: solid;\n"
-"    padding-top: 5px;\n"
-"    padding-bottom: 5px;\n"
-"    padding-left: 10px;\n"
-"    padding-right: 10px;\n"
-"    /*border-radius: 2px;*/\n"
-"    color: #454545;\n"
-"}\n"
-"\n"
-"QPushButton:focus {\n"
-"    background-color: #3d8ec9;\n"
-"    color: white;\n"
-"}\n"
-"\n"
-"QComboBox\n"
-"{\n"
-"    selection-background-color: #3d8ec9;\n"
-"    background-color: #201F1F;\n"
-"    border-style: solid;\n"
-"    border: 1px solid #3A3939;\n"
-"    border-radius: 2px;\n"
-"    padding: 2px;\n"
-"    min-width: 75px;\n"
-"}\n"
-"\n"
-"QPushButton:checked{\n"
-"    background-color: #4A4949;\n"
-"    border-color: #6A6969;\n"
-"}\n"
-"\n"
-"QComboBox:hover,QPushButton:hover,QAbstractSpinBox:hover,QLineEdit:hover,QTextEdit:hover,QPlainTextEdit:hover,QAbstractView:hover,QTreeView:hover\n"
-"{\n"
-"    border: 1px solid #78879b;\n"
-"    color: silver;\n"
-"}\n"
-"\n"
-"QComboBox:on\n"
-"{\n"
-"    background-color: #626873;\n"
-"    padding-top: 3px;\n"
-"    padding-left: 4px;\n"
-"    selection-background-color: #4a4a4a;\n"
-"}\n"
-"\n"
-"QComboBox QAbstractItemView\n"
-"{\n"
-"    background-color: #201F1F;\n"
-"    border-radius: 2px;\n"
-"    border: 1px solid #444;\n"
-"    selection-background-color: #3d8ec9;\n"
-"}\n"
-"\n"
-"QComboBox::drop-down\n"
-"{\n"
-"    subcontrol-origin: padding;\n"
-"    subcontrol-position: top right;\n"
-"    width: 15px;\n"
-"\n"
-"    border-left-width: 0px;\n"
-"    border-left-color: darkgray;\n"
-"    border-left-style: solid;\n"
-"    border-top-right-radius: 3px;\n"
-"    border-bottom-right-radius: 3px;\n"
-"}\n"
-"\n"
-"QComboBox::down-arrow\n"
-"{\n"
-"    image: url(:/qss_icons/rc/down_arrow_disabled.png);\n"
-"}\n"
-"\n"
-"QComboBox::down-arrow:on, QComboBox::down-arrow:hover,\n"
-"QComboBox::down-arrow:focus\n"
-"{\n"
-"    image: url(:/qss_icons/rc/down_arrow.png);\n"
-"}\n"
-"\n"
-"QPushButton:pressed\n"
-"{\n"
-"    background-color: #484846;\n"
-"}\n"
-"\n"
-"QAbstractSpinBox {\n"
-"    padding-top: 2px;\n"
-"    padding-bottom: 2px;\n"
-"    border: 1px solid #3A3939;\n"
-"    background-color: #201F1F;\n"
-"    color: silver;\n"
-"    border-radius: 2px;\n"
-"    min-width: 75px;\n"
-"}\n"
-"\n"
-"QAbstractSpinBox:up-button\n"
-"{\n"
-"    background-color: transparent;\n"
-"    subcontrol-origin: border;\n"
-"    subcontrol-position: center right;\n"
-"}\n"
-"\n"
-"QAbstractSpinBox:down-button\n"
-"{\n"
-"    background-color: transparent;\n"
-"    subcontrol-origin: border;\n"
-"    subcontrol-position: center left;\n"
-"}\n"
-"\n"
-"QAbstractSpinBox::up-arrow,QAbstractSpinBox::up-arrow:disabled,QAbstractSpinBox::up-arrow:off\n"
-"{\n"
-"    image: url(:/qss_icons/rc/up_arrow_disabled.png);\n"
-"    width: 10px;\n"
-"    height: 10px;\n"
-"}\n"
-"QAbstractSpinBox::up-arrow:hover\n"
-"{\n"
-"    image: url(:/qss_icons/rc/up_arrow.png);\n"
-"}\n"
-"\n"
-"\n"
-"QAbstractSpinBox::down-arrow,QAbstractSpinBox::down-arrow:disabled,QAbstractSpinBox::down-arrow:off\n"
-"{\n"
-"    image: url(:/qss_icons/rc/down_arrow_disabled.png);\n"
-"    width: 10px;\n"
-"    height: 10px;\n"
-"}\n"
-"QAbstractSpinBox::down-arrow:hover\n"
-"{\n"
-"    image: url(:/qss_icons/rc/down_arrow.png);\n"
-"}\n"
-"\n"
-"\n"
-"QLabel\n"
-"{\n"
-"    border: 0px solid black;\n"
-"}\n"
-"\n"
-"QTabWidget{\n"
-"    border: 1px transparent black;\n"
-"}\n"
-"\n"
-"QTabWidget::pane {\n"
-"    border: 1px solid #444;\n"
-"    border-radius: 3px;\n"
-"    padding: 3px;\n"
-"}\n"
-"\n"
-"QTabBar\n"
-"{\n"
-"    qproperty-drawBase: 0;\n"
-"    left: 5px; /* move to the right by 5px */\n"
-"}\n"
-"\n"
-"QTabBar:focus\n"
-"{\n"
-"    border: 0px transparent black;\n"
-"}\n"
-"\n"
-"QTabBar::close-button  {\n"
-"    image: url(:/qss_icons/rc/close.png);\n"
-"    background: transparent;\n"
-"}\n"
-"\n"
-"QTabBar::close-button:hover\n"
-"{\n"
-"    image: url(:/qss_icons/rc/close-hover.png);\n"
-"    background: transparent;\n"
-"}\n"
-"\n"
-"QTabBar::close-button:pressed {\n"
-"    image: url(:/qss_icons/rc/close-pressed.png);\n"
-"    background: transparent;\n"
-"}\n"
-"\n"
-"/* TOP TABS */\n"
-"QTabBar::tab:top {\n"
-"    color: #b1b1b1;\n"
-"    border: 1px solid #4A4949;\n"
-"    border-bottom: 1px transparent black;\n"
-"    background-color: #302F2F;\n"
-"    padding: 5px;\n"
-"    border-top-left-radius: 2px;\n"
-"    border-top-right-radius: 2px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:top:!selected\n"
-"{\n"
-"    color: #b1b1b1;\n"
-"    background-color: #201F1F;\n"
-"    border: 1px transparent #4A4949;\n"
-"    border-bottom: 1px transparent #4A4949;\n"
-"    border-top-left-radius: 0px;\n"
-"    border-top-right-radius: 0px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:top:!selected:hover {\n"
-"    background-color: #48576b;\n"
-"}\n"
-"\n"
-"/* BOTTOM TABS */\n"
-"QTabBar::tab:bottom {\n"
-"    color: #b1b1b1;\n"
-"    border: 1px solid #4A4949;\n"
-"    border-top: 1px transparent black;\n"
-"    background-color: #302F2F;\n"
-"    padding: 5px;\n"
-"    border-bottom-left-radius: 2px;\n"
-"    border-bottom-right-radius: 2px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:bottom:!selected\n"
-"{\n"
-"    color: #b1b1b1;\n"
-"    background-color: #201F1F;\n"
-"    border: 1px transparent #4A4949;\n"
-"    border-top: 1px transparent #4A4949;\n"
-"    border-bottom-left-radius: 0px;\n"
-"    border-bottom-right-radius: 0px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:bottom:!selected:hover {\n"
-"    background-color: #78879b;\n"
-"}\n"
-"\n"
-"/* LEFT TABS */\n"
-"QTabBar::tab:left {\n"
-"    color: #b1b1b1;\n"
-"    border: 1px solid #4A4949;\n"
-"    border-left: 1px transparent black;\n"
-"    background-color: #302F2F;\n"
-"    padding: 5px;\n"
-"    border-top-right-radius: 2px;\n"
-"    border-bottom-right-radius: 2px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:left:!selected\n"
-"{\n"
-"    color: #b1b1b1;\n"
-"    background-color: #201F1F;\n"
-"    border: 1px transparent #4A4949;\n"
-"    border-right: 1px transparent #4A4949;\n"
-"    border-top-right-radius: 0px;\n"
-"    border-bottom-right-radius: 0px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:left:!selected:hover {\n"
-"    background-color: #48576b;\n"
-"}\n"
-"\n"
-"\n"
-"/* RIGHT TABS */\n"
-"QTabBar::tab:right {\n"
-"    color: #b1b1b1;\n"
-"    border: 1px solid #4A4949;\n"
-"    border-right: 1px transparent black;\n"
-"    background-color: #302F2F;\n"
-"    padding: 5px;\n"
-"    border-top-left-radius: 2px;\n"
-"    border-bottom-left-radius: 2px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:right:!selected\n"
-"{\n"
-"    color: #b1b1b1;\n"
-"    background-color: #201F1F;\n"
-"    border: 1px transparent #4A4949;\n"
-"    border-right: 1px transparent #4A4949;\n"
-"    border-top-left-radius: 0px;\n"
-"    border-bottom-left-radius: 0px;\n"
-"}\n"
-"\n"
-"QTabBar::tab:right:!selected:hover {\n"
-"    background-color: #48576b;\n"
-"}\n"
-"\n"
-"QTabBar QToolButton::right-arrow:enabled {\n"
-"     image: url(:/qss_icons/rc/right_arrow.png);\n"
-" }\n"
-"\n"
-" QTabBar QToolButton::left-arrow:enabled {\n"
-"     image: url(:/qss_icons/rc/left_arrow.png);\n"
-" }\n"
-"\n"
-"QTabBar QToolButton::right-arrow:disabled {\n"
-"     image: url(:/qss_icons/rc/right_arrow_disabled.png);\n"
-" }\n"
-"\n"
-" QTabBar QToolButton::left-arrow:disabled {\n"
-"     image: url(:/qss_icons/rc/left_arrow_disabled.png);\n"
-" }\n"
-"\n"
-"\n"
-"QDockWidget {\n"
-"    border: 1px solid #403F3F;\n"
-"    titlebar-close-icon: url(:/qss_icons/rc/close.png);\n"
-"    titlebar-normal-icon: url(:/qss_icons/rc/undock.png);\n"
-"}\n"
-"\n"
-"QDockWidget::close-button, QDockWidget::float-button {\n"
-"    border: 1px solid transparent;\n"
-"    border-radius: 2px;\n"
-"    background: transparent;\n"
-"}\n"
-"\n"
-"QDockWidget::close-button:hover, QDockWidget::float-button:hover {\n"
-"    background: rgba(255, 255, 255, 10);\n"
-"}\n"
-"\n"
-"QDockWidget::close-button:pressed, QDockWidget::float-button:pressed {\n"
-"    padding: 1px -1px -1px 1px;\n"
-"    background: rgba(255, 255, 255, 10);\n"
-"}\n"
-"\n"
-"QTreeView, QListView\n"
-"{\n"
-"    border: 1px solid #444;\n"
-"    background-color: #201F1F;\n"
-"}\n"
-"\n"
-"QTreeView:branch:selected, QTreeView:branch:hover\n"
-"{\n"
-"    background: url(:/qss_icons/rc/transparent.png);\n"
-"}\n"
-"\n"
-"QTreeView::branch:has-siblings:!adjoins-item {\n"
-"    border-image: url(:/qss_icons/rc/transparent.png);\n"
-"}\n"
-"\n"
-"QTreeView::branch:has-siblings:adjoins-item {\n"
-"    border-image: url(:/qss_icons/rc/transparent.png);\n"
-"}\n"
-"\n"
-"QTreeView::branch:!has-children:!has-siblings:adjoins-item {\n"
-"    border-image: url(:/qss_icons/rc/transparent.png);\n"
-"}\n"
-"\n"
-"QTreeView::branch:has-children:!has-siblings:closed,\n"
-"QTreeView::branch:closed:has-children:has-siblings {\n"
-"    image: url(:/qss_icons/rc/branch_closed.png);\n"
-"}\n"
-"\n"
-"QTreeView::branch:open:has-children:!has-siblings,\n"
-"QTreeView::branch:open:has-children:has-siblings  {\n"
-"    image: url(:/qss_icons/rc/branch_open.png);\n"
-"}\n"
-"\n"
-"QTreeView::branch:has-children:!has-siblings:closed:hover,\n"
-"QTreeView::branch:closed:has-children:has-siblings:hover {\n"
-"    image: url(:/qss_icons/rc/branch_closed-on.png);\n"
-"    }\n"
-"\n"
-"QTreeView::branch:open:has-children:!has-siblings:hover,\n"
-"QTreeView::branch:open:has-children:has-siblings:hover  {\n"
-"    image: url(:/qss_icons/rc/branch_open-on.png);\n"
-"    }\n"
-"\n"
-"QListView::item:!selected:hover, QListView::item:!selected:hover,\n"
-"QTreeView::item:!selected:hover  {\n"
-"    background: rgba(0, 0, 0, 0);\n"
-"    outline: 0;\n"
-"    color: #FFFFFF\n"
-"}\n"
-"\n"
-"QListView::item:selected:hover, QListView::item:selected:hover,\n"
-"QTreeView::item:selected:hover  {\n"
-"    background: #3d8ec9;\n"
-"    color: #FFFFFF;\n"
-"}\n"
-"\n"
-"QSlider::groove:horizontal {\n"
-"    border: 1px solid #3A3939;\n"
-"    height: 8px;\n"
-"    background: #201F1F;\n"
-"    margin: 2px 0;\n"
-"    border-radius: 2px;\n"
-"}\n"
-"\n"
-"QSlider::handle:horizontal {\n"
-"    background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1,\n"
-"      stop: 0.0 silver, stop: 0.2 #a8a8a8, stop: 1 #727272);\n"
-"    border: 1px solid #3A3939;\n"
-"    width: 14px;\n"
-"    height: 14px;\n"
-"    margin: -4px 0;\n"
-"    border-radius: 2px;\n"
-"}\n"
-"\n"
-"QSlider::groove:vertical {\n"
-"    border: 1px solid #3A3939;\n"
-"    width: 8px;\n"
-"    background: #201F1F;\n"
-"    margin: 0 0px;\n"
-"    border-radius: 2px;\n"
-"}\n"
-"\n"
-"QSlider::handle:vertical {\n"
-"    background: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.0\n"
-"silver,\n"
-"      stop: 0.2 #a8a8a8, stop: 1 #727272);\n"
-"    border: 1px solid #3A3939;\n"
-"    width: 14px;\n"
-"    height: 14px;\n"
-"    margin: 0 -4px;\n"
-"    border-radius: 2px;\n"
-"}\n"
-"\n"
-"QToolButton {\n"
-"    background-color: transparent;\n"
-"    border: 1px transparent #4A4949;\n"
-"    border-radius: 2px;\n"
-"    margin: 3px;\n"
-"    padding: 3px;\n"
-"}\n"
-"\n"
-"QToolButton[popupMode=\"1\"] { /* only for MenuButtonPopup */\n"
-" padding-right: 20px; /* make way for the popup button */\n"
-" border: 1px transparent #4A4949;\n"
-" border-radius: 5px;\n"
-"}\n"
-"\n"
-"QToolButton[popupMode=\"2\"] { /* only for InstantPopup */\n"
-" padding-right: 10px; /* make way for the popup button */\n"
-" border: 1px transparent #4A4949;\n"
-"}\n"
-"\n"
-"\n"
-"QToolButton:hover, QToolButton::menu-button:hover {\n"
-"    background-color: transparent;\n"
-"    border: 1px solid #78879b;\n"
-"}\n"
-"\n"
-"QToolButton:checked, QToolButton:pressed,\n"
-"        QToolButton::menu-button:pressed {\n"
-"    background-color: #4A4949;\n"
-"    border: 1px solid #78879b;\n"
-"}\n"
-"\n"
-"/* the subcontrol below is used only in the InstantPopup or DelayedPopup\n"
-" * mode */\n"
-"QToolButton::menu-indicator {\n"
-"    image: url(:/qss_icons/rc/down_arrow.png);\n"
-"    top: -7px; left: -2px; /* shift it a bit */\n"
-"}\n"
-"\n"
-"/* the subcontrols below are used only in the MenuButtonPopup mode */\n"
-"QToolButton::menu-button {\n"
-"    border: 1px transparent #4A4949;\n"
-"    border-top-right-radius: 6px;\n"
-"    border-bottom-right-radius: 6px;\n"
-"    /* 16px width + 4px for border = 20px allocated above */\n"
-"    width: 16px;\n"
-"    outline: none;\n"
-"}\n"
-"\n"
-"QToolButton::menu-arrow {\n"
-"    image: url(:/qss_icons/rc/down_arrow.png);\n"
-"}\n"
-"\n"
-"QToolButton::menu-arrow:open {\n"
-"    top: 1px; left: 1px; /* shift it a bit */\n"
-"    border: 1px solid #3A3939;\n"
-"}\n"
-"\n"
-"QPushButton::menu-indicator  {\n"
-"    subcontrol-origin: padding;\n"
-"    subcontrol-position: bottom right;\n"
-"    left: 8px;\n"
-"}\n"
-"\n"
-"QTableView\n"
-"{\n"
-"    border: 1px solid #444;\n"
-"    gridline-color: #6c6c6c;\n"
-"    background-color: #201F1F;\n"
-"}\n"
-"\n"
-"\n"
-"QTableView, QHeaderView\n"
-"{\n"
-"    border-radius: 0px;\n"
-"}\n"
-"\n"
-"QTableView::item:pressed, QListView::item:pressed,\n"
-"QTreeView::item:pressed  {\n"
-"    background: #78879b;\n"
-"    color: #FFFFFF;\n"
-"}\n"
-"\n"
-"QTableView::item:selected:active, QTreeView::item:selected:active,\n"
-"QListView::item:selected:active  {\n"
-"    background: #3d8ec9;\n"
-"    color: #FFFFFF;\n"
-"}\n"
-"\n"
-"\n"
-"QHeaderView\n"
-"{\n"
-"    border: 1px transparent;\n"
-"    border-radius: 2px;\n"
-"    margin: 0px;\n"
-"    padding: 0px;\n"
-"}\n"
-"\n"
-"QHeaderView::section  {\n"
-"    background-color: #3A3939;\n"
-"    color: silver;\n"
-"    padding: 4px;\n"
-"    border: 1px solid #6c6c6c;\n"
-"    border-radius: 0px;\n"
-"    text-align: center;\n"
-"}\n"
-"\n"
-"QHeaderView::section::vertical::first,\n"
-"QHeaderView::section::vertical::only-one\n"
-"{\n"
-"    border-top: 1px solid #6c6c6c;\n"
-"}\n"
-"\n"
-"QHeaderView::section::vertical\n"
-"{\n"
-"    border-top: transparent;\n"
-"}\n"
-"\n"
-"QHeaderView::section::horizontal::first,\n"
-"QHeaderView::section::horizontal::only-one\n"
-"{\n"
-"    border-left: 1px solid #6c6c6c;\n"
-"}\n"
-"\n"
-"QHeaderView::section::horizontal\n"
-"{\n"
-"    border-left: transparent;\n"
-"}\n"
-"\n"
-"\n"
-"QHeaderView::section:checked\n"
-" {\n"
-"    color: white;\n"
-"    background-color: #5A5959;\n"
-" }\n"
-"\n"
-" /* style the sort indicator */\n"
-"QHeaderView::down-arrow {\n"
-"    image: url(:/qss_icons/rc/down_arrow.png);\n"
-"}\n"
-"\n"
-"QHeaderView::up-arrow {\n"
-"    image: url(:/qss_icons/rc/up_arrow.png);\n"
-"}\n"
-"\n"
-"\n"
-"QTableCornerButton::section {\n"
-"    background-color: #3A3939;\n"
-"    border: 1px solid #3A3939;\n"
-"    border-radius: 2px;\n"
-"}\n"
-"\n"
-"QToolBox  {\n"
-"    padding: 3px;\n"
-"    border: 1px transparent black;\n"
-"}\n"
-"\n"
-"QToolBox::tab {\n"
-"    color: #b1b1b1;\n"
-"    background-color: #302F2F;\n"
-"    border: 1px solid #4A4949;\n"
-"    border-bottom: 1px transparent #302F2F;\n"
-"    border-top-left-radius: 5px;\n"
-"    border-top-right-radius: 5px;\n"
-"}\n"
-"\n"
-" QToolBox::tab:selected { /* italicize selected tabs */\n"
-"    font: italic;\n"
-"    background-color: #302F2F;\n"
-"    border-color: #3d8ec9;\n"
-" }\n"
-"\n"
-"QStatusBar::item {\n"
-"    border: 1px solid #3A3939;\n"
-"    border-radius: 2px;\n"
-" }\n"
-"\n"
-"\n"
-"QFrame[height=\"3\"], QFrame[width=\"3\"] {\n"
-"    background-color: #444;\n"
-"}\n"
-"\n"
-"\n"
-"QSplitter::handle {\n"
-"    border: 1px dashed #3A3939;\n"
-"}\n"
-"\n"
-"QSplitter::handle:hover {\n"
-"    background-color: #787876;\n"
-"    border: 1px solid #3A3939;\n"
-"}\n"
-"\n"
-"QSplitter::handle:horizontal {\n"
-"    width: 1px;\n"
-"}\n"
-"\n"
-"QSplitter::handle:vertical {\n"
-"    height: 1px;\n"
-"}\n"
-"")
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtGui.QGridLayout(self.centralwidget)
@@ -1286,6 +42,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.addWidget(self.label_8)
         self.comboBox_3 = QtGui.QComboBox(self.frame_5)
         self.comboBox_3.setObjectName("comboBox_3")
+        self.comboBox_3.addItem("")
         self.comboBox_3.addItem("")
         self.comboBox_3.addItem("")
         self.comboBox_3.addItem("")
@@ -1376,6 +133,69 @@ class Ui_MainWindow(object):
         self.labelSnapshotThumbnail_3.setObjectName("labelSnapshotThumbnail_3")
         self.verticalLayout_6.addWidget(self.frame)
         self.stackedWidgetCenter_4.addWidget(self.page_13)
+        self.page_17 = QtGui.QWidget()
+        self.page_17.setObjectName("page_17")
+        self.label_59 = QtGui.QLabel(self.page_17)
+        self.label_59.setGeometry(QtCore.QRect(30, 80, 151, 111))
+        self.label_59.setObjectName("label_59")
+        self.stackedWidgetCenter_4.addWidget(self.page_17)
+        self.page_18 = QtGui.QWidget()
+        self.page_18.setObjectName("page_18")
+        self.frame_32 = QtGui.QFrame(self.page_18)
+        self.frame_32.setGeometry(QtCore.QRect(0, 20, 195, 121))
+        self.frame_32.setMinimumSize(QtCore.QSize(195, 0))
+        self.frame_32.setMaximumSize(QtCore.QSize(195, 16777215))
+        self.frame_32.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_32.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_32.setObjectName("frame_32")
+        self.label_60 = QtGui.QLabel(self.frame_32)
+        self.label_60.setGeometry(QtCore.QRect(10, 10, 161, 16))
+        self.label_60.setObjectName("label_60")
+        self.label_61 = QtGui.QLabel(self.frame_32)
+        self.label_61.setGeometry(QtCore.QRect(20, 40, 151, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_61.setFont(font)
+        self.label_61.setObjectName("label_61")
+        self.pushButton_39 = QtGui.QPushButton(self.frame_32)
+        self.pushButton_39.setGeometry(QtCore.QRect(20, 70, 31, 26))
+        self.pushButton_39.setCheckable(True)
+        self.pushButton_39.setObjectName("pushButton_39")
+        self.pushButton_40 = QtGui.QPushButton(self.frame_32)
+        self.pushButton_40.setGeometry(QtCore.QRect(60, 70, 31, 26))
+        self.pushButton_40.setCheckable(True)
+        self.pushButton_40.setObjectName("pushButton_40")
+        self.frame_33 = QtGui.QFrame(self.page_18)
+        self.frame_33.setGeometry(QtCore.QRect(0, 150, 195, 251))
+        self.frame_33.setMinimumSize(QtCore.QSize(195, 0))
+        self.frame_33.setMaximumSize(QtCore.QSize(195, 16777215))
+        self.frame_33.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_33.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_33.setObjectName("frame_33")
+        self.label_62 = QtGui.QLabel(self.frame_33)
+        self.label_62.setGeometry(QtCore.QRect(10, 10, 131, 16))
+        self.label_62.setObjectName("label_62")
+        self.labelSnapshotThumbnail_2 = QtGui.QLabel(self.frame_33)
+        self.labelSnapshotThumbnail_2.setGeometry(QtCore.QRect(20, 60, 161, 121))
+        self.labelSnapshotThumbnail_2.setText("")
+        self.labelSnapshotThumbnail_2.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/raw_image_pyqtgraph_plot.png"))
+        self.labelSnapshotThumbnail_2.setScaledContents(True)
+        self.labelSnapshotThumbnail_2.setObjectName("labelSnapshotThumbnail_2")
+        self.label_63 = QtGui.QLabel(self.frame_33)
+        self.label_63.setGeometry(QtCore.QRect(20, 40, 121, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_63.setFont(font)
+        self.label_63.setObjectName("label_63")
+        self.pushButton_41 = QtGui.QPushButton(self.frame_33)
+        self.pushButton_41.setGeometry(QtCore.QRect(20, 190, 31, 26))
+        self.pushButton_41.setCheckable(True)
+        self.pushButton_41.setObjectName("pushButton_41")
+        self.pushButton_42 = QtGui.QPushButton(self.frame_33)
+        self.pushButton_42.setGeometry(QtCore.QRect(60, 190, 31, 26))
+        self.pushButton_42.setCheckable(True)
+        self.pushButton_42.setObjectName("pushButton_42")
+        self.stackedWidgetCenter_4.addWidget(self.page_18)
         self.page_14 = QtGui.QWidget()
         self.page_14.setObjectName("page_14")
         self.label_9 = QtGui.QLabel(self.page_14)
@@ -1383,72 +203,6 @@ class Ui_MainWindow(object):
         self.label_9.setObjectName("label_9")
         self.stackedWidgetCenter_4.addWidget(self.page_14)
         self.gridLayout.addWidget(self.stackedWidgetCenter_4, 1, 0, 2, 1)
-        self.stackedWidgetCenter_2 = QtGui.QStackedWidget(self.centralwidget)
-        self.stackedWidgetCenter_2.setMinimumSize(QtCore.QSize(0, 50))
-        self.stackedWidgetCenter_2.setMaximumSize(QtCore.QSize(16777215, 50))
-        self.stackedWidgetCenter_2.setObjectName("stackedWidgetCenter_2")
-        self.page_7 = QtGui.QWidget()
-        self.page_7.setObjectName("page_7")
-        self.verticalLayout_3 = QtGui.QVBoxLayout(self.page_7)
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.frame_7 = QtGui.QFrame(self.page_7)
-        self.frame_7.setMinimumSize(QtCore.QSize(0, 45))
-        self.frame_7.setMaximumSize(QtCore.QSize(16777215, 45))
-        self.frame_7.setFrameShape(QtGui.QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QtGui.QFrame.Raised)
-        self.frame_7.setObjectName("frame_7")
-        self.horizontalLayout_13 = QtGui.QHBoxLayout(self.frame_7)
-        self.horizontalLayout_13.setObjectName("horizontalLayout_13")
-        spacerItem2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_13.addItem(spacerItem2)
-        self.frame_9 = QtGui.QFrame(self.frame_7)
-        self.frame_9.setMinimumSize(QtCore.QSize(200, 0))
-        self.frame_9.setMaximumSize(QtCore.QSize(200, 16777215))
-        self.frame_9.setFrameShape(QtGui.QFrame.NoFrame)
-        self.frame_9.setFrameShadow(QtGui.QFrame.Raised)
-        self.frame_9.setObjectName("frame_9")
-        self.horizontalLayout_14 = QtGui.QHBoxLayout(self.frame_9)
-        self.horizontalLayout_14.setSpacing(0)
-        self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_14.setObjectName("horizontalLayout_14")
-        self.horizontalLayout_15 = QtGui.QHBoxLayout()
-        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
-        self.pushButton_5 = QtGui.QPushButton(self.frame_9)
-        self.pushButton_5.setCheckable(True)
-        self.pushButton_5.setChecked(True)
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.horizontalLayout_15.addWidget(self.pushButton_5)
-        self.pushButton_15 = QtGui.QPushButton(self.frame_9)
-        self.pushButton_15.setCheckable(True)
-        self.pushButton_15.setChecked(False)
-        self.pushButton_15.setObjectName("pushButton_15")
-        self.horizontalLayout_15.addWidget(self.pushButton_15)
-        self.pushButton_16 = QtGui.QPushButton(self.frame_9)
-        self.pushButton_16.setCheckable(False)
-        self.pushButton_16.setObjectName("pushButton_16")
-        self.horizontalLayout_15.addWidget(self.pushButton_16)
-        self.pushButton_17 = QtGui.QPushButton(self.frame_9)
-        self.pushButton_17.setCheckable(True)
-        self.pushButton_17.setChecked(False)
-        self.pushButton_17.setObjectName("pushButton_17")
-        self.horizontalLayout_15.addWidget(self.pushButton_17)
-        self.pushButton_18 = QtGui.QPushButton(self.frame_9)
-        self.pushButton_18.setCheckable(False)
-        self.pushButton_18.setObjectName("pushButton_18")
-        self.horizontalLayout_15.addWidget(self.pushButton_18)
-        self.horizontalLayout_14.addLayout(self.horizontalLayout_15)
-        self.horizontalLayout_13.addWidget(self.frame_9)
-        spacerItem3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_13.addItem(spacerItem3)
-        self.verticalLayout_3.addWidget(self.frame_7)
-        self.stackedWidgetCenter_2.addWidget(self.page_7)
-        self.page_8 = QtGui.QWidget()
-        self.page_8.setObjectName("page_8")
-        self.label_6 = QtGui.QLabel(self.page_8)
-        self.label_6.setGeometry(QtCore.QRect(20, 20, 221, 41))
-        self.label_6.setObjectName("label_6")
-        self.stackedWidgetCenter_2.addWidget(self.page_8)
-        self.gridLayout.addWidget(self.stackedWidgetCenter_2, 1, 1, 1, 1)
         self.stackedWidgetCenter_5 = QtGui.QStackedWidget(self.centralwidget)
         self.stackedWidgetCenter_5.setMinimumSize(QtCore.QSize(210, 50))
         self.stackedWidgetCenter_5.setMaximumSize(QtCore.QSize(210, 16777215))
@@ -1500,7 +254,7 @@ class Ui_MainWindow(object):
         self.label_13.setGeometry(QtCore.QRect(10, 10, 171, 16))
         self.label_13.setObjectName("label_13")
         self.spinBox_7 = QtGui.QSpinBox(self.frame_11)
-        self.spinBox_7.setGeometry(QtCore.QRect(150, 40, 77, 16))
+        self.spinBox_7.setGeometry(QtCore.QRect(150, 40, 31, 16))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.spinBox_7.setFont(font)
@@ -1531,7 +285,7 @@ class Ui_MainWindow(object):
         self.label_16.setFont(font)
         self.label_16.setObjectName("label_16")
         self.spinBox_8 = QtGui.QSpinBox(self.frame_11)
-        self.spinBox_8.setGeometry(QtCore.QRect(150, 70, 77, 16))
+        self.spinBox_8.setGeometry(QtCore.QRect(150, 70, 31, 16))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.spinBox_8.setFont(font)
@@ -1549,7 +303,7 @@ class Ui_MainWindow(object):
         self.label_17.setGeometry(QtCore.QRect(10, 10, 171, 16))
         self.label_17.setObjectName("label_17")
         self.comboBox_4 = QtGui.QComboBox(self.frame_12)
-        self.comboBox_4.setGeometry(QtCore.QRect(10, 30, 81, 27))
+        self.comboBox_4.setGeometry(QtCore.QRect(10, 30, 71, 27))
         self.comboBox_4.setObjectName("comboBox_4")
         self.comboBox_4.addItem("")
         self.comboBox_4.addItem("")
@@ -1571,7 +325,7 @@ class Ui_MainWindow(object):
         self.label_18.setGeometry(QtCore.QRect(10, 10, 171, 16))
         self.label_18.setObjectName("label_18")
         self.spinBox_11 = QtGui.QSpinBox(self.frame_13)
-        self.spinBox_11.setGeometry(QtCore.QRect(150, 40, 77, 16))
+        self.spinBox_11.setGeometry(QtCore.QRect(150, 40, 31, 16))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.spinBox_11.setFont(font)
@@ -1602,7 +356,7 @@ class Ui_MainWindow(object):
         self.label_20.setFont(font)
         self.label_20.setObjectName("label_20")
         self.spinBox_12 = QtGui.QSpinBox(self.frame_13)
-        self.spinBox_12.setGeometry(QtCore.QRect(150, 70, 77, 16))
+        self.spinBox_12.setGeometry(QtCore.QRect(150, 70, 31, 16))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.spinBox_12.setFont(font)
@@ -1620,7 +374,7 @@ class Ui_MainWindow(object):
         self.label_21.setGeometry(QtCore.QRect(10, 10, 171, 16))
         self.label_21.setObjectName("label_21")
         self.spinBox_13 = QtGui.QSpinBox(self.frame_14)
-        self.spinBox_13.setGeometry(QtCore.QRect(150, 40, 77, 16))
+        self.spinBox_13.setGeometry(QtCore.QRect(150, 40, 31, 16))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.spinBox_13.setFont(font)
@@ -1651,7 +405,7 @@ class Ui_MainWindow(object):
         self.label_23.setFont(font)
         self.label_23.setObjectName("label_23")
         self.spinBox_14 = QtGui.QSpinBox(self.frame_14)
-        self.spinBox_14.setGeometry(QtCore.QRect(150, 70, 77, 16))
+        self.spinBox_14.setGeometry(QtCore.QRect(150, 70, 31, 16))
         font = QtGui.QFont()
         font.setPointSize(8)
         self.spinBox_14.setFont(font)
@@ -1659,63 +413,30 @@ class Ui_MainWindow(object):
         self.spinBox_14.setProperty("value", 99)
         self.spinBox_14.setObjectName("spinBox_14")
         self.verticalLayout_2.addWidget(self.frame_14)
-        spacerItem4 = QtGui.QSpacerItem(20, 68, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem4)
+        spacerItem2 = QtGui.QSpacerItem(20, 68, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem2)
         self.frame_15 = QtGui.QFrame(self.frame_2)
-        self.frame_15.setMinimumSize(QtCore.QSize(195, 200))
-        self.frame_15.setMaximumSize(QtCore.QSize(195, 200))
+        self.frame_15.setMinimumSize(QtCore.QSize(195, 150))
+        self.frame_15.setMaximumSize(QtCore.QSize(195, 150))
         self.frame_15.setFrameShape(QtGui.QFrame.StyledPanel)
         self.frame_15.setFrameShadow(QtGui.QFrame.Raised)
         self.frame_15.setObjectName("frame_15")
-        self.label_5 = QtGui.QLabel(self.frame_15)
-        self.label_5.setGeometry(QtCore.QRect(10, 10, 171, 16))
-        self.label_5.setObjectName("label_5")
-        self.labelSnapshotThumbnail_4 = QtGui.QLabel(self.frame_15)
-        self.labelSnapshotThumbnail_4.setGeometry(QtCore.QRect(10, 30, 171, 141))
-        self.labelSnapshotThumbnail_4.setText("")
-        self.labelSnapshotThumbnail_4.setPixmap(QtGui.QPixmap(":/samples/images/vis_gallery/example_vis_camera_13.jpg"))
-        self.labelSnapshotThumbnail_4.setScaledContents(True)
-        self.labelSnapshotThumbnail_4.setObjectName("labelSnapshotThumbnail_4")
         self.label_24 = QtGui.QLabel(self.frame_15)
-        self.label_24.setGeometry(QtCore.QRect(13, 180, 61, 16))
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        self.label_24.setFont(font)
+        self.label_24.setGeometry(QtCore.QRect(10, 10, 171, 16))
         self.label_24.setObjectName("label_24")
-        self.spinBox_5 = QtGui.QSpinBox(self.frame_15)
-        self.spinBox_5.setGeometry(QtCore.QRect(150, 180, 77, 16))
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        self.spinBox_5.setFont(font)
-        self.spinBox_5.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
-        self.spinBox_5.setObjectName("spinBox_5")
-        self.horizontalSlider = QtGui.QSlider(self.frame_15)
-        self.horizontalSlider.setGeometry(QtCore.QRect(70, 180, 71, 16))
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider.setObjectName("horizontalSlider")
-        self.verticalLayout_2.addWidget(self.frame_15)
-        self.frame_16 = QtGui.QFrame(self.frame_2)
-        self.frame_16.setMinimumSize(QtCore.QSize(195, 150))
-        self.frame_16.setMaximumSize(QtCore.QSize(195, 150))
-        self.frame_16.setFrameShape(QtGui.QFrame.StyledPanel)
-        self.frame_16.setFrameShadow(QtGui.QFrame.Raised)
-        self.frame_16.setObjectName("frame_16")
-        self.label_25 = QtGui.QLabel(self.frame_16)
-        self.label_25.setGeometry(QtCore.QRect(10, 10, 171, 16))
-        self.label_25.setObjectName("label_25")
-        self.pushButton_21 = QtGui.QPushButton(self.frame_16)
+        self.pushButton_21 = QtGui.QPushButton(self.frame_15)
         self.pushButton_21.setGeometry(QtCore.QRect(80, 40, 41, 27))
         self.pushButton_21.setObjectName("pushButton_21")
-        self.pushButton_22 = QtGui.QPushButton(self.frame_16)
+        self.pushButton_22 = QtGui.QPushButton(self.frame_15)
         self.pushButton_22.setGeometry(QtCore.QRect(80, 80, 41, 27))
         self.pushButton_22.setObjectName("pushButton_22")
-        self.pushButton_23 = QtGui.QPushButton(self.frame_16)
+        self.pushButton_23 = QtGui.QPushButton(self.frame_15)
         self.pushButton_23.setGeometry(QtCore.QRect(130, 60, 41, 27))
         self.pushButton_23.setObjectName("pushButton_23")
-        self.pushButton_24 = QtGui.QPushButton(self.frame_16)
+        self.pushButton_24 = QtGui.QPushButton(self.frame_15)
         self.pushButton_24.setGeometry(QtCore.QRect(30, 60, 41, 27))
         self.pushButton_24.setObjectName("pushButton_24")
-        self.spinBox_9 = QtGui.QSpinBox(self.frame_16)
+        self.spinBox_9 = QtGui.QSpinBox(self.frame_15)
         self.spinBox_9.setGeometry(QtCore.QRect(10, 120, 91, 23))
         font = QtGui.QFont()
         font.setPointSize(8)
@@ -1724,7 +445,7 @@ class Ui_MainWindow(object):
         self.spinBox_9.setMaximum(9999)
         self.spinBox_9.setProperty("value", 5555)
         self.spinBox_9.setObjectName("spinBox_9")
-        self.spinBox_10 = QtGui.QSpinBox(self.frame_16)
+        self.spinBox_10 = QtGui.QSpinBox(self.frame_15)
         self.spinBox_10.setGeometry(QtCore.QRect(110, 120, 81, 23))
         font = QtGui.QFont()
         font.setPointSize(8)
@@ -1733,9 +454,256 @@ class Ui_MainWindow(object):
         self.spinBox_10.setMaximum(360)
         self.spinBox_10.setProperty("value", 300)
         self.spinBox_10.setObjectName("spinBox_10")
+        self.verticalLayout_2.addWidget(self.frame_15)
+        self.frame_16 = QtGui.QFrame(self.frame_2)
+        self.frame_16.setMinimumSize(QtCore.QSize(195, 200))
+        self.frame_16.setMaximumSize(QtCore.QSize(195, 200))
+        self.frame_16.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_16.setObjectName("frame_16")
+        self.label_5 = QtGui.QLabel(self.frame_16)
+        self.label_5.setGeometry(QtCore.QRect(10, 10, 171, 16))
+        self.label_5.setObjectName("label_5")
+        self.labelSnapshotThumbnail_4 = QtGui.QLabel(self.frame_16)
+        self.labelSnapshotThumbnail_4.setGeometry(QtCore.QRect(10, 30, 171, 141))
+        self.labelSnapshotThumbnail_4.setText("")
+        self.labelSnapshotThumbnail_4.setPixmap(QtGui.QPixmap(":/samples/images/vis_gallery/example_vis_camera_13.jpg"))
+        self.labelSnapshotThumbnail_4.setScaledContents(True)
+        self.labelSnapshotThumbnail_4.setObjectName("labelSnapshotThumbnail_4")
+        self.label_25 = QtGui.QLabel(self.frame_16)
+        self.label_25.setGeometry(QtCore.QRect(13, 180, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_25.setFont(font)
+        self.label_25.setObjectName("label_25")
+        self.spinBox_5 = QtGui.QSpinBox(self.frame_16)
+        self.spinBox_5.setGeometry(QtCore.QRect(150, 180, 31, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_5.setFont(font)
+        self.spinBox_5.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_5.setObjectName("spinBox_5")
+        self.horizontalSlider = QtGui.QSlider(self.frame_16)
+        self.horizontalSlider.setGeometry(QtCore.QRect(70, 180, 71, 16))
+        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider.setObjectName("horizontalSlider")
         self.verticalLayout_2.addWidget(self.frame_16)
         self.verticalLayout_7.addWidget(self.frame_2)
         self.stackedWidgetCenter_5.addWidget(self.page_15)
+        self.page_5 = QtGui.QWidget()
+        self.page_5.setObjectName("page_5")
+        self.label_14 = QtGui.QLabel(self.page_5)
+        self.label_14.setGeometry(QtCore.QRect(10, 80, 141, 41))
+        self.label_14.setObjectName("label_14")
+        self.stackedWidgetCenter_5.addWidget(self.page_5)
+        self.page_6 = QtGui.QWidget()
+        self.page_6.setObjectName("page_6")
+        self.verticalLayout_11 = QtGui.QVBoxLayout(self.page_6)
+        self.verticalLayout_11.setObjectName("verticalLayout_11")
+        self.frame_8 = QtGui.QFrame(self.page_6)
+        self.frame_8.setMinimumSize(QtCore.QSize(200, 0))
+        self.frame_8.setMaximumSize(QtCore.QSize(200, 16777215))
+        self.frame_8.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_8.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_8.setObjectName("frame_8")
+        self.verticalLayout_10 = QtGui.QVBoxLayout(self.frame_8)
+        self.verticalLayout_10.setObjectName("verticalLayout_10")
+        self.frame_26 = QtGui.QFrame(self.frame_8)
+        self.frame_26.setMinimumSize(QtCore.QSize(195, 200))
+        self.frame_26.setMaximumSize(QtCore.QSize(195, 200))
+        self.frame_26.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_26.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_26.setObjectName("frame_26")
+        self.label_50 = QtGui.QLabel(self.frame_26)
+        self.label_50.setGeometry(QtCore.QRect(10, 10, 171, 16))
+        self.label_50.setObjectName("label_50")
+        self.spinBox_24 = QtGui.QSpinBox(self.frame_26)
+        self.spinBox_24.setGeometry(QtCore.QRect(150, 40, 31, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_24.setFont(font)
+        self.spinBox_24.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_24.setProperty("value", 50)
+        self.spinBox_24.setObjectName("spinBox_24")
+        self.label_51 = QtGui.QLabel(self.frame_26)
+        self.label_51.setGeometry(QtCore.QRect(10, 40, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_51.setFont(font)
+        self.label_51.setObjectName("label_51")
+        self.horizontalSlider_14 = QtGui.QSlider(self.frame_26)
+        self.horizontalSlider_14.setGeometry(QtCore.QRect(70, 40, 71, 16))
+        self.horizontalSlider_14.setProperty("value", 50)
+        self.horizontalSlider_14.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_14.setObjectName("horizontalSlider_14")
+        self.horizontalSlider_18 = QtGui.QSlider(self.frame_26)
+        self.horizontalSlider_18.setGeometry(QtCore.QRect(70, 70, 71, 16))
+        self.horizontalSlider_18.setSliderPosition(77)
+        self.horizontalSlider_18.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_18.setInvertedAppearance(False)
+        self.horizontalSlider_18.setInvertedControls(False)
+        self.horizontalSlider_18.setTickPosition(QtGui.QSlider.NoTicks)
+        self.horizontalSlider_18.setObjectName("horizontalSlider_18")
+        self.label_52 = QtGui.QLabel(self.frame_26)
+        self.label_52.setGeometry(QtCore.QRect(10, 70, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_52.setFont(font)
+        self.label_52.setObjectName("label_52")
+        self.spinBox_28 = QtGui.QSpinBox(self.frame_26)
+        self.spinBox_28.setGeometry(QtCore.QRect(150, 70, 31, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_28.setFont(font)
+        self.spinBox_28.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_28.setMaximum(100)
+        self.spinBox_28.setProperty("value", 100)
+        self.spinBox_28.setObjectName("spinBox_28")
+        self.spinBox_29 = QtGui.QSpinBox(self.frame_26)
+        self.spinBox_29.setGeometry(QtCore.QRect(150, 100, 31, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_29.setFont(font)
+        self.spinBox_29.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_29.setMaximum(100)
+        self.spinBox_29.setProperty("value", 100)
+        self.spinBox_29.setObjectName("spinBox_29")
+        self.horizontalSlider_19 = QtGui.QSlider(self.frame_26)
+        self.horizontalSlider_19.setGeometry(QtCore.QRect(70, 100, 71, 16))
+        self.horizontalSlider_19.setSliderPosition(77)
+        self.horizontalSlider_19.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_19.setInvertedAppearance(False)
+        self.horizontalSlider_19.setInvertedControls(False)
+        self.horizontalSlider_19.setTickPosition(QtGui.QSlider.NoTicks)
+        self.horizontalSlider_19.setObjectName("horizontalSlider_19")
+        self.label_53 = QtGui.QLabel(self.frame_26)
+        self.label_53.setGeometry(QtCore.QRect(10, 100, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_53.setFont(font)
+        self.label_53.setObjectName("label_53")
+        self.spinBox_38 = QtGui.QSpinBox(self.frame_26)
+        self.spinBox_38.setGeometry(QtCore.QRect(150, 130, 31, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_38.setFont(font)
+        self.spinBox_38.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_38.setMaximum(100)
+        self.spinBox_38.setProperty("value", 100)
+        self.spinBox_38.setObjectName("spinBox_38")
+        self.horizontalSlider_28 = QtGui.QSlider(self.frame_26)
+        self.horizontalSlider_28.setGeometry(QtCore.QRect(70, 130, 71, 16))
+        self.horizontalSlider_28.setSliderPosition(77)
+        self.horizontalSlider_28.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_28.setInvertedAppearance(False)
+        self.horizontalSlider_28.setInvertedControls(False)
+        self.horizontalSlider_28.setTickPosition(QtGui.QSlider.NoTicks)
+        self.horizontalSlider_28.setObjectName("horizontalSlider_28")
+        self.label_54 = QtGui.QLabel(self.frame_26)
+        self.label_54.setGeometry(QtCore.QRect(10, 130, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_54.setFont(font)
+        self.label_54.setObjectName("label_54")
+        self.verticalLayout_10.addWidget(self.frame_26)
+        self.frame_27 = QtGui.QFrame(self.frame_8)
+        self.frame_27.setMinimumSize(QtCore.QSize(195, 150))
+        self.frame_27.setMaximumSize(QtCore.QSize(195, 200))
+        self.frame_27.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_27.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_27.setObjectName("frame_27")
+        self.label_55 = QtGui.QLabel(self.frame_27)
+        self.label_55.setGeometry(QtCore.QRect(10, 10, 171, 16))
+        self.label_55.setObjectName("label_55")
+        self.verticalScrollBar_5 = QtGui.QScrollBar(self.frame_27)
+        self.verticalScrollBar_5.setGeometry(QtCore.QRect(20, 40, 16, 91))
+        self.verticalScrollBar_5.setOrientation(QtCore.Qt.Vertical)
+        self.verticalScrollBar_5.setObjectName("verticalScrollBar_5")
+        self.pushButton_30 = QtGui.QPushButton(self.frame_27)
+        self.pushButton_30.setGeometry(QtCore.QRect(50, 40, 41, 27))
+        self.pushButton_30.setObjectName("pushButton_30")
+        self.pushButton_31 = QtGui.QPushButton(self.frame_27)
+        self.pushButton_31.setGeometry(QtCore.QRect(50, 110, 41, 27))
+        self.pushButton_31.setObjectName("pushButton_31")
+        self.spinBox_30 = QtGui.QSpinBox(self.frame_27)
+        self.spinBox_30.setGeometry(QtCore.QRect(50, 70, 91, 31))
+        self.spinBox_30.setSuffix("")
+        self.spinBox_30.setMaximum(10000)
+        self.spinBox_30.setObjectName("spinBox_30")
+        self.verticalLayout_10.addWidget(self.frame_27)
+        self.frame_28 = QtGui.QFrame(self.frame_8)
+        self.frame_28.setMinimumSize(QtCore.QSize(195, 100))
+        self.frame_28.setMaximumSize(QtCore.QSize(195, 100))
+        self.frame_28.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_28.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_28.setObjectName("frame_28")
+        self.label_56 = QtGui.QLabel(self.frame_28)
+        self.label_56.setGeometry(QtCore.QRect(10, 10, 171, 16))
+        self.label_56.setObjectName("label_56")
+        self.pushButton_32 = QtGui.QPushButton(self.frame_28)
+        self.pushButton_32.setGeometry(QtCore.QRect(10, 30, 51, 27))
+        self.pushButton_32.setObjectName("pushButton_32")
+        self.spinBox_39 = QtGui.QSpinBox(self.frame_28)
+        self.spinBox_39.setGeometry(QtCore.QRect(150, 70, 31, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_39.setFont(font)
+        self.spinBox_39.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_39.setMaximum(100)
+        self.spinBox_39.setProperty("value", 100)
+        self.spinBox_39.setObjectName("spinBox_39")
+        self.horizontalSlider_29 = QtGui.QSlider(self.frame_28)
+        self.horizontalSlider_29.setGeometry(QtCore.QRect(70, 70, 71, 16))
+        self.horizontalSlider_29.setSliderPosition(77)
+        self.horizontalSlider_29.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_29.setInvertedAppearance(False)
+        self.horizontalSlider_29.setInvertedControls(False)
+        self.horizontalSlider_29.setTickPosition(QtGui.QSlider.NoTicks)
+        self.horizontalSlider_29.setObjectName("horizontalSlider_29")
+        self.label_57 = QtGui.QLabel(self.frame_28)
+        self.label_57.setGeometry(QtCore.QRect(10, 70, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_57.setFont(font)
+        self.label_57.setObjectName("label_57")
+        self.verticalLayout_10.addWidget(self.frame_28)
+        spacerItem3 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_10.addItem(spacerItem3)
+        self.frame_34 = QtGui.QFrame(self.frame_8)
+        self.frame_34.setMinimumSize(QtCore.QSize(195, 200))
+        self.frame_34.setMaximumSize(QtCore.QSize(195, 200))
+        self.frame_34.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_34.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_34.setObjectName("frame_34")
+        self.label_64 = QtGui.QLabel(self.frame_34)
+        self.label_64.setGeometry(QtCore.QRect(10, 10, 171, 16))
+        self.label_64.setObjectName("label_64")
+        self.labelSnapshotThumbnail_6 = QtGui.QLabel(self.frame_34)
+        self.labelSnapshotThumbnail_6.setGeometry(QtCore.QRect(10, 30, 171, 141))
+        self.labelSnapshotThumbnail_6.setText("")
+        self.labelSnapshotThumbnail_6.setPixmap(QtGui.QPixmap(":/samples/images/vis_gallery/example_vis_camera_13.jpg"))
+        self.labelSnapshotThumbnail_6.setScaledContents(True)
+        self.labelSnapshotThumbnail_6.setObjectName("labelSnapshotThumbnail_6")
+        self.label_65 = QtGui.QLabel(self.frame_34)
+        self.label_65.setGeometry(QtCore.QRect(13, 180, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_65.setFont(font)
+        self.label_65.setObjectName("label_65")
+        self.spinBox_31 = QtGui.QSpinBox(self.frame_34)
+        self.spinBox_31.setGeometry(QtCore.QRect(150, 180, 31, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_31.setFont(font)
+        self.spinBox_31.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_31.setObjectName("spinBox_31")
+        self.horizontalSlider_20 = QtGui.QSlider(self.frame_34)
+        self.horizontalSlider_20.setGeometry(QtCore.QRect(70, 180, 71, 16))
+        self.horizontalSlider_20.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_20.setObjectName("horizontalSlider_20")
+        self.verticalLayout_10.addWidget(self.frame_34)
+        self.verticalLayout_11.addWidget(self.frame_8)
+        self.stackedWidgetCenter_5.addWidget(self.page_6)
         self.page_16 = QtGui.QWidget()
         self.page_16.setObjectName("page_16")
         self.label_10 = QtGui.QLabel(self.page_16)
@@ -1776,7 +744,7 @@ class Ui_MainWindow(object):
         self.label_2.setSizePolicy(sizePolicy)
         self.label_2.setText("")
         self.label_2.setTextFormat(QtCore.Qt.AutoText)
-        self.label_2.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/30layerstape_fullsize11.png"))
+        self.label_2.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/cat1_retina36s.jpg"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout_2.addWidget(self.label_2)
@@ -1784,6 +752,124 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.addLayout(self.horizontalLayout)
         self.verticalLayout.addWidget(self.frameCenterArea)
         self.stackedWidgetCenter.addWidget(self.page_3)
+        self.page_19 = QtGui.QWidget()
+        self.page_19.setObjectName("page_19")
+        self.verticalLayout_12 = QtGui.QVBoxLayout(self.page_19)
+        self.verticalLayout_12.setObjectName("verticalLayout_12")
+        self.frameCenterArea_3 = QtGui.QFrame(self.page_19)
+        self.frameCenterArea_3.setMinimumSize(QtCore.QSize(200, 0))
+        self.frameCenterArea_3.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frameCenterArea_3.setFrameShadow(QtGui.QFrame.Raised)
+        self.frameCenterArea_3.setObjectName("frameCenterArea_3")
+        self.frame_35 = QtGui.QFrame(self.frameCenterArea_3)
+        self.frame_35.setGeometry(QtCore.QRect(110, 40, 441, 121))
+        self.frame_35.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_35.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_35.setObjectName("frame_35")
+        self.label_66 = QtGui.QLabel(self.frame_35)
+        self.label_66.setGeometry(QtCore.QRect(30, 20, 171, 16))
+        self.label_66.setObjectName("label_66")
+        self.pushButton_43 = QtGui.QPushButton(self.frame_35)
+        self.pushButton_43.setGeometry(QtCore.QRect(330, 40, 91, 61))
+        self.pushButton_43.setObjectName("pushButton_43")
+        self.pushButton_44 = QtGui.QPushButton(self.frame_35)
+        self.pushButton_44.setGeometry(QtCore.QRect(30, 40, 91, 61))
+        self.pushButton_44.setObjectName("pushButton_44")
+        self.pushButton_45 = QtGui.QPushButton(self.frame_35)
+        self.pushButton_45.setGeometry(QtCore.QRect(230, 40, 91, 61))
+        self.pushButton_45.setObjectName("pushButton_45")
+        self.pushButton_46 = QtGui.QPushButton(self.frame_35)
+        self.pushButton_46.setGeometry(QtCore.QRect(130, 40, 91, 61))
+        self.pushButton_46.setObjectName("pushButton_46")
+        self.frame_36 = QtGui.QFrame(self.frameCenterArea_3)
+        self.frame_36.setGeometry(QtCore.QRect(110, 170, 441, 121))
+        self.frame_36.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_36.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_36.setObjectName("frame_36")
+        self.label_67 = QtGui.QLabel(self.frame_36)
+        self.label_67.setGeometry(QtCore.QRect(30, 20, 171, 16))
+        self.label_67.setObjectName("label_67")
+        self.pushButton_47 = QtGui.QPushButton(self.frame_36)
+        self.pushButton_47.setGeometry(QtCore.QRect(30, 40, 91, 61))
+        self.pushButton_47.setObjectName("pushButton_47")
+        self.pushButton_48 = QtGui.QPushButton(self.frame_36)
+        self.pushButton_48.setGeometry(QtCore.QRect(130, 40, 91, 61))
+        self.pushButton_48.setObjectName("pushButton_48")
+        self.frame_37 = QtGui.QFrame(self.frameCenterArea_3)
+        self.frame_37.setGeometry(QtCore.QRect(110, 300, 441, 121))
+        self.frame_37.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_37.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_37.setObjectName("frame_37")
+        self.label_68 = QtGui.QLabel(self.frame_37)
+        self.label_68.setGeometry(QtCore.QRect(30, 20, 171, 16))
+        self.label_68.setObjectName("label_68")
+        self.pushButton_49 = QtGui.QPushButton(self.frame_37)
+        self.pushButton_49.setGeometry(QtCore.QRect(30, 40, 91, 61))
+        self.pushButton_49.setObjectName("pushButton_49")
+        self.pushButton_50 = QtGui.QPushButton(self.frame_37)
+        self.pushButton_50.setGeometry(QtCore.QRect(230, 40, 91, 61))
+        self.pushButton_50.setObjectName("pushButton_50")
+        self.pushButton_51 = QtGui.QPushButton(self.frame_37)
+        self.pushButton_51.setGeometry(QtCore.QRect(130, 40, 91, 61))
+        self.pushButton_51.setObjectName("pushButton_51")
+        self.frame_38 = QtGui.QFrame(self.frameCenterArea_3)
+        self.frame_38.setGeometry(QtCore.QRect(170, 430, 381, 219))
+        self.frame_38.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_38.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_38.setObjectName("frame_38")
+        self.gridLayout_4 = QtGui.QGridLayout(self.frame_38)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.label_69 = QtGui.QLabel(self.frame_38)
+        self.label_69.setObjectName("label_69")
+        self.gridLayout_4.addWidget(self.label_69, 0, 0, 1, 1)
+        self.checkBox = QtGui.QCheckBox(self.frame_38)
+        self.checkBox.setObjectName("checkBox")
+        self.gridLayout_4.addWidget(self.checkBox, 1, 0, 1, 1)
+        self.checkBox_3 = QtGui.QCheckBox(self.frame_38)
+        self.checkBox_3.setObjectName("checkBox_3")
+        self.gridLayout_4.addWidget(self.checkBox_3, 2, 0, 1, 1)
+        self.checkBox_4 = QtGui.QCheckBox(self.frame_38)
+        self.checkBox_4.setObjectName("checkBox_4")
+        self.gridLayout_4.addWidget(self.checkBox_4, 3, 0, 1, 1)
+        self.checkBox_5 = QtGui.QCheckBox(self.frame_38)
+        self.checkBox_5.setObjectName("checkBox_5")
+        self.gridLayout_4.addWidget(self.checkBox_5, 4, 0, 1, 1)
+        self.checkBox_6 = QtGui.QCheckBox(self.frame_38)
+        self.checkBox_6.setObjectName("checkBox_6")
+        self.gridLayout_4.addWidget(self.checkBox_6, 5, 0, 1, 1)
+        self.checkBox_7 = QtGui.QCheckBox(self.frame_38)
+        self.checkBox_7.setObjectName("checkBox_7")
+        self.gridLayout_4.addWidget(self.checkBox_7, 6, 0, 1, 1)
+        self.checkBox_8 = QtGui.QCheckBox(self.frame_38)
+        self.checkBox_8.setObjectName("checkBox_8")
+        self.gridLayout_4.addWidget(self.checkBox_8, 7, 0, 1, 1)
+        self.verticalLayout_12.addWidget(self.frameCenterArea_3)
+        self.stackedWidgetCenter.addWidget(self.page_19)
+        self.page = QtGui.QWidget()
+        self.page.setObjectName("page")
+        self.label_3 = QtGui.QLabel(self.page)
+        self.label_3.setGeometry(QtCore.QRect(90, 30, 321, 16))
+        self.label_3.setObjectName("label_3")
+        self.stackedWidgetCenter.addWidget(self.page)
+        self.page_2 = QtGui.QWidget()
+        self.page_2.setObjectName("page_2")
+        self.gridLayout_3 = QtGui.QGridLayout(self.page_2)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.frameCenterArea_2 = QtGui.QFrame(self.page_2)
+        self.frameCenterArea_2.setMinimumSize(QtCore.QSize(200, 0))
+        self.frameCenterArea_2.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frameCenterArea_2.setFrameShadow(QtGui.QFrame.Raised)
+        self.frameCenterArea_2.setObjectName("frameCenterArea_2")
+        self.gridLayout_2 = QtGui.QGridLayout(self.frameCenterArea_2)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.label_4 = QtGui.QLabel(self.frameCenterArea_2)
+        self.label_4.setText("")
+        self.label_4.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/raw_image_pyqtgraph_plot.png"))
+        self.label_4.setScaledContents(True)
+        self.label_4.setObjectName("label_4")
+        self.gridLayout_2.addWidget(self.label_4, 0, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.frameCenterArea_2, 0, 0, 1, 1)
+        self.stackedWidgetCenter.addWidget(self.page_2)
         self.page_4 = QtGui.QWidget()
         self.page_4.setObjectName("page_4")
         self.label = QtGui.QLabel(self.page_4)
@@ -1791,23 +877,141 @@ class Ui_MainWindow(object):
         self.label.setObjectName("label")
         self.stackedWidgetCenter.addWidget(self.page_4)
         self.gridLayout.addWidget(self.stackedWidgetCenter, 2, 1, 1, 1)
+        self.stackedWidgetCenter_2 = QtGui.QStackedWidget(self.centralwidget)
+        self.stackedWidgetCenter_2.setMinimumSize(QtCore.QSize(0, 50))
+        self.stackedWidgetCenter_2.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.stackedWidgetCenter_2.setObjectName("stackedWidgetCenter_2")
+        self.page_7 = QtGui.QWidget()
+        self.page_7.setObjectName("page_7")
+        self.verticalLayout_3 = QtGui.QVBoxLayout(self.page_7)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.frame_7 = QtGui.QFrame(self.page_7)
+        self.frame_7.setMinimumSize(QtCore.QSize(0, 45))
+        self.frame_7.setMaximumSize(QtCore.QSize(16777215, 45))
+        self.frame_7.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.horizontalLayout_13 = QtGui.QHBoxLayout(self.frame_7)
+        self.horizontalLayout_13.setObjectName("horizontalLayout_13")
+        spacerItem4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_13.addItem(spacerItem4)
+        self.frame_9 = QtGui.QFrame(self.frame_7)
+        self.frame_9.setMinimumSize(QtCore.QSize(200, 0))
+        self.frame_9.setMaximumSize(QtCore.QSize(200, 16777215))
+        self.frame_9.setFrameShape(QtGui.QFrame.NoFrame)
+        self.frame_9.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_9.setObjectName("frame_9")
+        self.horizontalLayout_14 = QtGui.QHBoxLayout(self.frame_9)
+        self.horizontalLayout_14.setSpacing(0)
+        self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_14.setObjectName("horizontalLayout_14")
+        self.horizontalLayout_15 = QtGui.QHBoxLayout()
+        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
+        self.pushButton_5 = QtGui.QPushButton(self.frame_9)
+        self.pushButton_5.setCheckable(True)
+        self.pushButton_5.setChecked(True)
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.horizontalLayout_15.addWidget(self.pushButton_5)
+        self.pushButton_15 = QtGui.QPushButton(self.frame_9)
+        self.pushButton_15.setCheckable(True)
+        self.pushButton_15.setChecked(False)
+        self.pushButton_15.setObjectName("pushButton_15")
+        self.horizontalLayout_15.addWidget(self.pushButton_15)
+        self.pushButton_16 = QtGui.QPushButton(self.frame_9)
+        self.pushButton_16.setCheckable(False)
+        self.pushButton_16.setObjectName("pushButton_16")
+        self.horizontalLayout_15.addWidget(self.pushButton_16)
+        self.pushButton_17 = QtGui.QPushButton(self.frame_9)
+        self.pushButton_17.setCheckable(True)
+        self.pushButton_17.setChecked(False)
+        self.pushButton_17.setObjectName("pushButton_17")
+        self.horizontalLayout_15.addWidget(self.pushButton_17)
+        self.pushButton_18 = QtGui.QPushButton(self.frame_9)
+        self.pushButton_18.setCheckable(False)
+        self.pushButton_18.setObjectName("pushButton_18")
+        self.horizontalLayout_15.addWidget(self.pushButton_18)
+        self.horizontalLayout_14.addLayout(self.horizontalLayout_15)
+        self.horizontalLayout_13.addWidget(self.frame_9)
+        spacerItem5 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_13.addItem(spacerItem5)
+        self.verticalLayout_3.addWidget(self.frame_7)
+        self.stackedWidgetCenter_2.addWidget(self.page_7)
+        self.page_11 = QtGui.QWidget()
+        self.page_11.setObjectName("page_11")
+        self.label_58 = QtGui.QLabel(self.page_11)
+        self.label_58.setGeometry(QtCore.QRect(90, 30, 171, 16))
+        self.label_58.setObjectName("label_58")
+        self.stackedWidgetCenter_2.addWidget(self.page_11)
+        self.page_12 = QtGui.QWidget()
+        self.page_12.setObjectName("page_12")
+        self.frame_29 = QtGui.QFrame(self.page_12)
+        self.frame_29.setGeometry(QtCore.QRect(-10, 10, 741, 45))
+        self.frame_29.setMinimumSize(QtCore.QSize(0, 45))
+        self.frame_29.setMaximumSize(QtCore.QSize(16777215, 45))
+        self.frame_29.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_29.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_29.setObjectName("frame_29")
+        self.horizontalLayout_16 = QtGui.QHBoxLayout(self.frame_29)
+        self.horizontalLayout_16.setObjectName("horizontalLayout_16")
+        spacerItem6 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_16.addItem(spacerItem6)
+        self.frame_31 = QtGui.QFrame(self.frame_29)
+        self.frame_31.setMinimumSize(QtCore.QSize(200, 0))
+        self.frame_31.setMaximumSize(QtCore.QSize(200, 16777215))
+        self.frame_31.setFrameShape(QtGui.QFrame.NoFrame)
+        self.frame_31.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_31.setObjectName("frame_31")
+        self.horizontalLayout_17 = QtGui.QHBoxLayout(self.frame_31)
+        self.horizontalLayout_17.setSpacing(0)
+        self.horizontalLayout_17.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
+        self.horizontalLayout_18 = QtGui.QHBoxLayout()
+        self.horizontalLayout_18.setObjectName("horizontalLayout_18")
+        self.pushButton_36 = QtGui.QPushButton(self.frame_31)
+        self.pushButton_36.setCheckable(True)
+        self.pushButton_36.setChecked(True)
+        self.pushButton_36.setObjectName("pushButton_36")
+        self.horizontalLayout_18.addWidget(self.pushButton_36)
+        self.pushButton_37 = QtGui.QPushButton(self.frame_31)
+        self.pushButton_37.setCheckable(True)
+        self.pushButton_37.setChecked(False)
+        self.pushButton_37.setObjectName("pushButton_37")
+        self.horizontalLayout_18.addWidget(self.pushButton_37)
+        self.pushButton_38 = QtGui.QPushButton(self.frame_31)
+        self.pushButton_38.setCheckable(True)
+        self.pushButton_38.setChecked(False)
+        self.pushButton_38.setObjectName("pushButton_38")
+        self.horizontalLayout_18.addWidget(self.pushButton_38)
+        self.horizontalLayout_17.addLayout(self.horizontalLayout_18)
+        self.horizontalLayout_16.addWidget(self.frame_31)
+        spacerItem7 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_16.addItem(spacerItem7)
+        self.stackedWidgetCenter_2.addWidget(self.page_12)
+        self.page_8 = QtGui.QWidget()
+        self.page_8.setObjectName("page_8")
+        self.label_6 = QtGui.QLabel(self.page_8)
+        self.label_6.setGeometry(QtCore.QRect(20, 20, 221, 41))
+        self.label_6.setObjectName("label_6")
+        self.stackedWidgetCenter_2.addWidget(self.page_8)
+        self.gridLayout.addWidget(self.stackedWidgetCenter_2, 1, 1, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
         self.stackedWidgetCenter_3.setCurrentIndex(0)
-        self.comboBox_3.setCurrentIndex(1)
-        self.stackedWidgetCenter_4.setCurrentIndex(0)
-        self.stackedWidgetCenter_2.setCurrentIndex(0)
-        self.stackedWidgetCenter_5.setCurrentIndex(0)
+        self.comboBox_3.setCurrentIndex(0)
+        self.stackedWidgetCenter_4.setCurrentIndex(2)
+        self.stackedWidgetCenter_5.setCurrentIndex(2)
         self.comboBox_4.setCurrentIndex(0)
-        self.stackedWidgetCenter.setCurrentIndex(0)
+        self.stackedWidgetCenter.setCurrentIndex(1)
+        self.stackedWidgetCenter_2.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
         self.comboBox_3.setItemText(0, QtGui.QApplication.translate("MainWindow", "Hardware", None, QtGui.QApplication.UnicodeUTF8))
-        self.comboBox_3.setItemText(1, QtGui.QApplication.translate("MainWindow", "OCT", None, QtGui.QApplication.UnicodeUTF8))
-        self.comboBox_3.setItemText(2, QtGui.QApplication.translate("MainWindow", "Angiography", None, QtGui.QApplication.UnicodeUTF8))
+        self.comboBox_3.setItemText(1, QtGui.QApplication.translate("MainWindow", "3D OCT", None, QtGui.QApplication.UnicodeUTF8))
+        self.comboBox_3.setItemText(2, QtGui.QApplication.translate("MainWindow", "OCT", None, QtGui.QApplication.UnicodeUTF8))
+        self.comboBox_3.setItemText(3, QtGui.QApplication.translate("MainWindow", "Angiography", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_3.setText(QtGui.QApplication.translate("MainWindow", "Setup", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_7.setText(QtGui.QApplication.translate("MainWindow", "Capture", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_8.setText(QtGui.QApplication.translate("MainWindow", "Evaluate", None, QtGui.QApplication.UnicodeUTF8))
@@ -1817,13 +1021,16 @@ class Ui_MainWindow(object):
         self.pushButton_6.setText(QtGui.QApplication.translate("MainWindow", "D", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_9.setText(QtGui.QApplication.translate("MainWindow", "C", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_10.setText(QtGui.QApplication.translate("MainWindow", "E", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_59.setText(QtGui.QApplication.translate("MainWindow", "<html><head/><body><p>Hardware configuration </p><p>save area</p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_60.setText(QtGui.QApplication.translate("MainWindow", "Current Configuration:", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_61.setText(QtGui.QApplication.translate("MainWindow", "LA OCT Config", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_39.setText(QtGui.QApplication.translate("MainWindow", "Opn", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_40.setText(QtGui.QApplication.translate("MainWindow", "Rel", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_62.setText(QtGui.QApplication.translate("MainWindow", "Saved configuration", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_63.setText(QtGui.QApplication.translate("MainWindow", "2016-04-18 07:49", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_41.setText(QtGui.QApplication.translate("MainWindow", "Ren", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_42.setText(QtGui.QApplication.translate("MainWindow", "De", None, QtGui.QApplication.UnicodeUTF8))
         self.label_9.setText(QtGui.QApplication.translate("MainWindow", "Left control area", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_5.setText(QtGui.QApplication.translate("MainWindow", "L", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_15.setText(QtGui.QApplication.translate("MainWindow", "P", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_16.setText(QtGui.QApplication.translate("MainWindow", "U", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_17.setText(QtGui.QApplication.translate("MainWindow", "S", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_18.setText(QtGui.QApplication.translate("MainWindow", "R", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_6.setText(QtGui.QApplication.translate("MainWindow", "Top center button area", None, QtGui.QApplication.UnicodeUTF8))
         self.label_11.setText(QtGui.QApplication.translate("MainWindow", "Reference Arm", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_19.setText(QtGui.QApplication.translate("MainWindow", "U", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_20.setText(QtGui.QApplication.translate("MainWindow", "D", None, QtGui.QApplication.UnicodeUTF8))
@@ -1841,17 +1048,65 @@ class Ui_MainWindow(object):
         self.label_21.setText(QtGui.QApplication.translate("MainWindow", "Polarization", None, QtGui.QApplication.UnicodeUTF8))
         self.label_22.setText(QtGui.QApplication.translate("MainWindow", "Half Wave", None, QtGui.QApplication.UnicodeUTF8))
         self.label_23.setText(QtGui.QApplication.translate("MainWindow", "Quar. Wave", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_5.setText(QtGui.QApplication.translate("MainWindow", "Visible Camera", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_24.setText(QtGui.QApplication.translate("MainWindow", "Exposure", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_25.setText(QtGui.QApplication.translate("MainWindow", "Scan line control", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_24.setText(QtGui.QApplication.translate("MainWindow", "Scan line control", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_21.setText(QtGui.QApplication.translate("MainWindow", "U", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_22.setText(QtGui.QApplication.translate("MainWindow", "D", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_23.setText(QtGui.QApplication.translate("MainWindow", "E", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_24.setText(QtGui.QApplication.translate("MainWindow", "L", None, QtGui.QApplication.UnicodeUTF8))
         self.spinBox_9.setPrefix(QtGui.QApplication.translate("MainWindow", "Length: ", None, QtGui.QApplication.UnicodeUTF8))
         self.spinBox_10.setPrefix(QtGui.QApplication.translate("MainWindow", "Angle: ", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_5.setText(QtGui.QApplication.translate("MainWindow", "Visible Camera", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_25.setText(QtGui.QApplication.translate("MainWindow", "Exposure", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_14.setText(QtGui.QApplication.translate("MainWindow", "Hardware controls", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_50.setText(QtGui.QApplication.translate("MainWindow", "OCT Camera Control", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_51.setText(QtGui.QApplication.translate("MainWindow", "Int. Time", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_52.setText(QtGui.QApplication.translate("MainWindow", "Line Time", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_53.setText(QtGui.QApplication.translate("MainWindow", "Gain", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_54.setText(QtGui.QApplication.translate("MainWindow", "Offset", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_55.setText(QtGui.QApplication.translate("MainWindow", "Reference Arm", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_30.setText(QtGui.QApplication.translate("MainWindow", "U", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_31.setText(QtGui.QApplication.translate("MainWindow", "D", None, QtGui.QApplication.UnicodeUTF8))
+        self.spinBox_30.setPrefix(QtGui.QApplication.translate("MainWindow", "Position: ", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_56.setText(QtGui.QApplication.translate("MainWindow", "Light source", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_32.setText(QtGui.QApplication.translate("MainWindow", "Off/On", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_57.setText(QtGui.QApplication.translate("MainWindow", "Power", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_64.setText(QtGui.QApplication.translate("MainWindow", "Visible Camera", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_65.setText(QtGui.QApplication.translate("MainWindow", "Exposure", None, QtGui.QApplication.UnicodeUTF8))
         self.label_10.setText(QtGui.QApplication.translate("MainWindow", "Left control area", None, QtGui.QApplication.UnicodeUTF8))
-        self.label.setText(QtGui.QApplication.translate("MainWindow", "Center image area", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_66.setText(QtGui.QApplication.translate("MainWindow", "Scan Pattern", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_43.setText(QtGui.QApplication.translate("MainWindow", "Circle", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_44.setText(QtGui.QApplication.translate("MainWindow", "Spiral", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_45.setText(QtGui.QApplication.translate("MainWindow", "Square", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_46.setText(QtGui.QApplication.translate("MainWindow", "Rect", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_67.setText(QtGui.QApplication.translate("MainWindow", "Motion Correction", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_47.setText(QtGui.QApplication.translate("MainWindow", "Avg", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_48.setText(QtGui.QApplication.translate("MainWindow", "Subtract", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_68.setText(QtGui.QApplication.translate("MainWindow", "Angiography algorithm", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_49.setText(QtGui.QApplication.translate("MainWindow", "Speckle", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_50.setText(QtGui.QApplication.translate("MainWindow", "Complex \n"
+"Differntial \n"
+"Variance", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_51.setText(QtGui.QApplication.translate("MainWindow", "Phase", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_69.setText(QtGui.QApplication.translate("MainWindow", "Save configuration", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox.setText(QtGui.QApplication.translate("MainWindow", "Angio B-scan", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox_3.setText(QtGui.QApplication.translate("MainWindow", "OCT Volume", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox_4.setText(QtGui.QApplication.translate("MainWindow", "Angio Volume", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox_5.setText(QtGui.QApplication.translate("MainWindow", "Angio Projection", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox_6.setText(QtGui.QApplication.translate("MainWindow", "Intensity and Phase data", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox_7.setText(QtGui.QApplication.translate("MainWindow", "Raw OCT data", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox_8.setText(QtGui.QApplication.translate("MainWindow", "Visible Camera image", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(QtGui.QApplication.translate("MainWindow", "Hardware center area", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("MainWindow", "oct  image area", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_5.setText(QtGui.QApplication.translate("MainWindow", "L", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_15.setText(QtGui.QApplication.translate("MainWindow", "P", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_16.setText(QtGui.QApplication.translate("MainWindow", "U", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_17.setText(QtGui.QApplication.translate("MainWindow", "S", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_18.setText(QtGui.QApplication.translate("MainWindow", "R", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_58.setText(QtGui.QApplication.translate("MainWindow", "Hardware control header", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_36.setText(QtGui.QApplication.translate("MainWindow", "Live", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_37.setText(QtGui.QApplication.translate("MainWindow", "Pause", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_38.setText(QtGui.QApplication.translate("MainWindow", "Save", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_6.setText(QtGui.QApplication.translate("MainWindow", "Top center button area", None, QtGui.QApplication.UnicodeUTF8))
 
 import oct_gallery_resources_rc
 import wasatch_logo_resources_rc

@@ -1440,7 +1440,7 @@ QFrame
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="page_hardware">
           <layout class="QHBoxLayout" name="horizontalLayout_13">
@@ -1569,7 +1569,7 @@ QFrame
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout">
            <item>
-            <widget class="QFrame" name="frame_2">
+            <widget class="QFrame" name="frame_hws_left_frame">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -1582,6 +1582,12 @@ QFrame
                <height>16777215</height>
               </size>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_hws_left_frame {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -1590,7 +1596,7 @@ QFrame
              </property>
              <layout class="QVBoxLayout" name="verticalLayout">
               <item>
-               <widget class="QFrame" name="frame_3">
+               <widget class="QFrame" name="frame_hws_saved">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -1608,6 +1614,12 @@ QFrame
                   <width>195</width>
                   <height>250</height>
                  </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame {
+  border: none;
+  padding: -4px;
+}</string>
                 </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -1670,7 +1682,7 @@ QFrame
                   <rect>
                    <x>20</x>
                    <y>190</y>
-                   <width>31</width>
+                   <width>41</width>
                    <height>26</height>
                   </rect>
                  </property>
@@ -1684,9 +1696,9 @@ QFrame
                 <widget class="QPushButton" name="pushButton_11">
                  <property name="geometry">
                   <rect>
-                   <x>60</x>
+                   <x>70</x>
                    <y>190</y>
-                   <width>31</width>
+                   <width>41</width>
                    <height>26</height>
                   </rect>
                  </property>
@@ -1716,12 +1728,18 @@ QFrame
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_8">
+            <widget class="QFrame" name="frame_hws_center_frame">
              <property name="minimumSize">
               <size>
                <width>500</width>
                <height>0</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_hws_center_frame {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
@@ -1912,7 +1930,7 @@ QFrame
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_4">
+            <widget class="QFrame" name="frame_hws_right_frame">
              <property name="minimumSize">
               <size>
                <width>200</width>
@@ -1924,6 +1942,12 @@ QFrame
                <width>200</width>
                <height>16777215</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#frame_hws_right_frame {
+ border: 1px solid #444;
+ padding: -8px;
+}</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
