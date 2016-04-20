@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1178</width>
+    <width>645</width>
     <height>744</height>
    </rect>
   </property>
@@ -314,77 +314,6 @@ Variance</string>
        </item>
       </layout>
      </widget>
-    </widget>
-   </item>
-   <item>
-    <widget class="QFrame" name="frame_9">
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <widget class="QLabel" name="label_20">
-      <property name="geometry">
-       <rect>
-        <x>368</x>
-        <y>80</y>
-        <width>391</width>
-        <height>301</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/retina_angiograph_03.jpg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_21">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>90</y>
-        <width>291</width>
-        <height>271</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/cat1_retina36s.jpg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_22">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>80</y>
-        <width>321</width>
-        <height>291</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/Retina11.jpg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <zorder>label_14</zorder>
-     <zorder>label_20</zorder>
-     <zorder>label_21</zorder>
-     <zorder>label_22</zorder>
     </widget>
    </item>
   </layout>

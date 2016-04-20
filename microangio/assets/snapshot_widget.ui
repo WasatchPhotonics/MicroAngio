@@ -19,19 +19,19 @@
      <x>40</x>
      <y>30</y>
      <width>195</width>
-     <height>211</height>
+     <height>200</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
      <width>195</width>
-     <height>0</height>
+     <height>200</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
      <width>195</width>
-     <height>16777215</height>
+     <height>200</height>
     </size>
    </property>
    <property name="frameShape">
@@ -130,7 +130,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/fingernail_fullsize.png</pixmap>
+     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/cat1_retina36s.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -143,7 +143,7 @@
      <x>50</x>
      <y>270</y>
      <width>195</width>
-     <height>251</height>
+     <height>250</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -155,13 +155,13 @@
    <property name="minimumSize">
     <size>
      <width>195</width>
-     <height>0</height>
+     <height>250</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
      <width>195</width>
-     <height>16777215</height>
+     <height>250</height>
     </size>
    </property>
    <property name="frameShape">
