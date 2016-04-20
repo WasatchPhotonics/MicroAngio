@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="website">
+    <file>images/oct_gallery/square_retina11.jpg</file>
+    <file>images/oct_gallery/square_cat1_retina36s.jpg</file>
     <file>images/oct_gallery/Retina11.jpg</file>
     <file>images/oct_gallery/raw_image_pyqtgraph_plot.png</file>
     <file>images/oct_gallery/retina_angiograph_03.jpg</file>

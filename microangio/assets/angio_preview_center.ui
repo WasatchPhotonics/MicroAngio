@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1305</width>
-    <height>744</height>
+    <width>1171</width>
+    <height>487</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -22,6 +22,18 @@
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
     <widget class="QFrame" name="frame_9">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>400</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>380</height>
+      </size>
+     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
@@ -31,11 +43,17 @@
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>820</x>
-        <y>100</y>
-        <width>380</width>
-        <height>380</height>
+        <x>769</x>
+        <y>32</y>
+        <width>373</width>
+        <height>337</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
       </property>
       <property name="text">
        <string/>
@@ -50,17 +68,23 @@
      <widget class="QLabel" name="label_21">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>100</y>
-        <width>380</width>
-        <height>380</height>
+        <x>11</x>
+        <y>32</y>
+        <width>373</width>
+        <height>337</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/cat1_retina36s.jpg</pixmap>
+       <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/square_cat1_retina36s.jpg</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -69,17 +93,23 @@
      <widget class="QLabel" name="label_22">
       <property name="geometry">
        <rect>
-        <x>420</x>
-        <y>100</y>
-        <width>380</width>
-        <height>380</height>
+        <x>390</x>
+        <y>32</y>
+        <width>373</width>
+        <height>337</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/Retina11.jpg</pixmap>
+       <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/square_retina11.jpg</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -88,9 +118,9 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>820</x>
-        <y>70</y>
-        <width>231</width>
+        <x>769</x>
+        <y>11</y>
+        <width>125</width>
         <height>16</height>
        </rect>
       </property>
@@ -101,9 +131,9 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>420</x>
-        <y>70</y>
-        <width>231</width>
+        <x>390</x>
+        <y>11</y>
+        <width>158</width>
         <height>16</height>
        </rect>
       </property>
@@ -114,9 +144,9 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>70</y>
-        <width>231</width>
+        <x>11</x>
+        <y>11</y>
+        <width>91</width>
         <height>16</height>
        </rect>
       </property>
@@ -124,13 +154,6 @@
        <string>Center B-scan</string>
       </property>
      </widget>
-     <zorder>label_14</zorder>
-     <zorder>label_20</zorder>
-     <zorder>label_21</zorder>
-     <zorder>label_22</zorder>
-     <zorder>label</zorder>
-     <zorder>label_2</zorder>
-     <zorder>label_3</zorder>
     </widget>
    </item>
   </layout>
