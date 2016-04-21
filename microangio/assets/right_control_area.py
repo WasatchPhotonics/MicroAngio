@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/right_control_area.ui'
 #
-# Created: Thu Apr 21 14:15:56 2016
+# Created: Thu Apr 21 15:39:29 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -890,6 +890,7 @@ class Ui_Form(object):
         self.horizontalLayout_8.addWidget(self.frame_49)
         self.groupBox_13 = QtGui.QGroupBox(Form)
         self.groupBox_13.setGeometry(QtCore.QRect(750, 630, 211, 251))
+        self.groupBox_13.setMinimumSize(QtCore.QSize(0, 250))
         self.groupBox_13.setStyleSheet("QGroupBox {\n"
 "    border:1px solid #3A3939;\n"
 "    border-radius: 2px;\n"
@@ -927,25 +928,29 @@ class Ui_Form(object):
         self.labelSnapshotThumbnail_10.setScaledContents(True)
         self.labelSnapshotThumbnail_10.setObjectName("labelSnapshotThumbnail_10")
         self.toolButton_30 = QtGui.QToolButton(self.frame_50)
-        self.toolButton_30.setGeometry(QtCore.QRect(7, 17, 24, 26))
+        self.toolButton_30.setGeometry(QtCore.QRect(7, 17, 30, 30))
+        self.toolButton_30.setMinimumSize(QtCore.QSize(30, 30))
         self.toolButton_30.setIcon(icon4)
         self.toolButton_30.setIconSize(QtCore.QSize(20, 20))
         self.toolButton_30.setArrowType(QtCore.Qt.NoArrow)
         self.toolButton_30.setObjectName("toolButton_30")
         self.toolButton_31 = QtGui.QToolButton(self.frame_50)
-        self.toolButton_31.setGeometry(QtCore.QRect(47, 17, 24, 26))
+        self.toolButton_31.setGeometry(QtCore.QRect(49, 17, 30, 30))
+        self.toolButton_31.setMinimumSize(QtCore.QSize(30, 30))
         self.toolButton_31.setIcon(icon5)
         self.toolButton_31.setIconSize(QtCore.QSize(20, 20))
         self.toolButton_31.setArrowType(QtCore.Qt.NoArrow)
         self.toolButton_31.setObjectName("toolButton_31")
         self.toolButton_32 = QtGui.QToolButton(self.frame_50)
-        self.toolButton_32.setGeometry(QtCore.QRect(87, 17, 24, 26))
+        self.toolButton_32.setGeometry(QtCore.QRect(90, 17, 30, 30))
+        self.toolButton_32.setMinimumSize(QtCore.QSize(30, 30))
         self.toolButton_32.setIcon(icon6)
         self.toolButton_32.setIconSize(QtCore.QSize(20, 20))
         self.toolButton_32.setArrowType(QtCore.Qt.NoArrow)
         self.toolButton_32.setObjectName("toolButton_32")
         self.toolButton_33 = QtGui.QToolButton(self.frame_50)
-        self.toolButton_33.setGeometry(QtCore.QRect(127, 17, 24, 26))
+        self.toolButton_33.setGeometry(QtCore.QRect(132, 17, 30, 30))
+        self.toolButton_33.setMinimumSize(QtCore.QSize(30, 30))
         icon7 = QtGui.QIcon()
         icon7.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/eye.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolButton_33.setIcon(icon7)
