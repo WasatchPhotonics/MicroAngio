@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/main_angio_capture.ui'
 #
-# Created: Wed Apr 20 14:58:33 2016
+# Created: Thu Apr 21 10:45:03 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,7 +12,7 @@ from PySide import QtCore, QtGui
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1126, 971)
+        Form.resize(1425, 898)
         self.gridLayout = QtGui.QGridLayout(Form)
         self.gridLayout.setObjectName("gridLayout")
         self.frame = QtGui.QFrame(Form)
@@ -77,18 +77,16 @@ class Ui_Form(object):
         self.frame_main_angio_capture_center.setFrameShape(QtGui.QFrame.StyledPanel)
         self.frame_main_angio_capture_center.setFrameShadow(QtGui.QFrame.Raised)
         self.frame_main_angio_capture_center.setObjectName("frame_main_angio_capture_center")
-        self.gridLayout_3 = QtGui.QGridLayout(self.frame_main_angio_capture_center)
-        self.gridLayout_3.setObjectName("gridLayout_3")
-        spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.gridLayout_3.addItem(spacerItem1, 1, 0, 1, 1)
+        self.gridLayout_2 = QtGui.QGridLayout(self.frame_main_angio_capture_center)
+        self.gridLayout_2.setObjectName("gridLayout_2")
         self.frame_19 = QtGui.QFrame(self.frame_main_angio_capture_center)
-        self.frame_19.setMinimumSize(QtCore.QSize(0, 400))
-        self.frame_19.setMaximumSize(QtCore.QSize(16777215, 380))
+        self.frame_19.setMinimumSize(QtCore.QSize(0, 750))
+        self.frame_19.setMaximumSize(QtCore.QSize(16777215, 1677215))
         self.frame_19.setFrameShape(QtGui.QFrame.StyledPanel)
         self.frame_19.setFrameShadow(QtGui.QFrame.Raised)
         self.frame_19.setObjectName("frame_19")
         self.label_55 = QtGui.QLabel(self.frame_19)
-        self.label_55.setGeometry(QtCore.QRect(769, 32, 373, 337))
+        self.label_55.setGeometry(QtCore.QRect(10, 400, 373, 337))
         self.label_55.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.label_55.setText("")
         self.label_55.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
@@ -109,7 +107,7 @@ class Ui_Form(object):
         self.label_57.setScaledContents(True)
         self.label_57.setObjectName("label_57")
         self.label_58 = QtGui.QLabel(self.frame_19)
-        self.label_58.setGeometry(QtCore.QRect(769, 11, 125, 16))
+        self.label_58.setGeometry(QtCore.QRect(10, 380, 125, 16))
         self.label_58.setObjectName("label_58")
         self.label_59 = QtGui.QLabel(self.frame_19)
         self.label_59.setGeometry(QtCore.QRect(390, 11, 158, 16))
@@ -117,7 +115,9 @@ class Ui_Form(object):
         self.label_60 = QtGui.QLabel(self.frame_19)
         self.label_60.setGeometry(QtCore.QRect(11, 11, 91, 16))
         self.label_60.setObjectName("label_60")
-        self.gridLayout_3.addWidget(self.frame_19, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.frame_19, 0, 0, 1, 1)
+        spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.gridLayout_2.addItem(spacerItem1, 1, 0, 1, 1)
         self.horizontalLayout.addWidget(self.frame_main_angio_capture_center)
         self.frame_main_angio_capture_right = QtGui.QFrame(self.frame)
         self.frame_main_angio_capture_right.setMinimumSize(QtCore.QSize(200, 500))

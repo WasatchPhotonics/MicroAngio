@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="greys">
+    <file>images/grey_icons/pure_left.svg</file>
+    <file>images/grey_icons/pure_right.svg</file>
+    <file>images/grey_icons/pure_up.svg</file>
+    <file>images/grey_icons/pure_down.svg</file>
+    <file>images/grey_icons/fast_backward.svg</file>
+    <file>images/grey_icons/down.svg</file>
+    <file>images/grey_icons/up.svg</file>
+    <file>images/grey_icons/forward.svg</file>
+    <file>images/grey_icons/full_extent.svg</file>
+    <file>images/grey_icons/pause.png</file>
+    <file>images/grey_icons/pause.svg</file>
+    <file>images/grey_icons/reset.svg</file>
+    <file>images/grey_icons/save.svg</file>
+    <file>images/grey_icons/select.svg</file>
+    <file>images/grey_icons/zoom.svg</file>
+  </qresource>
+</RCC>
