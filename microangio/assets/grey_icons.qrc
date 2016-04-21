@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="greys">
+    <file>images/grey_icons/badge.svg</file>
+    <file>images/grey_icons/clipboard.svg</file>
+    <file>images/grey_icons/eye.svg</file>
+    <file>images/grey_icons/trash.svg</file>
     <file>images/grey_icons/pure_left.svg</file>
     <file>images/grey_icons/pure_right.svg</file>
     <file>images/grey_icons/pure_up.svg</file>

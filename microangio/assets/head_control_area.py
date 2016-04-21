@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/head_control_area.ui'
 #
-# Created: Thu Apr 21 10:45:03 2016
+# Created: Thu Apr 21 14:15:53 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!

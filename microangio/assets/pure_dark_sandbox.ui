@@ -1243,8 +1243,24 @@ QSplitter::handle:vertical {
      <height>201</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+</string>
+   </property>
    <property name="title">
     <string>GroupBox</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
