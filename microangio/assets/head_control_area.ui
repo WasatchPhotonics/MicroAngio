@@ -6,46 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>849</width>
+    <width>1024</width>
     <height>577</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>40</y>
-     <width>661</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>0</width>
-     <height>50</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>16777215</width>
-     <height>50</height>
-    </size>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
   <widget class="QFrame" name="frame_2">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>110</y>
+     <x>10</x>
+     <y>10</y>
      <width>671</width>
      <height>50</height>
     </rect>
@@ -116,8 +88,8 @@
   <widget class="QFrame" name="frame_3">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>170</y>
+     <x>20</x>
+     <y>70</y>
      <width>741</width>
      <height>50</height>
     </rect>
@@ -278,8 +250,8 @@
   <widget class="QFrame" name="frame_5">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>240</y>
+     <x>20</x>
+     <y>130</y>
      <width>741</width>
      <height>45</height>
     </rect>
@@ -430,8 +402,8 @@
   <widget class="QFrame" name="frame_7">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>310</y>
+     <x>30</x>
+     <y>190</y>
      <width>741</width>
      <height>45</height>
     </rect>
@@ -562,8 +534,8 @@
   <widget class="QFrame" name="frame_9">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>380</y>
+     <x>30</x>
+     <y>260</y>
      <width>687</width>
      <height>50</height>
     </rect>
@@ -598,7 +570,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QComboBox" name="comboBox_mode">
+     <widget class="QComboBox" name="comboBox_modeold">
       <property name="currentIndex">
        <number>0</number>
       </property>
@@ -938,7 +910,292 @@
    </widget>
    <widget class="QWidget" name="page_5"/>
   </widget>
-  <zorder>frame</zorder>
+  <widget class="QFrame" name="frame_top_navigation">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>952</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_16">
+    <item>
+     <widget class="QLabel" name="label_angio_logo">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="wasatch_logo_resources.qrc">:/logos/images/logos/110x36_wp_angio.png</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox_hidden_mode">
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>HS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OCTS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OCTC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OCTEV</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AngioS</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AngioC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AngioEV</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hardware</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OCT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Angiography</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox_mode">
+      <property name="maximumSize">
+       <size>
+        <width>1677215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Hardware</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OCT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Angiography</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_14">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_11">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_17">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidgetHeaderNavigation_3">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_hardware_2">
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_21">
+          <property name="minimumSize">
+           <size>
+            <width>85</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>85</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Setup</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_15">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>210</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_oct_2">
+       <layout class="QHBoxLayout" name="horizontalLayout_23">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_nav_oct_setup">
+          <property name="text">
+           <string>Setup</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_nav_oct_capture">
+          <property name="text">
+           <string>Capture</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_22">
+          <property name="text">
+           <string>Evaluate</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3"/>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_16">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
   <zorder>frame_2</zorder>
   <zorder>frame_3</zorder>
   <zorder>frame_5</zorder>
@@ -947,14 +1204,15 @@
   <zorder>layoutWidget_2</zorder>
   <zorder>layoutWidget</zorder>
   <zorder>stackedWidgetHeaderNavigation_2</zorder>
-  <zorder>horizontalSpacer_13</zorder>
+  <zorder>frame_top_navigation</zorder>
+  <zorder>horizontalSpacer_6</zorder>
  </widget>
  <resources>
   <include location="wasatch_logo_resources.qrc"/>
  </resources>
  <connections>
   <connection>
-   <sender>comboBox_mode</sender>
+   <sender>comboBox_modeold</sender>
    <signal>currentIndexChanged(int)</signal>
    <receiver>stackedWidgetHeaderNavigation</receiver>
    <slot>setCurrentIndex(int)</slot>
