@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1484</width>
-    <height>603</height>
+    <width>1911</width>
+    <height>869</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1317,10 +1317,10 @@ QSplitter::handle:vertical {
   <widget class="QFrame" name="frame_main">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>160</y>
-     <width>471</width>
-     <height>351</height>
+     <x>310</x>
+     <y>30</y>
+     <width>321</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1336,18 +1336,21 @@ QSplitter::handle:vertical {
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="frame_center">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>50</y>
-      <width>361</width>
-      <height>261</height>
+      <x>30</x>
+      <y>20</y>
+      <width>271</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QFrame#frame_center {
   background: rgb(80, 80, 80);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
 }</string>
     </property>
     <property name="frameShape">
@@ -1356,11 +1359,1136 @@ QSplitter::handle:vertical {
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
    </widget>
   </widget>
+  <widget class="QFrame" name="frame_main_gradient">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>240</y>
+     <width>321</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame_main_gradient{
+  border: 0px;
+  background: rgba(62, 62, 62);
+
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_center_gradient">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>271</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame_center_gradient {
+  background: rgb(80, 80, 80);
+    border-radius: 15px;
+  border: 3px solid #000000;
+  border: 3px solid #ff0000;
+  border: 3px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 0, 0, 255), stop:0.166 rgba(255, 255, 0, 255), stop:0.333 rgba(0, 255, 0, 255), stop:0.5 rgba(0, 255, 255, 255), stop:0.666 rgba(0, 0, 255, 255), stop:0.833 rgba(255, 0, 255, 255), stop:1 rgba(255, 0, 0, 255));
+  border: 8px solid qlineargradient(spread:pad, x1:0.039, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(122, 122, 122, 255));
+ border: 3px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.490244, fy:0.494, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(51, 51, 51, 255));
+ border: 3px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.999468, fy:0.494324, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+ border: 15px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.999468, fy:0.494324, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+ border: 15px solid qradialgradient(spread:reflect, cx:0.5, cy:0.5, radius:0.5, fx:0.499, fy:0.505688, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(125, 125, 125, 255))
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_main_interior">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>420</y>
+     <width>321</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame_main_interior{
+  border: 0px;
+  background: rgba(62, 62, 62);
+
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_center_interior">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>271</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QFrame#frame_center_interior {
+  background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.490244, fy:0.494, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(51, 51, 51, 255));
+    border-radius: 6px;
+  border: 3px solid #000000;
+
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_main_nest">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>80</y>
+     <width>651</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame_main_nest {
+  border: 0px;
+  background: rgba(62, 62, 62);
+
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_center_nest">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>581</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame_center_nest {
+  background: rgb(80, 80, 80);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <widget class="QFrame" name="frame_center_nest_2">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>91</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_center_nest_4">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>351</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <widget class="QFrame" name="frame_center_nest_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>321</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+  background: rgb(29, 29, 29);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_center_nest_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>321</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+  background: rgb(29, 29, 29);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>301</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/Retina11.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_center_nest_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_center_nest_3">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>0</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  background: rgb(29, 29, 29);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_center_nest_8">
+   <property name="geometry">
+    <rect>
+     <x>1350</x>
+     <y>260</y>
+     <width>121</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  background: rgb(129, 29, 29);
+    border-style: solid;
+    border: 15px solid #000000;
+    border-radius: 6px;
+border: 8px solid #000;
+border-bottom-colors:#897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+border-top-colors:  #897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+border-left-colors: #897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+border-right-colors:#897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+padding: 5px 5px 5px 15px;
+width: 300px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_center_nest_9">
+   <property name="geometry">
+    <rect>
+     <x>1350</x>
+     <y>20</y>
+     <width>121</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  background: rgb(129,129, 29);
+    border-style: solid;
+    border: 15px solid #000000;
+    border-radius: 6px;
+border: 8px solid #000;
+border-top: 8px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.490244, fy:0.494, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(51, 51, 51, 255));
+border-right: 8px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.490244, fy:0.494, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(51, 51, 51, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_center_nest_10">
+   <property name="geometry">
+    <rect>
+     <x>1510</x>
+     <y>30</y>
+     <width>121</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  background: rgb(129,129, 29);
+    border-style: solid;
+    border: 15px solid #000000;
+    border-radius: 6px;
+border: 8px solid #000;
+border: 8px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.490244, fy:0.494, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(51, 51, 51, 255));
+border: 8px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_center_nest_11">
+   <property name="geometry">
+    <rect>
+     <x>1660</x>
+     <y>30</y>
+     <width>121</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  background: rgb(129,129, 29);
+    border-style: solid;
+    border: 15px solid #000000;
+    border-radius: 6px;
+border: 8px solid #000;
+border: 8px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.490244, fy:0.494, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(51, 51, 51, 255));
+
+border: 8px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+
+border-right: 8px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+border-left: 8px solid qlineargradient(spread:pad, x1:1, y1:0.477, x2:0, y2:0.5, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+
+border-top: 8px solid qlineargradient(spread:pad, x1:0.49, y1:1, x2:0.495, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+border-bottom: 8px solid qlineargradient(spread:pad, x1:0.485098, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_center_nest_12">
+   <property name="geometry">
+    <rect>
+     <x>1510</x>
+     <y>270</y>
+     <width>121</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  background: rgb(129,129, 29);
+    border-style: solid;
+    border: 15px solid #000000;
+    border-radius: 6px;
+border: 8px solid #000;
+border: 8px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.490244, fy:0.494, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(51, 51, 51, 255));
+
+border: 8px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+
+border-right: 3px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+border-left: 3px solid qlineargradient(spread:pad, x1:1, y1:0.477, x2:0, y2:0.5, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+
+border-top: 3px solid qlineargradient(spread:pad, x1:0.49, y1:1, x2:0.495, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+border-bottom: 3px solid qlineargradient(spread:pad, x1:0.485098, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_center_nest_13">
+   <property name="geometry">
+    <rect>
+     <x>1660</x>
+     <y>270</y>
+     <width>121</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  background: rgb(80, 80, 80);
+    border-style: solid;
+    border: 15px solid #000000;
+    border-radius: 8px;
+border: 8px solid #000;
+border: 8px solid qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.490244, fy:0.494, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(51, 51, 51, 255));
+
+border: 8px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+
+border-right: 3px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+border-left: 3px solid qlineargradient(spread:pad, x1:1, y1:0.477, x2:0, y2:0.5, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+
+border-top: 3px solid qlineargradient(spread:pad, x1:0.49, y1:1, x2:0.495, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+border-bottom: 3px solid qlineargradient(spread:pad, x1:0.485098, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(110, 110, 110, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_main_nest_2">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>240</y>
+     <width>651</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame_main_nest {
+  border: 0px;
+  background: rgba(62, 62, 62);
+
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_center_nest_21">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>581</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame_center_nest {
+  background: rgb(80, 80, 80);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <widget class="QFrame" name="frame_center_nest_22">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>91</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <widget class="QFrame" name="frame_center_nest_40">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>10</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 6px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_center_nest_41">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_center_nest_23">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>301</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+  background: rgb(80, 80, 80);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <widget class="QFrame" name="frame_center_nest_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>140</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 4px solid rgb(91, 91, 91);
+    border-radius: 6px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <widget class="QFrame" name="frame_center_nest_20">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>1</y>
+         <width>137</width>
+         <height>247</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <widget class="QFrame" name="frame_center_nest_25">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>126</width>
+          <height>126</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid rgb(91, 91, 91);
+    border-radius: 6px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_center_nest_26">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_center_nest_27">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>141</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid rgb(91, 91, 91);
+    border-radius: 6px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_center_nest_34">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>frame_center_nest_14</zorder>
+     <zorder>frame_center_nest_27</zorder>
+     <zorder>frame_center_nest_34</zorder>
+    </widget>
+    <widget class="QFrame" name="frame_center_nest_36">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>40</y>
+       <width>141</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid rgb(91, 91, 91);
+    border-radius: 6px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_center_nest_37">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QFrame" name="frame_center_nest_38">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>180</y>
+       <width>81</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid rgb(91, 91, 91);
+    border-radius: 6px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_center_nest_39">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QFrame" name="frame_center_nest_42">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>260</y>
+       <width>141</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 4px rgb(71, 71, 71);
+    border-radius: 6px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_center_nest_43">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_center_nest_24">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>580</y>
+     <width>140</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>toolButton</zorder>
+  <zorder>verticalSlider</zorder>
+  <zorder>verticalScrollBar</zorder>
+  <zorder>frame_main</zorder>
+  <zorder>frame_main_gradient</zorder>
+  <zorder>frame_main_interior</zorder>
+  <zorder>frame_main_nest</zorder>
+  <zorder>frame_center_nest_3</zorder>
+  <zorder>frame_center_nest_8</zorder>
+  <zorder>frame_center_nest_9</zorder>
+  <zorder>frame_center_nest_10</zorder>
+  <zorder>frame_center_nest_11</zorder>
+  <zorder>frame_center_nest_12</zorder>
+  <zorder>frame_center_nest_13</zorder>
+  <zorder>frame_main_nest_2</zorder>
+  <zorder>frame_center_nest_26</zorder>
+  <zorder>frame_center_nest_24</zorder>
  </widget>
  <resources>
   <include location="style.qrc"/>
+  <include location="oct_gallery_resources.qrc"/>
  </resources>
  <connections/>
 </ui>
