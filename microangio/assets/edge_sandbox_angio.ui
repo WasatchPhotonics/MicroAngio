@@ -1376,6 +1376,30 @@ QSplitter::handle:vertical {
      <property name="lineWidth">
       <number>1</number>
      </property>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>301</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;
+border-color: none;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QFrame" name="frame_center_nest_7">
@@ -2711,6 +2735,60 @@ border-radius: 12px;
    </property>
    <property name="text">
     <string>Hardware</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>160</y>
+     <width>104</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Hardware</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>OCT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>OCT 3D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Angiography</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>109</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;
+border-color: none;
+border: none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="wasatch_logo_resources.qrc">:/logos/images/logos/92x30_placeholder_logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
