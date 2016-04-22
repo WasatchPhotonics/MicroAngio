@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="logos">
+    <file>images/logos/92x30_placeholder_logo.png</file>
     <file>images/logos/92x30_wp_angio.png</file>
     <file>images/logos/110x36_wp_angio.png</file>
     <file>images/logos/120x39_wp_angio.png</file>
