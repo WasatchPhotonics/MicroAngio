@@ -5246,13 +5246,7 @@ border: 2px solid black;
         <property name="spacing">
          <number>0</number>
         </property>
-        <property name="leftMargin">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>0</number>
-        </property>
-        <property name="bottomMargin">
+        <property name="margin">
          <number>0</number>
         </property>
         <item>
@@ -6288,10 +6282,13 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_8">
                  <property name="spacing">
-                  <number>6</number>
+                  <number>0</number>
                  </property>
                  <property name="leftMargin">
                   <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
                  </property>
                  <property name="rightMargin">
                   <number>0</number>
@@ -6304,7 +6301,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                    <property name="minimumSize">
                     <size>
                      <width>0</width>
-                     <height>165</height>
+                     <height>144</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -6350,7 +6347,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                       <x>10</x>
                       <y>34</y>
                       <width>190</width>
-                      <height>120</height>
+                      <height>109</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
@@ -6427,7 +6424,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>14</x>
-                          <y>20</y>
+                          <y>13</y>
                           <width>16</width>
                           <height>81</height>
                          </rect>
@@ -6446,7 +6443,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>116</x>
-                          <y>30</y>
+                          <y>23</y>
                           <width>50</width>
                           <height>30</height>
                          </rect>
@@ -6505,7 +6502,7 @@ border-radius: 5px;
                         <property name="geometry">
                          <rect>
                           <x>57</x>
-                          <y>76</y>
+                          <y>69</y>
                           <width>108</width>
                           <height>23</height>
                          </rect>
@@ -6530,7 +6527,7 @@ border-radius: 5px;
                         <property name="geometry">
                          <rect>
                           <x>56</x>
-                          <y>30</y>
+                          <y>23</y>
                           <width>50</width>
                           <height>30</height>
                          </rect>
@@ -6596,7 +6593,7 @@ border-radius: 5px;
                    <property name="minimumSize">
                     <size>
                      <width>0</width>
-                     <height>174</height>
+                     <height>151</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -6618,7 +6615,7 @@ border-radius: 5px;
                     <property name="geometry">
                      <rect>
                       <x>10</x>
-                      <y>10</y>
+                      <y>7</y>
                       <width>161</width>
                       <height>16</height>
                      </rect>
@@ -6640,15 +6637,15 @@ border-radius: 5px;
                     <property name="geometry">
                      <rect>
                       <x>10</x>
-                      <y>34</y>
+                      <y>30</y>
                       <width>190</width>
-                      <height>138</height>
+                      <height>114</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
                      <size>
                       <width>190</width>
-                      <height>136</height>
+                      <height>100</height>
                      </size>
                     </property>
                     <property name="maximumSize">
@@ -6719,7 +6716,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>134</x>
-                          <y>30</y>
+                          <y>9</y>
                           <width>50</width>
                           <height>16</height>
                          </rect>
@@ -6740,7 +6737,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>66</x>
-                          <y>30</y>
+                          <y>9</y>
                           <width>65</width>
                           <height>16</height>
                          </rect>
@@ -6756,7 +6753,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>8</x>
-                          <y>30</y>
+                          <y>9</y>
                           <width>61</width>
                           <height>16</height>
                          </rect>
@@ -6777,7 +6774,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>134</x>
-                          <y>60</y>
+                          <y>39</y>
                           <width>50</width>
                           <height>16</height>
                          </rect>
@@ -6798,7 +6795,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>8</x>
-                          <y>60</y>
+                          <y>39</y>
                           <width>61</width>
                           <height>16</height>
                          </rect>
@@ -6819,7 +6816,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>66</x>
-                          <y>60</y>
+                          <y>39</y>
                           <width>65</width>
                           <height>16</height>
                          </rect>
@@ -6835,7 +6832,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>10</x>
-                          <y>100</y>
+                          <y>79</y>
                           <width>121</width>
                           <height>16</height>
                          </rect>
@@ -6856,7 +6853,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>139</x>
-                          <y>91</y>
+                          <y>70</y>
                           <width>35</width>
                           <height>30</height>
                          </rect>
@@ -6925,7 +6922,7 @@ border-radius: 5px;
                    <property name="minimumSize">
                     <size>
                      <width>0</width>
-                     <height>143</height>
+                     <height>162</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -6947,8 +6944,8 @@ border-radius: 5px;
                     <property name="geometry">
                      <rect>
                       <x>10</x>
-                      <y>10</y>
-                      <width>161</width>
+                      <y>6</y>
+                      <width>191</width>
                       <height>16</height>
                      </rect>
                     </property>
@@ -6962,22 +6959,22 @@ border-radius: 5px;
                      <string notr="true">border: none;</string>
                     </property>
                     <property name="text">
-                     <string>Dispersion</string>
+                     <string>Dispersion, Polarization</string>
                     </property>
                    </widget>
                    <widget class="QFrame" name="frame_white_border_31">
                     <property name="geometry">
                      <rect>
                       <x>10</x>
-                      <y>34</y>
+                      <y>28</y>
                       <width>190</width>
-                      <height>100</height>
+                      <height>130</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
                      <size>
                       <width>190</width>
-                      <height>100</height>
+                      <height>130</height>
                      </size>
                     </property>
                     <property name="maximumSize">
@@ -7047,8 +7044,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                        <widget class="QDoubleSpinBox" name="doubleSpinBox_24">
                         <property name="geometry">
                          <rect>
-                          <x>123</x>
-                          <y>30</y>
+                          <x>122</x>
+                          <y>7</y>
                           <width>61</width>
                           <height>20</height>
                          </rect>
@@ -7069,7 +7066,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>66</x>
-                          <y>30</y>
+                          <y>10</y>
                           <width>51</width>
                           <height>16</height>
                          </rect>
@@ -7085,7 +7082,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>8</x>
-                          <y>30</y>
+                          <y>10</y>
                           <width>61</width>
                           <height>16</height>
                          </rect>
@@ -7106,7 +7103,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>8</x>
-                          <y>60</y>
+                          <y>40</y>
                           <width>61</width>
                           <height>16</height>
                          </rect>
@@ -7127,7 +7124,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         <property name="geometry">
                          <rect>
                           <x>66</x>
-                          <y>60</y>
+                          <y>40</y>
                           <width>51</width>
                           <height>16</height>
                          </rect>
@@ -7142,8 +7139,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                        <widget class="QDoubleSpinBox" name="doubleSpinBox_25">
                         <property name="geometry">
                          <rect>
-                          <x>123</x>
-                          <y>60</y>
+                          <x>122</x>
+                          <y>37</y>
                           <width>61</width>
                           <height>20</height>
                          </rect>
@@ -7160,6 +7157,122 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                          <double>5.790000000000000</double>
                         </property>
                        </widget>
+                       <widget class="QLabel" name="label_44">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>98</y>
+                          <width>61</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>8</pointsize>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border: none; background: none;</string>
+                        </property>
+                        <property name="text">
+                         <string>Quar. Wave</string>
+                        </property>
+                       </widget>
+                       <widget class="QSlider" name="horizontalSlider_13">
+                        <property name="geometry">
+                         <rect>
+                          <x>68</x>
+                          <y>68</y>
+                          <width>51</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="value">
+                         <number>33</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                       <widget class="QSlider" name="horizontalSlider_14">
+                        <property name="geometry">
+                         <rect>
+                          <x>68</x>
+                          <y>98</y>
+                          <width>51</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="value">
+                         <number>77</number>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                       </widget>
+                       <widget class="QSpinBox" name="spinBox_21">
+                        <property name="geometry">
+                         <rect>
+                          <x>131</x>
+                          <y>98</y>
+                          <width>50</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>8</pointsize>
+                         </font>
+                        </property>
+                        <property name="buttonSymbols">
+                         <enum>QAbstractSpinBox::NoButtons</enum>
+                        </property>
+                        <property name="value">
+                         <number>50</number>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_43">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>68</y>
+                          <width>61</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>8</pointsize>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border: none; background: none;</string>
+                        </property>
+                        <property name="text">
+                         <string>Half Wave</string>
+                        </property>
+                       </widget>
+                       <widget class="QSpinBox" name="spinBox_20">
+                        <property name="geometry">
+                         <rect>
+                          <x>131</x>
+                          <y>68</y>
+                          <width>50</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>8</pointsize>
+                         </font>
+                        </property>
+                        <property name="buttonSymbols">
+                         <enum>QAbstractSpinBox::NoButtons</enum>
+                        </property>
+                        <property name="value">
+                         <number>50</number>
+                        </property>
+                       </widget>
                       </widget>
                      </item>
                     </layout>
@@ -7167,11 +7280,24 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="frame_oct_image_control">
+                  <spacer name="verticalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_reference_arm_2">
                    <property name="minimumSize">
                     <size>
                      <width>0</width>
-                     <height>143</height>
+                     <height>211</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -7189,11 +7315,11 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
-                   <widget class="QLabel" name="label_39">
+                   <widget class="QLabel" name="label_50">
                     <property name="geometry">
                      <rect>
                       <x>10</x>
-                      <y>10</y>
+                      <y>5</y>
                       <width>161</width>
                       <height>16</height>
                      </rect>
@@ -7208,28 +7334,28 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                      <string notr="true">border: none;</string>
                     </property>
                     <property name="text">
-                     <string>Polarization</string>
+                     <string>Scan line control</string>
                     </property>
                    </widget>
-                   <widget class="QFrame" name="frame_white_border_26">
+                   <widget class="QFrame" name="frame_white_border_28">
                     <property name="geometry">
                      <rect>
                       <x>10</x>
-                      <y>34</y>
+                      <y>25</y>
                       <width>190</width>
-                      <height>100</height>
+                      <height>185</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
                      <size>
                       <width>190</width>
-                      <height>100</height>
+                      <height>185</height>
                      </size>
                     </property>
                     <property name="maximumSize">
                      <size>
                       <width>190</width>
-                      <height>200</height>
+                      <height>140</height>
                      </size>
                     </property>
                     <property name="styleSheet">
@@ -7247,7 +7373,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                     <property name="lineWidth">
                      <number>1</number>
                     </property>
-                    <layout class="QGridLayout" name="gridLayout_33" rowstretch="0" columnstretch="0">
+                    <layout class="QGridLayout" name="gridLayout_35" rowstretch="0" columnstretch="0">
                      <property name="sizeConstraint">
                       <enum>QLayout::SetDefaultConstraint</enum>
                      </property>
@@ -7258,7 +7384,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                       <number>0</number>
                      </property>
                      <item row="0" column="0">
-                      <widget class="QFrame" name="frame_button_bar_18">
+                      <widget class="QFrame" name="frame_button_bar_20">
                        <property name="minimumSize">
                         <size>
                          <width>0</width>
@@ -7290,13 +7416,158 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                        <property name="lineWidth">
                         <number>1</number>
                        </property>
-                       <widget class="QSpinBox" name="spinBox_20">
+                       <widget class="QSpinBox" name="spinBox_40">
                         <property name="geometry">
                          <rect>
-                          <x>134</x>
-                          <y>30</y>
+                          <x>31</x>
+                          <y>147</y>
+                          <width>121</width>
+                          <height>23</height>
+                         </rect>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>8</pointsize>
+                         </font>
+                        </property>
+                        <property name="suffix">
+                         <string/>
+                        </property>
+                        <property name="prefix">
+                         <string>Angle: </string>
+                        </property>
+                        <property name="maximum">
+                         <number>360</number>
+                        </property>
+                        <property name="value">
+                         <number>300</number>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton_62">
+                        <property name="geometry">
+                         <rect>
+                          <x>20</x>
+                          <y>44</y>
                           <width>50</width>
-                          <height>16</height>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>20</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>130</width>
+                          <height>100</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton:hover
+{
+    border: 1px solid #78879b;
+    color: silver;
+}
+
+QPushButton
+{
+    border-color: rgb(0,0,0);
+}
+
+QPushButton {
+background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+border-radius: 5px;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="grey_icons.qrc">
+                          <normaloff>:/greys/images/grey_icons/10pc_gray_pure_left.svg</normaloff>:/greys/images/grey_icons/10pc_gray_pure_left.svg</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>14</width>
+                          <height>14</height>
+                         </size>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton_63">
+                        <property name="geometry">
+                         <rect>
+                          <x>70</x>
+                          <y>14</y>
+                          <width>50</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>20</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>130</width>
+                          <height>100</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton:hover
+{
+    border: 1px solid #78879b;
+    color: silver;
+}
+
+QPushButton
+{
+    border-color: rgb(0,0,0);
+}
+
+QPushButton {
+background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+border-radius: 5px;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="grey_icons.qrc">
+                          <normaloff>:/greys/images/grey_icons/10pc_gray_pure_up.svg</normaloff>:/greys/images/grey_icons/10pc_gray_pure_up.svg</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>14</width>
+                          <height>14</height>
+                         </size>
+                        </property>
+                       </widget>
+                       <widget class="QSpinBox" name="spinBox_45">
+                        <property name="geometry">
+                         <rect>
+                          <x>31</x>
+                          <y>119</y>
+                          <width>121</width>
+                          <height>23</height>
                          </rect>
                         </property>
                         <property name="font">
@@ -7305,105 +7576,137 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                          </font>
                         </property>
                         <property name="buttonSymbols">
-                         <enum>QAbstractSpinBox::NoButtons</enum>
+                         <enum>QAbstractSpinBox::UpDownArrows</enum>
+                        </property>
+                        <property name="suffix">
+                         <string/>
+                        </property>
+                        <property name="prefix">
+                         <string>Length: </string>
+                        </property>
+                        <property name="maximum">
+                         <number>9999</number>
                         </property>
                         <property name="value">
-                         <number>50</number>
+                         <number>5555</number>
                         </property>
                        </widget>
-                       <widget class="QSlider" name="horizontalSlider_13">
+                       <widget class="QPushButton" name="pushButton_68">
                         <property name="geometry">
                          <rect>
-                          <x>66</x>
-                          <y>30</y>
-                          <width>65</width>
-                          <height>16</height>
-                         </rect>
-                        </property>
-                        <property name="value">
-                         <number>33</number>
-                        </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
-                        </property>
-                       </widget>
-                       <widget class="QLabel" name="label_43">
-                        <property name="geometry">
-                         <rect>
-                          <x>8</x>
-                          <y>30</y>
-                          <width>61</width>
-                          <height>16</height>
-                         </rect>
-                        </property>
-                        <property name="font">
-                         <font>
-                          <pointsize>8</pointsize>
-                         </font>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">border: none; background: none;</string>
-                        </property>
-                        <property name="text">
-                         <string>Half Wave</string>
-                        </property>
-                       </widget>
-                       <widget class="QSpinBox" name="spinBox_21">
-                        <property name="geometry">
-                         <rect>
-                          <x>134</x>
-                          <y>60</y>
+                          <x>120</x>
+                          <y>44</y>
                           <width>50</width>
-                          <height>16</height>
+                          <height>30</height>
                          </rect>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>20</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>130</width>
+                          <height>100</height>
+                         </size>
                         </property>
                         <property name="font">
                          <font>
-                          <pointsize>8</pointsize>
-                         </font>
-                        </property>
-                        <property name="buttonSymbols">
-                         <enum>QAbstractSpinBox::NoButtons</enum>
-                        </property>
-                        <property name="value">
-                         <number>50</number>
-                        </property>
-                       </widget>
-                       <widget class="QLabel" name="label_44">
-                        <property name="geometry">
-                         <rect>
-                          <x>8</x>
-                          <y>60</y>
-                          <width>61</width>
-                          <height>16</height>
-                         </rect>
-                        </property>
-                        <property name="font">
-                         <font>
-                          <pointsize>8</pointsize>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
                          </font>
                         </property>
                         <property name="styleSheet">
-                         <string notr="true">border: none; background: none;</string>
+                         <string notr="true">QPushButton:hover
+{
+    border: 1px solid #78879b;
+    color: silver;
+}
+
+QPushButton
+{
+    border-color: rgb(0,0,0);
+}
+
+QPushButton {
+background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+border-radius: 5px;
+}</string>
                         </property>
                         <property name="text">
-                         <string>Quar. Wave</string>
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="grey_icons.qrc">
+                          <normaloff>:/greys/images/grey_icons/10pc_gray_pure_right.svg</normaloff>:/greys/images/grey_icons/10pc_gray_pure_right.svg</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>14</width>
+                          <height>14</height>
+                         </size>
                         </property>
                        </widget>
-                       <widget class="QSlider" name="horizontalSlider_14">
+                       <widget class="QPushButton" name="pushButton_76">
                         <property name="geometry">
                          <rect>
-                          <x>66</x>
-                          <y>60</y>
-                          <width>65</width>
-                          <height>16</height>
+                          <x>70</x>
+                          <y>75</y>
+                          <width>50</width>
+                          <height>30</height>
                          </rect>
                         </property>
-                        <property name="value">
-                         <number>77</number>
+                        <property name="minimumSize">
+                         <size>
+                          <width>20</width>
+                          <height>20</height>
+                         </size>
                         </property>
-                        <property name="orientation">
-                         <enum>Qt::Horizontal</enum>
+                        <property name="maximumSize">
+                         <size>
+                          <width>130</width>
+                          <height>100</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton:hover
+{
+    border: 1px solid #78879b;
+    color: silver;
+}
+
+QPushButton
+{
+    border-color: rgb(0,0,0);
+}
+
+QPushButton {
+background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+border-radius: 5px;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="grey_icons.qrc">
+                          <normaloff>:/greys/images/grey_icons/10pc_gray_pure_down.svg</normaloff>:/greys/images/grey_icons/10pc_gray_pure_down.svg</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>14</width>
+                          <height>14</height>
+                         </size>
                         </property>
                        </widget>
                       </widget>
@@ -7411,19 +7714,6 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                     </layout>
                    </widget>
                   </widget>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_4">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
                  </item>
                  <item>
                   <widget class="QFrame" name="frame_29">
@@ -7628,6 +7918,9 @@ border: 2px solid black;
                      </widget>
                     </widget>
                    </widget>
+                   <zorder>label_52</zorder>
+                   <zorder>frame_86</zorder>
+                   <zorder>frame_reference_arm_2</zorder>
                   </widget>
                  </item>
                 </layout>

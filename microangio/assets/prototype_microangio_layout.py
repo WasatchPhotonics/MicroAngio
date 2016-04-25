@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Mon Apr 25 16:06:15 2016
+# Created: Mon Apr 25 16:39:42 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,7 +12,7 @@ from PySide import QtCore, QtGui
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1437, 927)
+        MainWindow.resize(1437, 1119)
         MainWindow.setStyleSheet("/*\n"
 " * The MIT License (MIT)\n"
 " *\n"
@@ -1802,22 +1802,13 @@ class Ui_MainWindow(object):
         self.frame_button_bar_12.setObjectName("frame_button_bar_12")
         self.gridLayout_20 = QtGui.QGridLayout(self.frame_button_bar_12)
         self.gridLayout_20.setObjectName("gridLayout_20")
-        self.label_26 = QtGui.QLabel(self.frame_button_bar_12)
-        self.label_26.setMaximumSize(QtCore.QSize(16777215, 25))
-        font = QtGui.QFont()
-        font.setWeight(75)
-        font.setBold(True)
-        self.label_26.setFont(font)
-        self.label_26.setStyleSheet("border: none; background: none;")
-        self.label_26.setObjectName("label_26")
-        self.gridLayout_20.addWidget(self.label_26, 0, 0, 1, 1)
         self.label_7 = QtGui.QLabel(self.frame_button_bar_12)
         self.label_7.setStyleSheet("border: none;")
         self.label_7.setText("")
         self.label_7.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/raw_image_pyqtgraph_plot.png"))
         self.label_7.setScaledContents(True)
         self.label_7.setObjectName("label_7")
-        self.gridLayout_20.addWidget(self.label_7, 1, 0, 1, 1)
+        self.gridLayout_20.addWidget(self.label_7, 0, 0, 1, 1)
         self.gridLayout_19.addWidget(self.frame_button_bar_12, 0, 0, 1, 1)
         self.verticalLayout_2.addWidget(self.frame_white_border_13)
         self.gridLayout_17.addWidget(self.frame_center_nest_5, 0, 0, 1, 1)
@@ -2912,6 +2903,1087 @@ class Ui_MainWindow(object):
         self.stackedWidget_bottom.addWidget(self.page_oct_setup)
         self.page_oct_capture = QtGui.QWidget()
         self.page_oct_capture.setObjectName("page_oct_capture")
+        self.horizontalLayout_14 = QtGui.QHBoxLayout(self.page_oct_capture)
+        self.horizontalLayout_14.setSpacing(0)
+        self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_14.setObjectName("horizontalLayout_14")
+        self.frame_oct_capture = QtGui.QFrame(self.page_oct_capture)
+        self.frame_oct_capture.setMinimumSize(QtCore.QSize(400, 400))
+        self.frame_oct_capture.setStyleSheet("QFrame#frame_center_nest {\n"
+"    /*border: 1px solid #ff0000;*/\n"
+"    border: none;\n"
+"}")
+        self.frame_oct_capture.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_oct_capture.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_oct_capture.setLineWidth(1)
+        self.frame_oct_capture.setObjectName("frame_oct_capture")
+        self.horizontalLayout_12 = QtGui.QHBoxLayout(self.frame_oct_capture)
+        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
+        self.frame_white_border_22 = QtGui.QFrame(self.frame_oct_capture)
+        self.frame_white_border_22.setMinimumSize(QtCore.QSize(225, 0))
+        self.frame_white_border_22.setMaximumSize(QtCore.QSize(230, 16777215))
+        self.frame_white_border_22.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_22.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_22.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_22.setLineWidth(1)
+        self.frame_white_border_22.setObjectName("frame_white_border_22")
+        self.gridLayout_28 = QtGui.QGridLayout(self.frame_white_border_22)
+        self.gridLayout_28.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_28.setSpacing(0)
+        self.gridLayout_28.setObjectName("gridLayout_28")
+        self.frame_center_nest_12 = QtGui.QFrame(self.frame_white_border_22)
+        self.frame_center_nest_12.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_center_nest_12.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_center_nest_12.setStyleSheet("QFrame {\n"
+"  background: rgb(74, 74, 74);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_center_nest_12.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_center_nest_12.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_center_nest_12.setLineWidth(1)
+        self.frame_center_nest_12.setObjectName("frame_center_nest_12")
+        self.frame_20 = QtGui.QFrame(self.frame_center_nest_12)
+        self.frame_20.setGeometry(QtCore.QRect(7, 10, 211, 241))
+        self.frame_20.setStyleSheet("border: none;")
+        self.frame_20.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_20.setObjectName("frame_20")
+        self.label_34 = QtGui.QLabel(self.frame_20)
+        self.label_34.setGeometry(QtCore.QRect(10, 10, 161, 16))
+        font = QtGui.QFont()
+        font.setWeight(75)
+        font.setBold(True)
+        self.label_34.setFont(font)
+        self.label_34.setStyleSheet("border: none;")
+        self.label_34.setObjectName("label_34")
+        self.frame_84 = QtGui.QFrame(self.frame_20)
+        self.frame_84.setGeometry(QtCore.QRect(10, 30, 190, 200))
+        self.frame_84.setMinimumSize(QtCore.QSize(190, 100))
+        self.frame_84.setMaximumSize(QtCore.QSize(190, 200))
+        self.frame_84.setStyleSheet("QFrame {\n"
+"background-color: none;\n"
+"border: 1px solid rgb(95, 95, 95)\n"
+"}")
+        self.frame_84.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_84.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_84.setObjectName("frame_84")
+        self.frame_85 = QtGui.QFrame(self.frame_84)
+        self.frame_85.setGeometry(QtCore.QRect(1, 1, 188, 198))
+        self.frame_85.setMinimumSize(QtCore.QSize(100, 198))
+        self.frame_85.setMaximumSize(QtCore.QSize(190, 198))
+        self.frame_85.setStyleSheet("QFrame {\n"
+"\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(23, 23, 23, 255), stop:0.497561 rgba(50, 50, 50, 255), stop:1 rgba(44, 44, 44, 255));\n"
+"border: 2px solid black;\n"
+"}")
+        self.frame_85.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_85.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_85.setObjectName("frame_85")
+        self.labelSnapshotThumbnail_16 = QtGui.QLabel(self.frame_85)
+        self.labelSnapshotThumbnail_16.setGeometry(QtCore.QRect(13, 32, 151, 121))
+        self.labelSnapshotThumbnail_16.setStyleSheet("border: none;")
+        self.labelSnapshotThumbnail_16.setText("")
+        self.labelSnapshotThumbnail_16.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/raw_image_pyqtgraph_plot.png"))
+        self.labelSnapshotThumbnail_16.setScaledContents(True)
+        self.labelSnapshotThumbnail_16.setObjectName("labelSnapshotThumbnail_16")
+        self.label_35 = QtGui.QLabel(self.frame_85)
+        self.label_35.setGeometry(QtCore.QRect(15, 10, 131, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        font.setWeight(50)
+        font.setBold(False)
+        self.label_35.setFont(font)
+        self.label_35.setStyleSheet("border: none;\n"
+"background:none;")
+        self.label_35.setObjectName("label_35")
+        self.pushButton_74 = QtGui.QPushButton(self.frame_85)
+        self.pushButton_74.setGeometry(QtCore.QRect(14, 160, 35, 30))
+        self.pushButton_74.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_74.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_74.setFont(font)
+        self.pushButton_74.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_74.setText("")
+        self.pushButton_74.setIcon(icon)
+        self.pushButton_74.setIconSize(QtCore.QSize(28, 28))
+        self.pushButton_74.setObjectName("pushButton_74")
+        self.pushButton_75 = QtGui.QPushButton(self.frame_85)
+        self.pushButton_75.setGeometry(QtCore.QRect(60, 160, 35, 30))
+        self.pushButton_75.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_75.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_75.setFont(font)
+        self.pushButton_75.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_75.setText("")
+        self.pushButton_75.setIcon(icon1)
+        self.pushButton_75.setIconSize(QtCore.QSize(28, 28))
+        self.pushButton_75.setObjectName("pushButton_75")
+        self.gridLayout_28.addWidget(self.frame_center_nest_12, 0, 0, 1, 1)
+        self.horizontalLayout_12.addWidget(self.frame_white_border_22)
+        self.frame_white_border_8 = QtGui.QFrame(self.frame_oct_capture)
+        self.frame_white_border_8.setMinimumSize(QtCore.QSize(400, 0))
+        self.frame_white_border_8.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_8.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_8.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_8.setLineWidth(1)
+        self.frame_white_border_8.setObjectName("frame_white_border_8")
+        self.gridLayout_29 = QtGui.QGridLayout(self.frame_white_border_8)
+        self.gridLayout_29.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_29.setSpacing(0)
+        self.gridLayout_29.setObjectName("gridLayout_29")
+        self.frame_center_nest_14 = QtGui.QFrame(self.frame_white_border_8)
+        self.frame_center_nest_14.setMinimumSize(QtCore.QSize(400, 0))
+        self.frame_center_nest_14.setStyleSheet("QFrame {\n"
+"  background: rgb(54, 54, 54);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_center_nest_14.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_center_nest_14.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_center_nest_14.setLineWidth(1)
+        self.frame_center_nest_14.setObjectName("frame_center_nest_14")
+        self.verticalLayout_7 = QtGui.QVBoxLayout(self.frame_center_nest_14)
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.frame_white_border_23 = QtGui.QFrame(self.frame_center_nest_14)
+        self.frame_white_border_23.setMinimumSize(QtCore.QSize(200, 50))
+        self.frame_white_border_23.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.frame_white_border_23.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_23.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_23.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_23.setLineWidth(1)
+        self.frame_white_border_23.setObjectName("frame_white_border_23")
+        self.gridLayout_30 = QtGui.QGridLayout(self.frame_white_border_23)
+        self.gridLayout_30.setSizeConstraint(QtGui.QLayout.SetDefaultConstraint)
+        self.gridLayout_30.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_30.setSpacing(0)
+        self.gridLayout_30.setObjectName("gridLayout_30")
+        self.frame_button_bar_16 = QtGui.QFrame(self.frame_white_border_23)
+        self.frame_button_bar_16.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_button_bar_16.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_button_bar_16.setStyleSheet("QFrame {\n"
+"  background: rgb(29, 29, 29);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(23, 23, 23, 255), stop:0.497561 rgba(50, 50, 50, 255), stop:1 rgba(44, 44, 44, 255));\n"
+"}")
+        self.frame_button_bar_16.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_button_bar_16.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_button_bar_16.setLineWidth(1)
+        self.frame_button_bar_16.setObjectName("frame_button_bar_16")
+        self.horizontalLayout_13 = QtGui.QHBoxLayout(self.frame_button_bar_16)
+        self.horizontalLayout_13.setSpacing(0)
+        self.horizontalLayout_13.setContentsMargins(0, 4, 0, 0)
+        self.horizontalLayout_13.setObjectName("horizontalLayout_13")
+        spacerItem7 = QtGui.QSpacerItem(173, 37, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_13.addItem(spacerItem7)
+        self.frame_27 = QtGui.QFrame(self.frame_button_bar_16)
+        self.frame_27.setMinimumSize(QtCore.QSize(400, 0))
+        self.frame_27.setStyleSheet("border: none; background: none;")
+        self.frame_27.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_27.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_27.setObjectName("frame_27")
+        self.pushButton_137 = QtGui.QPushButton(self.frame_27)
+        self.pushButton_137.setGeometry(QtCore.QRect(240, 3, 67, 30))
+        self.pushButton_137.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_137.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_137.setFont(font)
+        self.pushButton_137.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_137.setText("")
+        self.pushButton_137.setIcon(icon3)
+        self.pushButton_137.setIconSize(QtCore.QSize(30, 30))
+        self.pushButton_137.setObjectName("pushButton_137")
+        self.pushButton_147 = QtGui.QPushButton(self.frame_27)
+        self.pushButton_147.setGeometry(QtCore.QRect(313, 3, 67, 30))
+        self.pushButton_147.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_147.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_147.setFont(font)
+        self.pushButton_147.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_147.setText("")
+        icon15 = QtGui.QIcon()
+        icon15.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_record.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_147.setIcon(icon15)
+        self.pushButton_147.setIconSize(QtCore.QSize(28, 28))
+        self.pushButton_147.setObjectName("pushButton_147")
+        self.pushButton_148 = QtGui.QPushButton(self.frame_27)
+        self.pushButton_148.setGeometry(QtCore.QRect(21, 3, 67, 30))
+        self.pushButton_148.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_148.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_148.setFont(font)
+        self.pushButton_148.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_148.setText("")
+        self.pushButton_148.setIcon(icon2)
+        self.pushButton_148.setIconSize(QtCore.QSize(14, 14))
+        self.pushButton_148.setObjectName("pushButton_148")
+        self.pushButton_149 = QtGui.QPushButton(self.frame_27)
+        self.pushButton_149.setGeometry(QtCore.QRect(94, 3, 67, 30))
+        self.pushButton_149.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_149.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_149.setFont(font)
+        self.pushButton_149.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_149.setText("")
+        self.pushButton_149.setIcon(icon4)
+        self.pushButton_149.setIconSize(QtCore.QSize(30, 30))
+        self.pushButton_149.setObjectName("pushButton_149")
+        self.pushButton_150 = QtGui.QPushButton(self.frame_27)
+        self.pushButton_150.setGeometry(QtCore.QRect(167, 3, 67, 30))
+        self.pushButton_150.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_150.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_150.setFont(font)
+        self.pushButton_150.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_150.setText("")
+        icon16 = QtGui.QIcon()
+        icon16.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_update_background.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_150.setIcon(icon16)
+        self.pushButton_150.setIconSize(QtCore.QSize(30, 30))
+        self.pushButton_150.setObjectName("pushButton_150")
+        self.horizontalLayout_13.addWidget(self.frame_27)
+        spacerItem8 = QtGui.QSpacerItem(173, 37, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_13.addItem(spacerItem8)
+        self.gridLayout_30.addWidget(self.frame_button_bar_16, 0, 0, 1, 1)
+        self.verticalLayout_7.addWidget(self.frame_white_border_23)
+        self.frame_white_border_24 = QtGui.QFrame(self.frame_center_nest_14)
+        self.frame_white_border_24.setMinimumSize(QtCore.QSize(200, 50))
+        self.frame_white_border_24.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_white_border_24.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_24.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_24.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_24.setLineWidth(1)
+        self.frame_white_border_24.setObjectName("frame_white_border_24")
+        self.gridLayout_31 = QtGui.QGridLayout(self.frame_white_border_24)
+        self.gridLayout_31.setSizeConstraint(QtGui.QLayout.SetDefaultConstraint)
+        self.gridLayout_31.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_31.setSpacing(0)
+        self.gridLayout_31.setObjectName("gridLayout_31")
+        self.frame_button_bar_17 = QtGui.QFrame(self.frame_white_border_24)
+        self.frame_button_bar_17.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_button_bar_17.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_button_bar_17.setStyleSheet("QFrame {\n"
+"  background: rgb(29, 29, 29);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(23, 23, 23, 255), stop:0.497561 rgba(50, 50, 50, 255), stop:1 rgba(44, 44, 44, 255));\n"
+"}")
+        self.frame_button_bar_17.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_button_bar_17.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_button_bar_17.setLineWidth(1)
+        self.frame_button_bar_17.setObjectName("frame_button_bar_17")
+        self.gridLayout_32 = QtGui.QGridLayout(self.frame_button_bar_17)
+        self.gridLayout_32.setObjectName("gridLayout_32")
+        self.label_8 = QtGui.QLabel(self.frame_button_bar_17)
+        self.label_8.setStyleSheet("border: none;")
+        self.label_8.setText("")
+        self.label_8.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label_8.setScaledContents(True)
+        self.label_8.setObjectName("label_8")
+        self.gridLayout_32.addWidget(self.label_8, 0, 0, 1, 1)
+        self.gridLayout_31.addWidget(self.frame_button_bar_17, 0, 0, 1, 1)
+        self.verticalLayout_7.addWidget(self.frame_white_border_24)
+        self.gridLayout_29.addWidget(self.frame_center_nest_14, 0, 0, 1, 1)
+        self.horizontalLayout_12.addWidget(self.frame_white_border_8)
+        self.frame_white_border_25 = QtGui.QFrame(self.frame_oct_capture)
+        self.frame_white_border_25.setMinimumSize(QtCore.QSize(220, 0))
+        self.frame_white_border_25.setMaximumSize(QtCore.QSize(220, 16777215))
+        self.frame_white_border_25.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_25.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_25.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_25.setLineWidth(1)
+        self.frame_white_border_25.setObjectName("frame_white_border_25")
+        self.verticalLayout_12 = QtGui.QVBoxLayout(self.frame_white_border_25)
+        self.verticalLayout_12.setSpacing(0)
+        self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_12.setObjectName("verticalLayout_12")
+        self.frame_center_nest_15 = QtGui.QFrame(self.frame_white_border_25)
+        self.frame_center_nest_15.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_center_nest_15.setMaximumSize(QtCore.QSize(220, 16777215))
+        self.frame_center_nest_15.setStyleSheet("QFrame {\n"
+"  background: rgb(74, 74, 74);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_center_nest_15.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_center_nest_15.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_center_nest_15.setLineWidth(1)
+        self.frame_center_nest_15.setObjectName("frame_center_nest_15")
+        self.verticalLayout_8 = QtGui.QVBoxLayout(self.frame_center_nest_15)
+        self.verticalLayout_8.setSpacing(0)
+        self.verticalLayout_8.setContentsMargins(3, 0, 0, 20)
+        self.verticalLayout_8.setObjectName("verticalLayout_8")
+        self.frame_reference_arm = QtGui.QFrame(self.frame_center_nest_15)
+        self.frame_reference_arm.setMinimumSize(QtCore.QSize(0, 144))
+        self.frame_reference_arm.setMaximumSize(QtCore.QSize(16777215, 210))
+        self.frame_reference_arm.setStyleSheet("border: none;")
+        self.frame_reference_arm.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_reference_arm.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_reference_arm.setObjectName("frame_reference_arm")
+        self.label_49 = QtGui.QLabel(self.frame_reference_arm)
+        self.label_49.setGeometry(QtCore.QRect(10, 10, 161, 16))
+        font = QtGui.QFont()
+        font.setWeight(75)
+        font.setBold(True)
+        self.label_49.setFont(font)
+        self.label_49.setStyleSheet("border: none;")
+        self.label_49.setObjectName("label_49")
+        self.frame_white_border_27 = QtGui.QFrame(self.frame_reference_arm)
+        self.frame_white_border_27.setGeometry(QtCore.QRect(10, 34, 190, 109))
+        self.frame_white_border_27.setMinimumSize(QtCore.QSize(190, 100))
+        self.frame_white_border_27.setMaximumSize(QtCore.QSize(190, 140))
+        self.frame_white_border_27.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_27.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_27.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_27.setLineWidth(1)
+        self.frame_white_border_27.setObjectName("frame_white_border_27")
+        self.gridLayout_34 = QtGui.QGridLayout(self.frame_white_border_27)
+        self.gridLayout_34.setSizeConstraint(QtGui.QLayout.SetDefaultConstraint)
+        self.gridLayout_34.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_34.setSpacing(0)
+        self.gridLayout_34.setObjectName("gridLayout_34")
+        self.frame_button_bar_19 = QtGui.QFrame(self.frame_white_border_27)
+        self.frame_button_bar_19.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_button_bar_19.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_button_bar_19.setStyleSheet("QFrame {\n"
+"  background: rgb(29, 29, 29);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(23, 23, 23, 255), stop:0.497561 rgba(50, 50, 50, 255), stop:1 rgba(44, 44, 44, 255));\n"
+"}")
+        self.frame_button_bar_19.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_button_bar_19.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_button_bar_19.setLineWidth(1)
+        self.frame_button_bar_19.setObjectName("frame_button_bar_19")
+        self.verticalSlider_18 = QtGui.QSlider(self.frame_button_bar_19)
+        self.verticalSlider_18.setGeometry(QtCore.QRect(14, 13, 16, 81))
+        self.verticalSlider_18.setMaximum(999)
+        self.verticalSlider_18.setProperty("value", 444)
+        self.verticalSlider_18.setOrientation(QtCore.Qt.Vertical)
+        self.verticalSlider_18.setObjectName("verticalSlider_18")
+        self.pushButton_60 = QtGui.QPushButton(self.frame_button_bar_19)
+        self.pushButton_60.setGeometry(QtCore.QRect(116, 23, 50, 30))
+        self.pushButton_60.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_60.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_60.setFont(font)
+        self.pushButton_60.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_60.setText("")
+        self.pushButton_60.setIcon(icon5)
+        self.pushButton_60.setIconSize(QtCore.QSize(14, 14))
+        self.pushButton_60.setObjectName("pushButton_60")
+        self.spinBox_44 = QtGui.QSpinBox(self.frame_button_bar_19)
+        self.spinBox_44.setGeometry(QtCore.QRect(57, 69, 108, 23))
+        self.spinBox_44.setAlignment(QtCore.Qt.AlignCenter)
+        self.spinBox_44.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_44.setSuffix("")
+        self.spinBox_44.setMaximum(10000)
+        self.spinBox_44.setObjectName("spinBox_44")
+        self.pushButton_61 = QtGui.QPushButton(self.frame_button_bar_19)
+        self.pushButton_61.setGeometry(QtCore.QRect(56, 23, 50, 30))
+        self.pushButton_61.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_61.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_61.setFont(font)
+        self.pushButton_61.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_61.setText("")
+        self.pushButton_61.setIcon(icon6)
+        self.pushButton_61.setIconSize(QtCore.QSize(14, 14))
+        self.pushButton_61.setObjectName("pushButton_61")
+        self.gridLayout_34.addWidget(self.frame_button_bar_19, 0, 0, 1, 1)
+        self.verticalLayout_8.addWidget(self.frame_reference_arm)
+        self.frame_oct_image_control_3 = QtGui.QFrame(self.frame_center_nest_15)
+        self.frame_oct_image_control_3.setMinimumSize(QtCore.QSize(0, 151))
+        self.frame_oct_image_control_3.setMaximumSize(QtCore.QSize(16777215, 210))
+        self.frame_oct_image_control_3.setStyleSheet("border: none;")
+        self.frame_oct_image_control_3.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_oct_image_control_3.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_oct_image_control_3.setObjectName("frame_oct_image_control_3")
+        self.label_60 = QtGui.QLabel(self.frame_oct_image_control_3)
+        self.label_60.setGeometry(QtCore.QRect(10, 7, 161, 16))
+        font = QtGui.QFont()
+        font.setWeight(75)
+        font.setBold(True)
+        self.label_60.setFont(font)
+        self.label_60.setStyleSheet("border: none;")
+        self.label_60.setObjectName("label_60")
+        self.frame_white_border_32 = QtGui.QFrame(self.frame_oct_image_control_3)
+        self.frame_white_border_32.setGeometry(QtCore.QRect(10, 30, 190, 114))
+        self.frame_white_border_32.setMinimumSize(QtCore.QSize(190, 100))
+        self.frame_white_border_32.setMaximumSize(QtCore.QSize(190, 200))
+        self.frame_white_border_32.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_32.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_32.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_32.setLineWidth(1)
+        self.frame_white_border_32.setObjectName("frame_white_border_32")
+        self.gridLayout_39 = QtGui.QGridLayout(self.frame_white_border_32)
+        self.gridLayout_39.setSizeConstraint(QtGui.QLayout.SetDefaultConstraint)
+        self.gridLayout_39.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_39.setSpacing(0)
+        self.gridLayout_39.setObjectName("gridLayout_39")
+        self.frame_button_bar_24 = QtGui.QFrame(self.frame_white_border_32)
+        self.frame_button_bar_24.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_button_bar_24.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_button_bar_24.setStyleSheet("QFrame {\n"
+"  background: rgb(29, 29, 29);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(23, 23, 23, 255), stop:0.497561 rgba(50, 50, 50, 255), stop:1 rgba(44, 44, 44, 255));\n"
+"}")
+        self.frame_button_bar_24.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_button_bar_24.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_button_bar_24.setLineWidth(1)
+        self.frame_button_bar_24.setObjectName("frame_button_bar_24")
+        self.spinBox_26 = QtGui.QSpinBox(self.frame_button_bar_24)
+        self.spinBox_26.setGeometry(QtCore.QRect(134, 9, 50, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_26.setFont(font)
+        self.spinBox_26.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_26.setProperty("value", 50)
+        self.spinBox_26.setObjectName("spinBox_26")
+        self.horizontalSlider_19 = QtGui.QSlider(self.frame_button_bar_24)
+        self.horizontalSlider_19.setGeometry(QtCore.QRect(66, 9, 65, 16))
+        self.horizontalSlider_19.setProperty("value", 33)
+        self.horizontalSlider_19.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_19.setObjectName("horizontalSlider_19")
+        self.label_61 = QtGui.QLabel(self.frame_button_bar_24)
+        self.label_61.setGeometry(QtCore.QRect(8, 9, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_61.setFont(font)
+        self.label_61.setStyleSheet("border: none; background: none;")
+        self.label_61.setObjectName("label_61")
+        self.spinBox_30 = QtGui.QSpinBox(self.frame_button_bar_24)
+        self.spinBox_30.setGeometry(QtCore.QRect(134, 39, 50, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_30.setFont(font)
+        self.spinBox_30.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_30.setProperty("value", 50)
+        self.spinBox_30.setObjectName("spinBox_30")
+        self.label_62 = QtGui.QLabel(self.frame_button_bar_24)
+        self.label_62.setGeometry(QtCore.QRect(8, 39, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_62.setFont(font)
+        self.label_62.setStyleSheet("border: none; background: none;")
+        self.label_62.setObjectName("label_62")
+        self.horizontalSlider_27 = QtGui.QSlider(self.frame_button_bar_24)
+        self.horizontalSlider_27.setGeometry(QtCore.QRect(66, 39, 65, 16))
+        self.horizontalSlider_27.setProperty("value", 77)
+        self.horizontalSlider_27.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_27.setObjectName("horizontalSlider_27")
+        self.label_63 = QtGui.QLabel(self.frame_button_bar_24)
+        self.label_63.setGeometry(QtCore.QRect(10, 79, 121, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_63.setFont(font)
+        self.label_63.setStyleSheet("border: none; background: none;")
+        self.label_63.setObjectName("label_63")
+        self.pushButton_78 = QtGui.QPushButton(self.frame_button_bar_24)
+        self.pushButton_78.setGeometry(QtCore.QRect(139, 70, 35, 30))
+        self.pushButton_78.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_78.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_78.setFont(font)
+        self.pushButton_78.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_78.setText("")
+        icon17 = QtGui.QIcon()
+        icon17.addPixmap(QtGui.QPixmap(":/thumbnails/images/colormaps/gray.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_78.setIcon(icon17)
+        self.pushButton_78.setIconSize(QtCore.QSize(30, 30))
+        self.pushButton_78.setCheckable(True)
+        self.pushButton_78.setObjectName("pushButton_78")
+        self.gridLayout_39.addWidget(self.frame_button_bar_24, 0, 0, 1, 1)
+        self.verticalLayout_8.addWidget(self.frame_oct_image_control_3)
+        self.frame_oct_image_control_2 = QtGui.QFrame(self.frame_center_nest_15)
+        self.frame_oct_image_control_2.setMinimumSize(QtCore.QSize(0, 162))
+        self.frame_oct_image_control_2.setMaximumSize(QtCore.QSize(16777215, 210))
+        self.frame_oct_image_control_2.setStyleSheet("border: none;")
+        self.frame_oct_image_control_2.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_oct_image_control_2.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_oct_image_control_2.setObjectName("frame_oct_image_control_2")
+        self.label_57 = QtGui.QLabel(self.frame_oct_image_control_2)
+        self.label_57.setGeometry(QtCore.QRect(10, 6, 191, 16))
+        font = QtGui.QFont()
+        font.setWeight(75)
+        font.setBold(True)
+        self.label_57.setFont(font)
+        self.label_57.setStyleSheet("border: none;")
+        self.label_57.setObjectName("label_57")
+        self.frame_white_border_31 = QtGui.QFrame(self.frame_oct_image_control_2)
+        self.frame_white_border_31.setGeometry(QtCore.QRect(10, 28, 190, 130))
+        self.frame_white_border_31.setMinimumSize(QtCore.QSize(190, 130))
+        self.frame_white_border_31.setMaximumSize(QtCore.QSize(190, 200))
+        self.frame_white_border_31.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_31.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_31.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_31.setLineWidth(1)
+        self.frame_white_border_31.setObjectName("frame_white_border_31")
+        self.gridLayout_38 = QtGui.QGridLayout(self.frame_white_border_31)
+        self.gridLayout_38.setSizeConstraint(QtGui.QLayout.SetDefaultConstraint)
+        self.gridLayout_38.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_38.setSpacing(0)
+        self.gridLayout_38.setObjectName("gridLayout_38")
+        self.frame_button_bar_23 = QtGui.QFrame(self.frame_white_border_31)
+        self.frame_button_bar_23.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_button_bar_23.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_button_bar_23.setStyleSheet("QFrame {\n"
+"  background: rgb(29, 29, 29);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(23, 23, 23, 255), stop:0.497561 rgba(50, 50, 50, 255), stop:1 rgba(44, 44, 44, 255));\n"
+"}")
+        self.frame_button_bar_23.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_button_bar_23.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_button_bar_23.setLineWidth(1)
+        self.frame_button_bar_23.setObjectName("frame_button_bar_23")
+        self.doubleSpinBox_24 = QtGui.QDoubleSpinBox(self.frame_button_bar_23)
+        self.doubleSpinBox_24.setGeometry(QtCore.QRect(122, 7, 61, 20))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.doubleSpinBox_24.setFont(font)
+        self.doubleSpinBox_24.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.doubleSpinBox_24.setProperty("value", 1.38)
+        self.doubleSpinBox_24.setObjectName("doubleSpinBox_24")
+        self.horizontalSlider_17 = QtGui.QSlider(self.frame_button_bar_23)
+        self.horizontalSlider_17.setGeometry(QtCore.QRect(66, 10, 51, 16))
+        self.horizontalSlider_17.setProperty("value", 33)
+        self.horizontalSlider_17.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_17.setObjectName("horizontalSlider_17")
+        self.label_58 = QtGui.QLabel(self.frame_button_bar_23)
+        self.label_58.setGeometry(QtCore.QRect(8, 10, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_58.setFont(font)
+        self.label_58.setStyleSheet("border: none; background: none;")
+        self.label_58.setObjectName("label_58")
+        self.label_59 = QtGui.QLabel(self.frame_button_bar_23)
+        self.label_59.setGeometry(QtCore.QRect(8, 40, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_59.setFont(font)
+        self.label_59.setStyleSheet("border: none; background: none;")
+        self.label_59.setObjectName("label_59")
+        self.horizontalSlider_18 = QtGui.QSlider(self.frame_button_bar_23)
+        self.horizontalSlider_18.setGeometry(QtCore.QRect(66, 40, 51, 16))
+        self.horizontalSlider_18.setProperty("value", 77)
+        self.horizontalSlider_18.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_18.setObjectName("horizontalSlider_18")
+        self.doubleSpinBox_25 = QtGui.QDoubleSpinBox(self.frame_button_bar_23)
+        self.doubleSpinBox_25.setGeometry(QtCore.QRect(122, 37, 61, 20))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.doubleSpinBox_25.setFont(font)
+        self.doubleSpinBox_25.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.doubleSpinBox_25.setProperty("value", 5.79)
+        self.doubleSpinBox_25.setObjectName("doubleSpinBox_25")
+        self.label_44 = QtGui.QLabel(self.frame_button_bar_23)
+        self.label_44.setGeometry(QtCore.QRect(10, 98, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_44.setFont(font)
+        self.label_44.setStyleSheet("border: none; background: none;")
+        self.label_44.setObjectName("label_44")
+        self.horizontalSlider_13 = QtGui.QSlider(self.frame_button_bar_23)
+        self.horizontalSlider_13.setGeometry(QtCore.QRect(68, 68, 51, 16))
+        self.horizontalSlider_13.setProperty("value", 33)
+        self.horizontalSlider_13.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_13.setObjectName("horizontalSlider_13")
+        self.horizontalSlider_14 = QtGui.QSlider(self.frame_button_bar_23)
+        self.horizontalSlider_14.setGeometry(QtCore.QRect(68, 98, 51, 16))
+        self.horizontalSlider_14.setProperty("value", 77)
+        self.horizontalSlider_14.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_14.setObjectName("horizontalSlider_14")
+        self.spinBox_21 = QtGui.QSpinBox(self.frame_button_bar_23)
+        self.spinBox_21.setGeometry(QtCore.QRect(131, 98, 50, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_21.setFont(font)
+        self.spinBox_21.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_21.setProperty("value", 50)
+        self.spinBox_21.setObjectName("spinBox_21")
+        self.label_43 = QtGui.QLabel(self.frame_button_bar_23)
+        self.label_43.setGeometry(QtCore.QRect(10, 68, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_43.setFont(font)
+        self.label_43.setStyleSheet("border: none; background: none;")
+        self.label_43.setObjectName("label_43")
+        self.spinBox_20 = QtGui.QSpinBox(self.frame_button_bar_23)
+        self.spinBox_20.setGeometry(QtCore.QRect(131, 68, 50, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_20.setFont(font)
+        self.spinBox_20.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_20.setProperty("value", 50)
+        self.spinBox_20.setObjectName("spinBox_20")
+        self.gridLayout_38.addWidget(self.frame_button_bar_23, 0, 0, 1, 1)
+        self.verticalLayout_8.addWidget(self.frame_oct_image_control_2)
+        spacerItem9 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_8.addItem(spacerItem9)
+        self.frame_reference_arm_2 = QtGui.QFrame(self.frame_center_nest_15)
+        self.frame_reference_arm_2.setMinimumSize(QtCore.QSize(0, 211))
+        self.frame_reference_arm_2.setMaximumSize(QtCore.QSize(16777215, 210))
+        self.frame_reference_arm_2.setStyleSheet("border: none;")
+        self.frame_reference_arm_2.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_reference_arm_2.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_reference_arm_2.setObjectName("frame_reference_arm_2")
+        self.label_50 = QtGui.QLabel(self.frame_reference_arm_2)
+        self.label_50.setGeometry(QtCore.QRect(10, 5, 161, 16))
+        font = QtGui.QFont()
+        font.setWeight(75)
+        font.setBold(True)
+        self.label_50.setFont(font)
+        self.label_50.setStyleSheet("border: none;")
+        self.label_50.setObjectName("label_50")
+        self.frame_white_border_28 = QtGui.QFrame(self.frame_reference_arm_2)
+        self.frame_white_border_28.setGeometry(QtCore.QRect(10, 25, 190, 185))
+        self.frame_white_border_28.setMinimumSize(QtCore.QSize(190, 185))
+        self.frame_white_border_28.setMaximumSize(QtCore.QSize(190, 140))
+        self.frame_white_border_28.setStyleSheet("QFrame {\n"
+"    border: 1px solid rgb(95, 95, 95);\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_white_border_28.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_white_border_28.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_white_border_28.setLineWidth(1)
+        self.frame_white_border_28.setObjectName("frame_white_border_28")
+        self.gridLayout_35 = QtGui.QGridLayout(self.frame_white_border_28)
+        self.gridLayout_35.setSizeConstraint(QtGui.QLayout.SetDefaultConstraint)
+        self.gridLayout_35.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_35.setSpacing(0)
+        self.gridLayout_35.setObjectName("gridLayout_35")
+        self.frame_button_bar_20 = QtGui.QFrame(self.frame_white_border_28)
+        self.frame_button_bar_20.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_button_bar_20.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_button_bar_20.setStyleSheet("QFrame {\n"
+"  background: rgb(29, 29, 29);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(23, 23, 23, 255), stop:0.497561 rgba(50, 50, 50, 255), stop:1 rgba(44, 44, 44, 255));\n"
+"}")
+        self.frame_button_bar_20.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_button_bar_20.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_button_bar_20.setLineWidth(1)
+        self.frame_button_bar_20.setObjectName("frame_button_bar_20")
+        self.spinBox_40 = QtGui.QSpinBox(self.frame_button_bar_20)
+        self.spinBox_40.setGeometry(QtCore.QRect(31, 147, 121, 23))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_40.setFont(font)
+        self.spinBox_40.setSuffix("")
+        self.spinBox_40.setMaximum(360)
+        self.spinBox_40.setProperty("value", 300)
+        self.spinBox_40.setObjectName("spinBox_40")
+        self.pushButton_62 = QtGui.QPushButton(self.frame_button_bar_20)
+        self.pushButton_62.setGeometry(QtCore.QRect(20, 44, 50, 30))
+        self.pushButton_62.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_62.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_62.setFont(font)
+        self.pushButton_62.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_62.setText("")
+        icon18 = QtGui.QIcon()
+        icon18.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_pure_left.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_62.setIcon(icon18)
+        self.pushButton_62.setIconSize(QtCore.QSize(14, 14))
+        self.pushButton_62.setObjectName("pushButton_62")
+        self.pushButton_63 = QtGui.QPushButton(self.frame_button_bar_20)
+        self.pushButton_63.setGeometry(QtCore.QRect(70, 14, 50, 30))
+        self.pushButton_63.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_63.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_63.setFont(font)
+        self.pushButton_63.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_63.setText("")
+        self.pushButton_63.setIcon(icon6)
+        self.pushButton_63.setIconSize(QtCore.QSize(14, 14))
+        self.pushButton_63.setObjectName("pushButton_63")
+        self.spinBox_45 = QtGui.QSpinBox(self.frame_button_bar_20)
+        self.spinBox_45.setGeometry(QtCore.QRect(31, 119, 121, 23))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_45.setFont(font)
+        self.spinBox_45.setButtonSymbols(QtGui.QAbstractSpinBox.UpDownArrows)
+        self.spinBox_45.setSuffix("")
+        self.spinBox_45.setMaximum(9999)
+        self.spinBox_45.setProperty("value", 5555)
+        self.spinBox_45.setObjectName("spinBox_45")
+        self.pushButton_68 = QtGui.QPushButton(self.frame_button_bar_20)
+        self.pushButton_68.setGeometry(QtCore.QRect(120, 44, 50, 30))
+        self.pushButton_68.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_68.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_68.setFont(font)
+        self.pushButton_68.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_68.setText("")
+        self.pushButton_68.setIcon(icon2)
+        self.pushButton_68.setIconSize(QtCore.QSize(14, 14))
+        self.pushButton_68.setObjectName("pushButton_68")
+        self.pushButton_76 = QtGui.QPushButton(self.frame_button_bar_20)
+        self.pushButton_76.setGeometry(QtCore.QRect(70, 75, 50, 30))
+        self.pushButton_76.setMinimumSize(QtCore.QSize(20, 20))
+        self.pushButton_76.setMaximumSize(QtCore.QSize(130, 100))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_76.setFont(font)
+        self.pushButton_76.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 5px;\n"
+"}")
+        self.pushButton_76.setText("")
+        self.pushButton_76.setIcon(icon5)
+        self.pushButton_76.setIconSize(QtCore.QSize(14, 14))
+        self.pushButton_76.setObjectName("pushButton_76")
+        self.gridLayout_35.addWidget(self.frame_button_bar_20, 0, 0, 1, 1)
+        self.verticalLayout_8.addWidget(self.frame_reference_arm_2)
+        self.frame_29 = QtGui.QFrame(self.frame_center_nest_15)
+        self.frame_29.setMinimumSize(QtCore.QSize(0, 232))
+        self.frame_29.setStyleSheet("border: none;")
+        self.frame_29.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_29.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_29.setObjectName("frame_29")
+        self.label_52 = QtGui.QLabel(self.frame_29)
+        self.label_52.setGeometry(QtCore.QRect(10, 10, 161, 16))
+        font = QtGui.QFont()
+        font.setWeight(75)
+        font.setBold(True)
+        self.label_52.setFont(font)
+        self.label_52.setStyleSheet("border: none;")
+        self.label_52.setObjectName("label_52")
+        self.frame_86 = QtGui.QFrame(self.frame_29)
+        self.frame_86.setGeometry(QtCore.QRect(10, 30, 190, 200))
+        self.frame_86.setMinimumSize(QtCore.QSize(190, 100))
+        self.frame_86.setMaximumSize(QtCore.QSize(190, 200))
+        self.frame_86.setStyleSheet("QFrame {\n"
+"background-color: none;\n"
+"border: 1px solid rgb(95, 95, 95)\n"
+"}")
+        self.frame_86.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_86.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_86.setObjectName("frame_86")
+        self.frame_87 = QtGui.QFrame(self.frame_86)
+        self.frame_87.setGeometry(QtCore.QRect(1, 1, 188, 198))
+        self.frame_87.setMinimumSize(QtCore.QSize(100, 198))
+        self.frame_87.setMaximumSize(QtCore.QSize(190, 198))
+        self.frame_87.setStyleSheet("QFrame {\n"
+"\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(23, 23, 23, 255), stop:0.497561 rgba(50, 50, 50, 255), stop:1 rgba(44, 44, 44, 255));\n"
+"border: 2px solid black;\n"
+"}")
+        self.frame_87.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_87.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_87.setObjectName("frame_87")
+        self.labelSnapshotThumbnail_18 = QtGui.QLabel(self.frame_87)
+        self.labelSnapshotThumbnail_18.setGeometry(QtCore.QRect(3, 3, 182, 158))
+        self.labelSnapshotThumbnail_18.setStyleSheet("border: none;")
+        self.labelSnapshotThumbnail_18.setText("")
+        self.labelSnapshotThumbnail_18.setPixmap(QtGui.QPixmap(":/samples/images/vis_gallery/example_vis_camera_13.jpg"))
+        self.labelSnapshotThumbnail_18.setScaledContents(True)
+        self.labelSnapshotThumbnail_18.setObjectName("labelSnapshotThumbnail_18")
+        self.label_53 = QtGui.QLabel(self.frame_87)
+        self.label_53.setGeometry(QtCore.QRect(6, 170, 61, 16))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.label_53.setFont(font)
+        self.label_53.setStyleSheet("border:none; background: none;")
+        self.label_53.setObjectName("label_53")
+        self.horizontalSlider_26 = QtGui.QSlider(self.frame_87)
+        self.horizontalSlider_26.setGeometry(QtCore.QRect(63, 170, 65, 16))
+        self.horizontalSlider_26.setProperty("value", 22)
+        self.horizontalSlider_26.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider_26.setObjectName("horizontalSlider_26")
+        self.spinBox_55 = QtGui.QSpinBox(self.frame_87)
+        self.spinBox_55.setGeometry(QtCore.QRect(133, 168, 50, 20))
+        self.spinBox_55.setMinimumSize(QtCore.QSize(50, 0))
+        self.spinBox_55.setMaximumSize(QtCore.QSize(50, 16777215))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.spinBox_55.setFont(font)
+        self.spinBox_55.setStyleSheet("")
+        self.spinBox_55.setButtonSymbols(QtGui.QAbstractSpinBox.NoButtons)
+        self.spinBox_55.setProperty("value", 77)
+        self.spinBox_55.setObjectName("spinBox_55")
+        self.verticalLayout_8.addWidget(self.frame_29)
+        self.verticalLayout_12.addWidget(self.frame_center_nest_15)
+        self.horizontalLayout_12.addWidget(self.frame_white_border_25)
+        self.horizontalLayout_14.addWidget(self.frame_oct_capture)
         self.stackedWidget_bottom.addWidget(self.page_oct_capture)
         self.page_oct_evaluate = QtGui.QWidget()
         self.page_oct_evaluate.setObjectName("page_oct_evaluate")
@@ -3028,9 +4100,9 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "}")
         self.pushButton_64.setText("")
-        icon15 = QtGui.QIcon()
-        icon15.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_badge.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_64.setIcon(icon15)
+        icon19 = QtGui.QIcon()
+        icon19.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_badge.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_64.setIcon(icon19)
         self.pushButton_64.setIconSize(QtCore.QSize(28, 28))
         self.pushButton_64.setObjectName("pushButton_64")
         self.pushButton_65 = QtGui.QPushButton(self.frame_75)
@@ -3058,9 +4130,9 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "}")
         self.pushButton_65.setText("")
-        icon16 = QtGui.QIcon()
-        icon16.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_clipboard.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_65.setIcon(icon16)
+        icon20 = QtGui.QIcon()
+        icon20.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_clipboard.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_65.setIcon(icon20)
         self.pushButton_65.setIconSize(QtCore.QSize(28, 28))
         self.pushButton_65.setObjectName("pushButton_65")
         self.pushButton_66 = QtGui.QPushButton(self.frame_75)
@@ -3116,9 +4188,9 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "}")
         self.pushButton_67.setText("")
-        icon17 = QtGui.QIcon()
-        icon17.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_eye.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_67.setIcon(icon17)
+        icon21 = QtGui.QIcon()
+        icon21.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_eye.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_67.setIcon(icon21)
         self.pushButton_67.setIconSize(QtCore.QSize(28, 28))
         self.pushButton_67.setObjectName("pushButton_67")
         self.labelSnapshotThumbnail_14 = QtGui.QLabel(self.frame_75)
@@ -3293,8 +4365,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.setSpacing(0)
         self.horizontalLayout_5.setContentsMargins(0, 4, 0, 0)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        spacerItem7 = QtGui.QSpacerItem(173, 37, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_5.addItem(spacerItem7)
+        spacerItem10 = QtGui.QSpacerItem(173, 37, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_5.addItem(spacerItem10)
         self.frame_23 = QtGui.QFrame(self.frame_button_bar_5)
         self.frame_23.setMinimumSize(QtCore.QSize(400, 0))
         self.frame_23.setStyleSheet("border: none; background: none;")
@@ -3382,9 +4454,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "}")
         self.pushButton_132.setText("")
-        icon18 = QtGui.QIcon()
-        icon18.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_record.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_132.setIcon(icon18)
+        self.pushButton_132.setIcon(icon15)
         self.pushButton_132.setIconSize(QtCore.QSize(28, 28))
         self.pushButton_132.setObjectName("pushButton_132")
         self.pushButton_133 = QtGui.QPushButton(self.frame_23)
@@ -3412,9 +4482,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "}")
         self.pushButton_133.setText("")
-        icon19 = QtGui.QIcon()
-        icon19.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_update_background.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_133.setIcon(icon19)
+        self.pushButton_133.setIcon(icon16)
         self.pushButton_133.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_133.setObjectName("pushButton_133")
         self.pushButton_134 = QtGui.QPushButton(self.frame_23)
@@ -3446,8 +4514,8 @@ class Ui_MainWindow(object):
         self.pushButton_134.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_134.setObjectName("pushButton_134")
         self.horizontalLayout_5.addWidget(self.frame_23)
-        spacerItem8 = QtGui.QSpacerItem(173, 37, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_5.addItem(spacerItem8)
+        spacerItem11 = QtGui.QSpacerItem(173, 37, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout_5.addItem(spacerItem11)
         self.gridLayout_3.addWidget(self.frame_button_bar_5, 0, 0, 1, 1)
         self.gridLayout_9.addWidget(self.frame_white_border_3, 0, 0, 1, 2)
         self.frame_white_border_6 = QtGui.QFrame(self.frame_center_nest_4)
@@ -3729,8 +4797,8 @@ class Ui_MainWindow(object):
         self.spinBox_49.setProperty("value", 77)
         self.spinBox_49.setObjectName("spinBox_49")
         self.verticalLayout_3.addWidget(self.frame_11)
-        spacerItem9 = QtGui.QSpacerItem(20, 61, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_3.addItem(spacerItem9)
+        spacerItem12 = QtGui.QSpacerItem(20, 61, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_3.addItem(spacerItem12)
         self.frame_9 = QtGui.QFrame(self.frame_center_nest_2)
         self.frame_9.setMinimumSize(QtCore.QSize(0, 241))
         self.frame_9.setStyleSheet("border: none;")
@@ -3896,9 +4964,7 @@ class Ui_MainWindow(object):
 "border-radius: 5px;\n"
 "}")
         self.pushButton_59.setText("")
-        icon20 = QtGui.QIcon()
-        icon20.addPixmap(QtGui.QPixmap(":/greys/images/grey_icons/10pc_gray_pure_left.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_59.setIcon(icon20)
+        self.pushButton_59.setIcon(icon18)
         self.pushButton_59.setIconSize(QtCore.QSize(14, 14))
         self.pushButton_59.setObjectName("pushButton_59")
         self.verticalLayout_3.addWidget(self.frame_9)
@@ -3981,7 +5047,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget_bottom.setCurrentIndex(0)
+        self.stackedWidget_bottom.setCurrentIndex(2)
         QtCore.QObject.connect(self.comboBox_selector, QtCore.SIGNAL("currentIndexChanged(int)"), self.stackedWidget_bottom.setCurrentIndex)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.comboBox_selector.hide)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -4006,7 +5072,6 @@ class Ui_MainWindow(object):
         self.label_15.setText(QtGui.QApplication.translate("MainWindow", "Saved Configuration", None, QtGui.QApplication.UnicodeUTF8))
         self.label_30.setText(QtGui.QApplication.translate("MainWindow", "2016-04-29 17:54", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_135.setShortcut(QtGui.QApplication.translate("MainWindow", "Backspace", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_26.setText(QtGui.QApplication.translate("MainWindow", "Angiograph Preview", None, QtGui.QApplication.UnicodeUTF8))
         self.label_20.setText(QtGui.QApplication.translate("MainWindow", "OCT Camera Control", None, QtGui.QApplication.UnicodeUTF8))
         self.label_25.setText(QtGui.QApplication.translate("MainWindow", "Int. Time", None, QtGui.QApplication.UnicodeUTF8))
         self.label_27.setText(QtGui.QApplication.translate("MainWindow", "Line Time", None, QtGui.QApplication.UnicodeUTF8))
@@ -4031,6 +5096,25 @@ class Ui_MainWindow(object):
         self.checkBox_4.setText(QtGui.QApplication.translate("MainWindow", "OCT Volume", None, QtGui.QApplication.UnicodeUTF8))
         self.label_47.setText(QtGui.QApplication.translate("MainWindow", "Visible Camera", None, QtGui.QApplication.UnicodeUTF8))
         self.label_48.setText(QtGui.QApplication.translate("MainWindow", "Exposure", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_34.setText(QtGui.QApplication.translate("MainWindow", "Saved Configuration", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_35.setText(QtGui.QApplication.translate("MainWindow", "2016-04-29 17:54", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_148.setShortcut(QtGui.QApplication.translate("MainWindow", "Backspace", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_49.setText(QtGui.QApplication.translate("MainWindow", "Reference Arm", None, QtGui.QApplication.UnicodeUTF8))
+        self.spinBox_44.setPrefix(QtGui.QApplication.translate("MainWindow", "Position: ", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_60.setText(QtGui.QApplication.translate("MainWindow", "OCT Image Control", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_61.setText(QtGui.QApplication.translate("MainWindow", "Min. Level", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_62.setText(QtGui.QApplication.translate("MainWindow", "Max Level", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_63.setText(QtGui.QApplication.translate("MainWindow", "Colormap: Grey-Gist", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_57.setText(QtGui.QApplication.translate("MainWindow", "Dispersion, Polarization", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_58.setText(QtGui.QApplication.translate("MainWindow", "Coeff. B", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_59.setText(QtGui.QApplication.translate("MainWindow", "Coeff. C", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_44.setText(QtGui.QApplication.translate("MainWindow", "Quar. Wave", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_43.setText(QtGui.QApplication.translate("MainWindow", "Half Wave", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_50.setText(QtGui.QApplication.translate("MainWindow", "Scan line control", None, QtGui.QApplication.UnicodeUTF8))
+        self.spinBox_40.setPrefix(QtGui.QApplication.translate("MainWindow", "Angle: ", None, QtGui.QApplication.UnicodeUTF8))
+        self.spinBox_45.setPrefix(QtGui.QApplication.translate("MainWindow", "Length: ", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_52.setText(QtGui.QApplication.translate("MainWindow", "Visible Camera", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_53.setText(QtGui.QApplication.translate("MainWindow", "Exposure", None, QtGui.QApplication.UnicodeUTF8))
         self.label_14.setText(QtGui.QApplication.translate("MainWindow", "Snapshot", None, QtGui.QApplication.UnicodeUTF8))
         self.label_21.setText(QtGui.QApplication.translate("MainWindow", "Center B-scan", None, QtGui.QApplication.UnicodeUTF8))
         self.label_22.setText(QtGui.QApplication.translate("MainWindow", "Current B-Scan", None, QtGui.QApplication.UnicodeUTF8))
@@ -4048,6 +5132,7 @@ class Ui_MainWindow(object):
         self.label_40.setText(QtGui.QApplication.translate("MainWindow", "Exposure", None, QtGui.QApplication.UnicodeUTF8))
 
 import wasatch_logo_resources_rc
+import colormap_resources_rc
 import oct_gallery_resources_rc
 import style_rc
 import grey_icons_rc
