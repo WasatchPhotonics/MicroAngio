@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Mon Apr 25 15:59:01 2016
+# Created: Mon Apr 25 16:06:15 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1439,6 +1439,7 @@ class Ui_MainWindow(object):
         self.stackedWidget_top.addWidget(self.page_2)
         self.verticalLayout.addWidget(self.stackedWidget_top)
         self.stackedWidget_bottom = QtGui.QStackedWidget(self.centralwidget)
+        self.stackedWidget_bottom.setStyleSheet("border:none;")
         self.stackedWidget_bottom.setObjectName("stackedWidget_bottom")
         self.page_hardware_setup = QtGui.QWidget()
         self.page_hardware_setup.setObjectName("page_hardware_setup")
@@ -2282,6 +2283,8 @@ class Ui_MainWindow(object):
         self.page_oct_setup = QtGui.QWidget()
         self.page_oct_setup.setObjectName("page_oct_setup")
         self.horizontalLayout_11 = QtGui.QHBoxLayout(self.page_oct_setup)
+        self.horizontalLayout_11.setSpacing(0)
+        self.horizontalLayout_11.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_11.setObjectName("horizontalLayout_11")
         self.frame_oct_setup = QtGui.QFrame(self.page_oct_setup)
         self.frame_oct_setup.setMinimumSize(QtCore.QSize(400, 400))
@@ -2294,8 +2297,8 @@ class Ui_MainWindow(object):
         self.frame_oct_setup.setLineWidth(1)
         self.frame_oct_setup.setObjectName("frame_oct_setup")
         self.horizontalLayout_9 = QtGui.QHBoxLayout(self.frame_oct_setup)
-        self.horizontalLayout_9.setSpacing(0)
-        self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_9.setSpacing(6)
+        self.horizontalLayout_9.setContentsMargins(9, 9, 9, 9)
         self.horizontalLayout_9.setObjectName("horizontalLayout_9")
         self.frame_white_border_18 = QtGui.QFrame(self.frame_oct_setup)
         self.frame_white_border_18.setMinimumSize(QtCore.QSize(225, 0))
@@ -2933,6 +2936,7 @@ class Ui_MainWindow(object):
         self.frame_center_nest.setLineWidth(1)
         self.frame_center_nest.setObjectName("frame_center_nest")
         self.horizontalLayout_2 = QtGui.QHBoxLayout(self.frame_center_nest)
+        self.horizontalLayout_2.setContentsMargins(-1, -1, 9, -1)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.frame_white_border_10 = QtGui.QFrame(self.frame_center_nest)
         self.frame_white_border_10.setMinimumSize(QtCore.QSize(225, 0))
@@ -3977,7 +3981,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget_bottom.setCurrentIndex(1)
+        self.stackedWidget_bottom.setCurrentIndex(0)
         QtCore.QObject.connect(self.comboBox_selector, QtCore.SIGNAL("currentIndexChanged(int)"), self.stackedWidget_bottom.setCurrentIndex)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.comboBox_selector.hide)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
