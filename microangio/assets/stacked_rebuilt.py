@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/stacked_rebuilt.ui'
 #
-# Created: Mon Apr 25 10:20:10 2016
+# Created: Mon Apr 25 10:20:25 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1409,7 +1409,7 @@ class Ui_MainWindow(object):
         self.frame_center_nest_7.setMinimumSize(QtCore.QSize(220, 0))
         self.frame_center_nest_7.setMaximumSize(QtCore.QSize(220, 16777215))
         self.frame_center_nest_7.setStyleSheet("QFrame {\n"
-"  background: rgb(54, 54, 54);\n"
+"  background: rgb(74, 74, 74);\n"
 "    border-style: solid;\n"
 "    border: 2px solid #000000;\n"
 "    border-radius: 6px;\n"
@@ -1579,7 +1579,7 @@ class Ui_MainWindow(object):
         self.labelSnapshotThumbnail_14.setGeometry(QtCore.QRect(13, 60, 161, 131))
         self.labelSnapshotThumbnail_14.setStyleSheet("border: none;")
         self.labelSnapshotThumbnail_14.setText("")
-        self.labelSnapshotThumbnail_14.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.labelSnapshotThumbnail_14.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
         self.labelSnapshotThumbnail_14.setScaledContents(True)
         self.labelSnapshotThumbnail_14.setObjectName("labelSnapshotThumbnail_14")
         self.horizontalLayout.addWidget(self.frame_center_nest_7)
@@ -1817,7 +1817,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_7.addWidget(self.label_33)
         self.label_34 = QtGui.QLabel(self.frame_center_nest_9)
         self.label_34.setText("")
-        self.label_34.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label_34.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/square_cat1_retina36s.jpg"))
         self.label_34.setScaledContents(True)
         self.label_34.setObjectName("label_34")
         self.verticalLayout_7.addWidget(self.label_34)
@@ -1844,9 +1844,10 @@ class Ui_MainWindow(object):
         self.label_35.setObjectName("label_35")
         self.verticalLayout_8.addWidget(self.label_35)
         self.label_3 = QtGui.QLabel(self.frame_center_nest_12)
+        self.label_3.setMinimumSize(QtCore.QSize(0, 800))
         self.label_3.setStyleSheet("border: 1px solid #303030;")
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label_3.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.verticalLayout_8.addWidget(self.label_3)
@@ -1879,7 +1880,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addWidget(self.label_15)
         self.label = QtGui.QLabel(self.frame_center_nest_8)
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/square_retina11.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.verticalLayout_4.addWidget(self.label)

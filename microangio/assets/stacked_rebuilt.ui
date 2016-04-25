@@ -1580,7 +1580,7 @@ border-radius: 12px;
          </property>
          <property name="styleSheet">
           <string notr="true">QFrame {
-  background: rgb(54, 54, 54);
+  background: rgb(74, 74, 74);
     border-style: solid;
     border: 2px solid #000000;
     border-radius: 6px;
@@ -1954,7 +1954,7 @@ border-radius: 5px;
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+              <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/retina_angiograph_03.jpg</pixmap>
              </property>
              <property name="scaledContents">
               <bool>true</bool>
@@ -2471,7 +2471,7 @@ border-radius: 5px;
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                   <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/square_cat1_retina36s.jpg</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -2542,6 +2542,12 @@ border-radius: 5px;
                 </item>
                 <item>
                  <widget class="QLabel" name="label_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>800</height>
+                   </size>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">border: 1px solid #303030;</string>
                   </property>
@@ -2549,7 +2555,7 @@ border-radius: 5px;
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                   <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/retina_angiograph_03.jpg</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -2629,7 +2635,7 @@ border-radius: 5px;
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                   <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/square_retina11.jpg</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>

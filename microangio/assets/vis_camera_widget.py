@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/vis_camera_widget.ui'
 #
-# Created: Mon Apr 25 10:20:10 2016
+# Created: Mon Apr 25 10:20:25 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
