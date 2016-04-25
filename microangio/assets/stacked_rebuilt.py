@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/stacked_rebuilt.ui'
 #
-# Created: Mon Apr 25 10:20:25 2016
+# Created: Mon Apr 25 15:59:04 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1253,7 +1253,7 @@ class Ui_MainWindow(object):
         self.frame.setFrameShadow(QtGui.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.frame_center_nest_13 = QtGui.QFrame(self.frame)
-        self.frame_center_nest_13.setGeometry(QtCore.QRect(250, 10, 671, 43))
+        self.frame_center_nest_13.setGeometry(QtCore.QRect(260, 10, 671, 43))
         self.frame_center_nest_13.setStyleSheet("QFrame {\n"
 "  background: rgb(54, 54, 54);\n"
 "    border-style: solid;\n"
@@ -1269,15 +1269,15 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setSpacing(0)
         self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
-        self.pushButton_29 = QtGui.QPushButton(self.frame_center_nest_13)
-        self.pushButton_29.setMinimumSize(QtCore.QSize(130, 30))
-        self.pushButton_29.setMaximumSize(QtCore.QSize(130, 30))
+        self.pushButton_36 = QtGui.QPushButton(self.frame_center_nest_13)
+        self.pushButton_36.setMinimumSize(QtCore.QSize(130, 30))
+        self.pushButton_36.setMaximumSize(QtCore.QSize(130, 30))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setWeight(75)
         font.setBold(True)
-        self.pushButton_29.setFont(font)
-        self.pushButton_29.setStyleSheet("QPushButton:hover\n"
+        self.pushButton_36.setFont(font)
+        self.pushButton_36.setStyleSheet("QPushButton:hover\n"
 "{\n"
 "    border: 1px solid #78879b;\n"
 "    color: silver;\n"
@@ -1290,19 +1290,21 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton {\n"
 "background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
-"border-radius: 12px;\n"
+"border-radius: 0px;\n"
+"    border-top-left-radius: 12px;\n"
+"    border-bottom-left-radius: 12px;\n"
 "}")
-        self.pushButton_29.setObjectName("pushButton_29")
-        self.horizontalLayout_6.addWidget(self.pushButton_29)
-        self.pushButton_34 = QtGui.QPushButton(self.frame_center_nest_13)
-        self.pushButton_34.setMinimumSize(QtCore.QSize(130, 30))
-        self.pushButton_34.setMaximumSize(QtCore.QSize(130, 30))
+        self.pushButton_36.setObjectName("pushButton_36")
+        self.horizontalLayout_6.addWidget(self.pushButton_36)
+        self.pushButton_37 = QtGui.QPushButton(self.frame_center_nest_13)
+        self.pushButton_37.setMinimumSize(QtCore.QSize(130, 30))
+        self.pushButton_37.setMaximumSize(QtCore.QSize(130, 30))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setWeight(75)
         font.setBold(True)
-        self.pushButton_34.setFont(font)
-        self.pushButton_34.setStyleSheet("QPushButton:hover\n"
+        self.pushButton_37.setFont(font)
+        self.pushButton_37.setStyleSheet("QPushButton:hover\n"
 "{\n"
 "    border: 1px solid #78879b;\n"
 "    color: silver;\n"
@@ -1315,43 +1317,38 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton {\n"
 "background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
-"border-radius: 12px;\n"
-"}\n"
-"\n"
-"\n"
-"QPushButton {\n"
-"background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));\n"
-"border-radius: 12px;\n"
-"}\n"
-"\n"
-"")
-        self.pushButton_34.setObjectName("pushButton_34")
-        self.horizontalLayout_6.addWidget(self.pushButton_34)
-        self.pushButton_31 = QtGui.QPushButton(self.frame_center_nest_13)
-        self.pushButton_31.setMinimumSize(QtCore.QSize(130, 30))
-        self.pushButton_31.setMaximumSize(QtCore.QSize(130, 30))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        font.setWeight(75)
-        font.setBold(True)
-        self.pushButton_31.setFont(font)
-        self.pushButton_31.setStyleSheet("QPushButton:hover\n"
-"{\n"
-"    border: 1px solid #78879b;\n"
-"    color: silver;\n"
-"}\n"
-"\n"
-"QPushButton\n"
-"{\n"
-"    border-color: rgb(0,0,0);\n"
-"}\n"
-"\n"
-"QPushButton {\n"
-"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
-"border-radius: 12px;\n"
+"    background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));\n"
+"border-radius: 0px;\n"
 "}")
-        self.pushButton_31.setObjectName("pushButton_31")
-        self.horizontalLayout_6.addWidget(self.pushButton_31)
+        self.pushButton_37.setObjectName("pushButton_37")
+        self.horizontalLayout_6.addWidget(self.pushButton_37)
+        self.pushButton_38 = QtGui.QPushButton(self.frame_center_nest_13)
+        self.pushButton_38.setMinimumSize(QtCore.QSize(130, 30))
+        self.pushButton_38.setMaximumSize(QtCore.QSize(130, 30))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_38.setFont(font)
+        self.pushButton_38.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"border-radius: 0px;\n"
+"    border-top-right-radius: 12px;\n"
+"    border-bottom-right-radius: 12px;\n"
+"}")
+        self.pushButton_38.setObjectName("pushButton_38")
+        self.horizontalLayout_6.addWidget(self.pushButton_38)
         spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.horizontalLayout_6.addItem(spacerItem)
         self.label_23 = QtGui.QLabel(self.frame)
@@ -1360,7 +1357,7 @@ class Ui_MainWindow(object):
 "border-color: none;\n"
 "border: none;")
         self.label_23.setText("")
-        self.label_23.setPixmap(QtGui.QPixmap(":/logos/images/logos/92x30_wp_angio.png"))
+        self.label_23.setPixmap(QtGui.QPixmap(":/logos/images/logos/92x30_placeholder_logo.png"))
         self.label_23.setScaledContents(True)
         self.label_23.setObjectName("label_23")
         self.comboBox_6 = QtGui.QComboBox(self.frame)
@@ -1406,8 +1403,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.frame_center_nest_7 = QtGui.QFrame(self.frame_center_nest)
-        self.frame_center_nest_7.setMinimumSize(QtCore.QSize(220, 0))
-        self.frame_center_nest_7.setMaximumSize(QtCore.QSize(220, 16777215))
+        self.frame_center_nest_7.setMinimumSize(QtCore.QSize(235, 0))
+        self.frame_center_nest_7.setMaximumSize(QtCore.QSize(230, 16777215))
         self.frame_center_nest_7.setStyleSheet("QFrame {\n"
 "  background: rgb(74, 74, 74);\n"
 "    border-style: solid;\n"
@@ -1579,7 +1576,7 @@ class Ui_MainWindow(object):
         self.labelSnapshotThumbnail_14.setGeometry(QtCore.QRect(13, 60, 161, 131))
         self.labelSnapshotThumbnail_14.setStyleSheet("border: none;")
         self.labelSnapshotThumbnail_14.setText("")
-        self.labelSnapshotThumbnail_14.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
+        self.labelSnapshotThumbnail_14.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
         self.labelSnapshotThumbnail_14.setScaledContents(True)
         self.labelSnapshotThumbnail_14.setObjectName("labelSnapshotThumbnail_14")
         self.horizontalLayout.addWidget(self.frame_center_nest_7)
@@ -1817,7 +1814,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_7.addWidget(self.label_33)
         self.label_34 = QtGui.QLabel(self.frame_center_nest_9)
         self.label_34.setText("")
-        self.label_34.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/square_cat1_retina36s.jpg"))
+        self.label_34.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
         self.label_34.setScaledContents(True)
         self.label_34.setObjectName("label_34")
         self.verticalLayout_7.addWidget(self.label_34)
@@ -1847,7 +1844,7 @@ class Ui_MainWindow(object):
         self.label_3.setMinimumSize(QtCore.QSize(0, 800))
         self.label_3.setStyleSheet("border: 1px solid #303030;")
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
+        self.label_3.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.verticalLayout_8.addWidget(self.label_3)
@@ -1880,7 +1877,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addWidget(self.label_15)
         self.label = QtGui.QLabel(self.frame_center_nest_8)
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/square_retina11.jpg"))
+        self.label.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.verticalLayout_4.addWidget(self.label)
@@ -2353,9 +2350,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_29.setText(QtGui.QApplication.translate("MainWindow", "Setup", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_34.setText(QtGui.QApplication.translate("MainWindow", "Capture", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_31.setText(QtGui.QApplication.translate("MainWindow", "Evaluate", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_36.setText(QtGui.QApplication.translate("MainWindow", "Setup", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_37.setText(QtGui.QApplication.translate("MainWindow", "Capture", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_38.setText(QtGui.QApplication.translate("MainWindow", "Evaluate", None, QtGui.QApplication.UnicodeUTF8))
         self.comboBox_6.setItemText(0, QtGui.QApplication.translate("MainWindow", " Hardware", None, QtGui.QApplication.UnicodeUTF8))
         self.comboBox_6.setItemText(1, QtGui.QApplication.translate("MainWindow", " OCT", None, QtGui.QApplication.UnicodeUTF8))
         self.comboBox_6.setItemText(2, QtGui.QApplication.translate("MainWindow", " OCT 3D", None, QtGui.QApplication.UnicodeUTF8))
@@ -2377,9 +2374,7 @@ class Ui_MainWindow(object):
         self.label_40.setText(QtGui.QApplication.translate("MainWindow", "Exposure", None, QtGui.QApplication.UnicodeUTF8))
 
 import wasatch_logo_resources_rc
-import wasatch_logo_resources_rc
+import style_rc
 import oct_gallery_resources_rc
 import grey_icons_rc
-import vis_gallery_resources_rc
-import oct_gallery_resources_rc
 import vis_gallery_resources_rc

@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="greys">
+    <file>images/grey_icons/10pc_gray_oct_volume.svg</file>
+    <file>images/grey_icons/10pc_gray_raw_oct_data.svg</file>
+    <file>images/grey_icons/10pc_gray_visible_camera.svg</file>
     <file>images/grey_icons/10pc_gray_rectangle_scan.svg</file>
     <file>images/grey_icons/10pc_gray_spiral_scan.svg</file>
     <file>images/grey_icons/10pc_gray_square_scan.svg</file>

@@ -4136,7 +4136,125 @@ border-radius: 5px;
                     </property>
                     <property name="icon">
                      <iconset resource="grey_icons.qrc">
-                      <normaloff>:/greys/images/grey_icons/10pc_gray_spiral_scan.svg</normaloff>:/greys/images/grey_icons/10pc_gray_spiral_scan.svg</iconset>
+                      <normaloff>:/greys/images/grey_icons/10pc_gray_oct_volume.svg</normaloff>:/greys/images/grey_icons/10pc_gray_oct_volume.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="pushButton_145">
+                    <property name="geometry">
+                     <rect>
+                      <x>70</x>
+                      <y>40</y>
+                      <width>31</width>
+                      <height>31</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton:hover
+{
+    border: 1px solid #78879b;
+    color: silver;
+}
+
+QPushButton
+{
+    border-color: rgb(0,0,0);
+}
+
+QPushButton {
+background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+border-radius: 5px;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="grey_icons.qrc">
+                      <normaloff>:/greys/images/grey_icons/10pc_gray_raw_oct_data.svg</normaloff>:/greys/images/grey_icons/10pc_gray_raw_oct_data.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="pushButton_146">
+                    <property name="geometry">
+                     <rect>
+                      <x>110</x>
+                      <y>40</y>
+                      <width>31</width>
+                      <height>31</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>130</width>
+                      <height>100</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton:hover
+{
+    border: 1px solid #78879b;
+    color: silver;
+}
+
+QPushButton
+{
+    border-color: rgb(0,0,0);
+}
+
+QPushButton {
+background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+border-radius: 5px;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="grey_icons.qrc">
+                      <normaloff>:/greys/images/grey_icons/10pc_gray_visible_camera.svg</normaloff>:/greys/images/grey_icons/10pc_gray_visible_camera.svg</iconset>
                     </property>
                     <property name="iconSize">
                      <size>
@@ -4569,6 +4687,13 @@ border-radius: 5px;
                        <property name="text">
                         <string>Raw OCT data</string>
                        </property>
+                       <property name="icon">
+                        <iconset resource="grey_icons.qrc">
+                         <normaloff>:/greys/images/grey_icons/10pc_gray_raw_oct_data.svg</normaloff>:/greys/images/grey_icons/10pc_gray_raw_oct_data.svg</iconset>
+                       </property>
+                       <property name="checked">
+                        <bool>true</bool>
+                       </property>
                       </widget>
                       <widget class="QCheckBox" name="checkBox_9">
                        <property name="geometry">
@@ -4584,6 +4709,13 @@ border-radius: 5px;
                        </property>
                        <property name="text">
                         <string>Visible Camera image</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="grey_icons.qrc">
+                         <normaloff>:/greys/images/grey_icons/10pc_gray_visible_camera.svg</normaloff>:/greys/images/grey_icons/10pc_gray_visible_camera.svg</iconset>
+                       </property>
+                       <property name="checked">
+                        <bool>true</bool>
                        </property>
                       </widget>
                       <widget class="QPushButton" name="pushButton_140">
@@ -4796,7 +4928,10 @@ border-radius: 5px;
                        </property>
                        <property name="icon">
                         <iconset resource="grey_icons.qrc">
-                         <normaloff>:/greys/images/grey_icons/full_extent.svg</normaloff>:/greys/images/grey_icons/full_extent.svg</iconset>
+                         <normaloff>:/greys/images/grey_icons/10pc_gray_oct_volume.svg</normaloff>:/greys/images/grey_icons/10pc_gray_oct_volume.svg</iconset>
+                       </property>
+                       <property name="checked">
+                        <bool>true</bool>
                        </property>
                       </widget>
                      </widget>
