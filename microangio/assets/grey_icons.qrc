@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="greys">
+    <file>images/grey_icons/10pc_gray_power_onoff_active.svg</file>
+    <file>images/grey_icons/10pc_gray_power_onoff_active.svg</file>
+    <file>images/grey_icons/10pc_gray_power_onoff.svg</file>
+    <file>images/grey_icons/10pc_gray_rename.svg</file>
     <file>images/grey_icons/10pc_gray_badge.svg</file>
     <file>images/grey_icons/10pc_gray_badge.svg</file>
     <file>images/grey_icons/10pc_gray_eye.svg</file>
