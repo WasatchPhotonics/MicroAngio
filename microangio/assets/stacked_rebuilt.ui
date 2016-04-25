@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1263</width>
+    <height>880</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1472,7 +1472,7 @@ border: none;</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="wasatch_logo_resources.qrc">:/logos/images/logos/92x30_placeholder_logo.png</pixmap>
+        <pixmap resource="wasatch_logo_resources.qrc">:/logos/images/logos/92x30_wp_angio.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2401,86 +2401,6 @@ border-radius: 5px;
              <number>1</number>
             </property>
             <layout class="QGridLayout" name="gridLayout">
-             <item row="0" column="0">
-              <widget class="QFrame" name="frame_center_nest_8">
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>100</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>400</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QFrame {
-  background: rgb(54, 54, 54);
-    border-style: solid;
-    border: 2px solid #000000;
-    border-radius: 6px;
-}</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <property name="lineWidth">
-                <number>1</number>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_4">
-                <property name="topMargin">
-                 <number>5</number>
-                </property>
-                <item>
-                 <spacer name="verticalSpacer_2">
-                  <property name="orientation">
-                   <enum>Qt::Vertical</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>20</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_15">
-                  <property name="font">
-                   <font>
-                    <weight>75</weight>
-                    <bold>true</bold>
-                   </font>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">border: none;</string>
-                  </property>
-                  <property name="text">
-                   <string>Continuous B-scan</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label">
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="pixmap">
-                   <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
-                  </property>
-                  <property name="scaledContents">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
              <item row="1" column="0">
               <widget class="QFrame" name="frame_center_nest_9">
                <property name="minimumSize">
@@ -2625,6 +2545,86 @@ border-radius: 5px;
                   <property name="styleSheet">
                    <string notr="true">border: 1px solid #303030;</string>
                   </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QFrame" name="frame_center_nest_8">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>400</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame {
+  background: rgb(54, 54, 54);
+    border-style: solid;
+    border: 2px solid #000000;
+    border-radius: 6px;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="lineWidth">
+                <number>1</number>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <property name="topMargin">
+                 <number>5</number>
+                </property>
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border: none;</string>
+                  </property>
+                  <property name="text">
+                   <string>Continuous B-scan</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label">
                   <property name="text">
                    <string/>
                   </property>

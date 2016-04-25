@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/stacked_rebuilt.ui'
 #
-# Created: Mon Apr 25 10:04:12 2016
+# Created: Mon Apr 25 10:20:10 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,7 +12,7 @@ from PySide import QtCore, QtGui
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(1263, 880)
         MainWindow.setStyleSheet("/*\n"
 " * The MIT License (MIT)\n"
 " *\n"
@@ -1360,7 +1360,7 @@ class Ui_MainWindow(object):
 "border-color: none;\n"
 "border: none;")
         self.label_23.setText("")
-        self.label_23.setPixmap(QtGui.QPixmap(":/logos/images/logos/92x30_placeholder_logo.png"))
+        self.label_23.setPixmap(QtGui.QPixmap(":/logos/images/logos/92x30_wp_angio.png"))
         self.label_23.setScaledContents(True)
         self.label_23.setObjectName("label_23")
         self.comboBox_6 = QtGui.QComboBox(self.frame)
@@ -1789,39 +1789,6 @@ class Ui_MainWindow(object):
         self.frame_center_nest_6.setObjectName("frame_center_nest_6")
         self.gridLayout = QtGui.QGridLayout(self.frame_center_nest_6)
         self.gridLayout.setObjectName("gridLayout")
-        self.frame_center_nest_8 = QtGui.QFrame(self.frame_center_nest_6)
-        self.frame_center_nest_8.setMinimumSize(QtCore.QSize(100, 100))
-        self.frame_center_nest_8.setMaximumSize(QtCore.QSize(400, 16777215))
-        self.frame_center_nest_8.setStyleSheet("QFrame {\n"
-"  background: rgb(54, 54, 54);\n"
-"    border-style: solid;\n"
-"    border: 2px solid #000000;\n"
-"    border-radius: 6px;\n"
-"}")
-        self.frame_center_nest_8.setFrameShape(QtGui.QFrame.StyledPanel)
-        self.frame_center_nest_8.setFrameShadow(QtGui.QFrame.Raised)
-        self.frame_center_nest_8.setLineWidth(1)
-        self.frame_center_nest_8.setObjectName("frame_center_nest_8")
-        self.verticalLayout_4 = QtGui.QVBoxLayout(self.frame_center_nest_8)
-        self.verticalLayout_4.setContentsMargins(-1, 5, -1, -1)
-        self.verticalLayout_4.setObjectName("verticalLayout_4")
-        spacerItem3 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_4.addItem(spacerItem3)
-        self.label_15 = QtGui.QLabel(self.frame_center_nest_8)
-        font = QtGui.QFont()
-        font.setWeight(75)
-        font.setBold(True)
-        self.label_15.setFont(font)
-        self.label_15.setStyleSheet("border: none;")
-        self.label_15.setObjectName("label_15")
-        self.verticalLayout_4.addWidget(self.label_15)
-        self.label = QtGui.QLabel(self.frame_center_nest_8)
-        self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
-        self.label.setScaledContents(True)
-        self.label.setObjectName("label")
-        self.verticalLayout_4.addWidget(self.label)
-        self.gridLayout.addWidget(self.frame_center_nest_8, 0, 0, 1, 1)
         self.frame_center_nest_9 = QtGui.QFrame(self.frame_center_nest_6)
         self.frame_center_nest_9.setMinimumSize(QtCore.QSize(100, 100))
         self.frame_center_nest_9.setMaximumSize(QtCore.QSize(400, 16777215))
@@ -1838,8 +1805,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_7 = QtGui.QVBoxLayout(self.frame_center_nest_9)
         self.verticalLayout_7.setContentsMargins(-1, 5, -1, -1)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
-        spacerItem4 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_7.addItem(spacerItem4)
+        spacerItem3 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_7.addItem(spacerItem3)
         self.label_33 = QtGui.QLabel(self.frame_center_nest_9)
         font = QtGui.QFont()
         font.setWeight(75)
@@ -1866,8 +1833,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_8 = QtGui.QVBoxLayout(self.frame_center_nest_12)
         self.verticalLayout_8.setContentsMargins(-1, 5, -1, -1)
         self.verticalLayout_8.setObjectName("verticalLayout_8")
-        spacerItem5 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_8.addItem(spacerItem5)
+        spacerItem4 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_8.addItem(spacerItem4)
         self.label_35 = QtGui.QLabel(self.frame_center_nest_12)
         font = QtGui.QFont()
         font.setWeight(75)
@@ -1884,6 +1851,39 @@ class Ui_MainWindow(object):
         self.label_3.setObjectName("label_3")
         self.verticalLayout_8.addWidget(self.label_3)
         self.gridLayout.addWidget(self.frame_center_nest_12, 0, 1, 2, 1)
+        self.frame_center_nest_8 = QtGui.QFrame(self.frame_center_nest_6)
+        self.frame_center_nest_8.setMinimumSize(QtCore.QSize(100, 100))
+        self.frame_center_nest_8.setMaximumSize(QtCore.QSize(400, 16777215))
+        self.frame_center_nest_8.setStyleSheet("QFrame {\n"
+"  background: rgb(54, 54, 54);\n"
+"    border-style: solid;\n"
+"    border: 2px solid #000000;\n"
+"    border-radius: 6px;\n"
+"}")
+        self.frame_center_nest_8.setFrameShape(QtGui.QFrame.StyledPanel)
+        self.frame_center_nest_8.setFrameShadow(QtGui.QFrame.Raised)
+        self.frame_center_nest_8.setLineWidth(1)
+        self.frame_center_nest_8.setObjectName("frame_center_nest_8")
+        self.verticalLayout_4 = QtGui.QVBoxLayout(self.frame_center_nest_8)
+        self.verticalLayout_4.setContentsMargins(-1, 5, -1, -1)
+        self.verticalLayout_4.setObjectName("verticalLayout_4")
+        spacerItem5 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_4.addItem(spacerItem5)
+        self.label_15 = QtGui.QLabel(self.frame_center_nest_8)
+        font = QtGui.QFont()
+        font.setWeight(75)
+        font.setBold(True)
+        self.label_15.setFont(font)
+        self.label_15.setStyleSheet("border: none;")
+        self.label_15.setObjectName("label_15")
+        self.verticalLayout_4.addWidget(self.label_15)
+        self.label = QtGui.QLabel(self.frame_center_nest_8)
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label.setScaledContents(True)
+        self.label.setObjectName("label")
+        self.verticalLayout_4.addWidget(self.label)
+        self.gridLayout.addWidget(self.frame_center_nest_8, 0, 0, 1, 1)
         self.verticalLayout.addWidget(self.frame_center_nest_6)
         self.horizontalLayout.addWidget(self.frame_center_nest_4)
         self.frame_center_nest_2 = QtGui.QFrame(self.frame_center_nest)
@@ -2361,9 +2361,9 @@ class Ui_MainWindow(object):
         self.comboBox_6.setItemText(3, QtGui.QApplication.translate("MainWindow", " Angiography", None, QtGui.QApplication.UnicodeUTF8))
         self.label_14.setText(QtGui.QApplication.translate("MainWindow", "Snapshot", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_115.setShortcut(QtGui.QApplication.translate("MainWindow", "Backspace", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_15.setText(QtGui.QApplication.translate("MainWindow", "Continuous B-scan", None, QtGui.QApplication.UnicodeUTF8))
         self.label_33.setText(QtGui.QApplication.translate("MainWindow", "Center B-scan", None, QtGui.QApplication.UnicodeUTF8))
         self.label_35.setText(QtGui.QApplication.translate("MainWindow", "3D Angiography preview", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_15.setText(QtGui.QApplication.translate("MainWindow", "Continuous B-scan", None, QtGui.QApplication.UnicodeUTF8))
         self.label_5.setText(QtGui.QApplication.translate("MainWindow", "Reference Arm", None, QtGui.QApplication.UnicodeUTF8))
         self.spinBox_42.setPrefix(QtGui.QApplication.translate("MainWindow", "Position: ", None, QtGui.QApplication.UnicodeUTF8))
         self.label_16.setText(QtGui.QApplication.translate("MainWindow", "OCT Image Control", None, QtGui.QApplication.UnicodeUTF8))
