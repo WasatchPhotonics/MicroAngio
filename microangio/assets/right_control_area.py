@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/right_control_area.ui'
 #
-# Created: Thu Apr 21 15:39:29 2016
+# Created: Mon Apr 25 09:59:15 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/main_angio_capture.ui'
 #
-# Created: Thu Apr 21 15:39:27 2016
+# Created: Mon Apr 25 09:59:12 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -305,9 +305,9 @@ class Ui_Form(object):
         self.label_57.setScaledContents(True)
         self.label_57.setObjectName("label_57")
         self.horizontalLayout.addWidget(self.label_57)
-        spacerItem3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem3)
         self.gridLayout_4.addWidget(self.groupBox_5, 0, 1, 2, 1)
+        spacerItem3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout_4.addItem(spacerItem3, 0, 2, 1, 1)
         self.verticalLayout_2.addWidget(self.frame_34)
         spacerItem4 = QtGui.QSpacerItem(20, 99, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.verticalLayout_2.addItem(spacerItem4)
