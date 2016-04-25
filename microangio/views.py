@@ -5,7 +5,7 @@ from PySide import QtGui, QtCore
 from PIL import Image  # for creating placeholder imagery at startup
 import pyqtgraph
 
-from .assets import stacked_microangio_layout as microangio_layout
+from .assets import stacked_rebuilt as microangio_layout
 
 import logging
 log = logging.getLogger(__name__)
