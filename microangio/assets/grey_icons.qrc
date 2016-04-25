@@ -1,5 +1,16 @@
 <RCC>
   <qresource prefix="greys">
+    <file>images/grey_icons/10pc_gray_angio_volume.svg</file>
+    <file>images/grey_icons/10pc_gray_intensity_and_phase.svg</file>
+    <file>images/grey_icons/10pc_gray_angio_bscan.svg</file>
+    <file>images/grey_icons/10pc_gray_angio_projection.svg</file>
+    <file>images/grey_icons/10pc_gray_angio_volume.svg</file>
+    <file>images/grey_icons/10pc_gray_intensity_and_phase.svg</file>
+    <file>images/grey_icons/10pc_gray_subtract.svg</file>
+    <file>images/grey_icons/10pc_gray_average.svg</file>
+    <file>images/grey_icons/10pc_gray_phase_algorithm.svg</file>
+    <file>images/grey_icons/10pc_gray_complex_differential_algorithm.svg</file>
+    <file>images/grey_icons/10pc_gray_speckle_algorithm.svg</file>
     <file>images/grey_icons/10pc_gray_oct_volume.svg</file>
     <file>images/grey_icons/10pc_gray_raw_oct_data.svg</file>
     <file>images/grey_icons/10pc_gray_visible_camera.svg</file>
