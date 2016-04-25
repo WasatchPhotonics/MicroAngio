@@ -1,5 +1,14 @@
 <RCC>
   <qresource prefix="greys">
+    <file>images/grey_icons/10pc_gray_badge.svg</file>
+    <file>images/grey_icons/10pc_gray_badge.svg</file>
+    <file>images/grey_icons/10pc_gray_eye.svg</file>
+    <file>images/grey_icons/10pc_gray_clipboard.svg</file>
+    <file>images/grey_icons/1opc_gray_trash.svg</file>
+    <file>images/grey_icons/10pc_gray_pause.svg</file>
+    <file>images/grey_icons/10pc_gray_record.svg</file>
+    <file>images/grey_icons/10pc_gray_save.svg</file>
+    <file>images/grey_icons/10pc_update_background.svg</file>
     <file>images/grey_icons/10pc_gray_pure_left.svg</file>
     <file>images/grey_icons/10pc_gray_pure_right.svg</file>
     <file>images/grey_icons/10pc_gray_pure_down.svg</file>
