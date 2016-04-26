@@ -123,16 +123,20 @@ class TestControl:
 
         signal = basic_window.control_signals.nav_changed
         with qtbot.wait_signal(signal, timeout=1000, raising=True):
-            qtbot.mouseClick(nav_cmb, QtCore.Qt.LeftButton)
-
+            nav_cmb.setCurrentIndex(0)
 
         qtbot.wait(3000)
 
     def test_view_hardware_highlights_setup(self, basic_window, qtbot):
 
-        signal = app_control.control_nav_signal.nav_changed
-        with qtbot.wait_signal(signal, timeout=1):
-            print "Check for red in setup button"
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            nav_cmb.setCurrentIndex(0)
+
+        pbs = basic_window.form.ui.pushButton_setup
+        assert "/* Red Active */" in pbs.styleSheet()
+        qtbot.wait(2000)
 
 
 
