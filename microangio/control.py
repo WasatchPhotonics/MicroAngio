@@ -287,7 +287,7 @@ class Controller(object):
         self.main_timer = QtCore.QTimer()
         self.main_timer.setSingleShot(True)
         self.main_timer.timeout.connect(self.event_loop)
-        self.main_timer.start(0)
+        self.main_timer.start(1000)
 
     def event_loop(self):
         """ Process queue events, interface events, then update views.
