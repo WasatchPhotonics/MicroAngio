@@ -11,6 +11,7 @@ requires = [
     "pytest-qt",
     "pytest-capturelog",
     "pyside",
+    "pyqt", # See README
     ]
 
 setup(name="microangio",

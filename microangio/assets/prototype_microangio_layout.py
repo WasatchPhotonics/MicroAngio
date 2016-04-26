@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Mon Apr 25 17:19:44 2016
+# Created: Tue Apr 26 07:45:35 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,7 +12,7 @@ from PySide import QtCore, QtGui
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1437, 1119)
+        MainWindow.resize(1262, 1119)
         MainWindow.setStyleSheet("/*\n"
 " * The MIT License (MIT)\n"
 " *\n"
@@ -1366,7 +1366,7 @@ class Ui_MainWindow(object):
 "border-color: none;\n"
 "border: none;")
         self.label_angio_logo.setText("")
-        self.label_angio_logo.setPixmap(QtGui.QPixmap(":/logos/images/logos/92x30_placeholder_logo.png"))
+        self.label_angio_logo.setPixmap(QtGui.QPixmap(":/logos/images/logos/92x30_wp_angio.png"))
         self.label_angio_logo.setScaledContents(True)
         self.label_angio_logo.setObjectName("label_angio_logo")
         self.comboBox_6 = QtGui.QComboBox(self.frame_main_navigation)
@@ -2988,7 +2988,7 @@ class Ui_MainWindow(object):
         self.labelSnapshotThumbnail_16.setGeometry(QtCore.QRect(13, 32, 151, 121))
         self.labelSnapshotThumbnail_16.setStyleSheet("border: none;")
         self.labelSnapshotThumbnail_16.setText("")
-        self.labelSnapshotThumbnail_16.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/raw_image_pyqtgraph_plot.png"))
+        self.labelSnapshotThumbnail_16.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/cat1_retina36s.jpg"))
         self.labelSnapshotThumbnail_16.setScaledContents(True)
         self.labelSnapshotThumbnail_16.setObjectName("labelSnapshotThumbnail_16")
         self.label_35 = QtGui.QLabel(self.frame_85)
@@ -3315,7 +3315,7 @@ class Ui_MainWindow(object):
         self.label_8 = QtGui.QLabel(self.frame_button_bar_17)
         self.label_8.setStyleSheet("border: none;")
         self.label_8.setText("")
-        self.label_8.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label_8.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/cat1_retina36s.jpg"))
         self.label_8.setScaledContents(True)
         self.label_8.setObjectName("label_8")
         self.gridLayout_32.addWidget(self.label_8, 0, 0, 1, 1)
@@ -5586,7 +5586,7 @@ class Ui_MainWindow(object):
         self.labelSnapshotThumbnail_14.setGeometry(QtCore.QRect(13, 60, 161, 131))
         self.labelSnapshotThumbnail_14.setStyleSheet("border: none;")
         self.labelSnapshotThumbnail_14.setText("")
-        self.labelSnapshotThumbnail_14.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.labelSnapshotThumbnail_14.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
         self.labelSnapshotThumbnail_14.setScaledContents(True)
         self.labelSnapshotThumbnail_14.setObjectName("labelSnapshotThumbnail_14")
         self.gridLayout_14.addWidget(self.frame_center_nest_7, 0, 0, 1, 1)
@@ -5621,7 +5621,7 @@ class Ui_MainWindow(object):
         self.gridLayout_9.setObjectName("gridLayout_9")
         self.frame_white_border_4 = QtGui.QFrame(self.frame_center_nest_4)
         self.frame_white_border_4.setMinimumSize(QtCore.QSize(200, 50))
-        self.frame_white_border_4.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_white_border_4.setMaximumSize(QtCore.QSize(500, 16777215))
         self.frame_white_border_4.setStyleSheet("QFrame {\n"
 "    border: 1px solid rgb(95, 95, 95);\n"
 "    border-radius: 6px;\n"
@@ -5663,7 +5663,7 @@ class Ui_MainWindow(object):
         self.label = QtGui.QLabel(self.frame_button_bar_7)
         self.label.setStyleSheet("border: none;")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"))
+        self.label.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/square_cat1_retina36s.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
@@ -5671,7 +5671,7 @@ class Ui_MainWindow(object):
         self.gridLayout_9.addWidget(self.frame_white_border_4, 1, 0, 1, 1)
         self.frame_white_border_5 = QtGui.QFrame(self.frame_center_nest_4)
         self.frame_white_border_5.setMinimumSize(QtCore.QSize(200, 50))
-        self.frame_white_border_5.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.frame_white_border_5.setMaximumSize(QtCore.QSize(500, 16777215))
         self.frame_white_border_5.setStyleSheet("QFrame {\n"
 "    border: 1px solid rgb(95, 95, 95);\n"
 "    border-radius: 6px;\n"
@@ -5713,7 +5713,7 @@ class Ui_MainWindow(object):
         self.label_2 = QtGui.QLabel(self.frame_button_bar_8)
         self.label_2.setStyleSheet("border: none;")
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"))
+        self.label_2.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/square_retina11.jpg"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
         self.gridLayout_2.addWidget(self.label_2, 1, 0, 1, 1)
@@ -5941,6 +5941,7 @@ class Ui_MainWindow(object):
         self.gridLayout_8 = QtGui.QGridLayout(self.frame_button_bar_9)
         self.gridLayout_8.setObjectName("gridLayout_8")
         self.label_24 = QtGui.QLabel(self.frame_button_bar_9)
+        self.label_24.setMaximumSize(QtCore.QSize(16777215, 20))
         font = QtGui.QFont()
         font.setWeight(75)
         font.setBold(True)
@@ -5951,7 +5952,7 @@ class Ui_MainWindow(object):
         self.label_3 = QtGui.QLabel(self.frame_button_bar_9)
         self.label_3.setStyleSheet("border: none;")
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"))
+        self.label_3.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.gridLayout_8.addWidget(self.label_3, 1, 0, 1, 1)
@@ -6436,13 +6437,13 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget_bottom.setCurrentIndex(4)
+        self.stackedWidget_bottom.setCurrentIndex(5)
         QtCore.QObject.connect(self.comboBox_selector, QtCore.SIGNAL("currentIndexChanged(int)"), self.stackedWidget_bottom.setCurrentIndex)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.comboBox_selector.hide)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
+        MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MicroAngio", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_36.setText(QtGui.QApplication.translate("MainWindow", "Setup", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_37.setText(QtGui.QApplication.translate("MainWindow", "Capture", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_38.setText(QtGui.QApplication.translate("MainWindow", "Evaluate", None, QtGui.QApplication.UnicodeUTF8))

@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1437</width>
+    <width>1262</width>
     <height>1119</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>MicroAngio</string>
   </property>
   <property name="styleSheet">
    <string notr="true">/*
@@ -1485,7 +1485,7 @@ border: none;</string>
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="wasatch_logo_resources.qrc">:/logos/images/logos/92x30_placeholder_logo.png</pixmap>
+            <pixmap resource="wasatch_logo_resources.qrc">:/logos/images/logos/92x30_wp_angio.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -1649,7 +1649,7 @@ border-radius: 12px;
        <string notr="true">border:none;</string>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="page_hardware_setup">
        <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -5463,7 +5463,7 @@ border: 2px solid black;
                      <string/>
                     </property>
                     <property name="pixmap">
-                     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/raw_image_pyqtgraph_plot.png</pixmap>
+                     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/cat1_retina36s.jpg</pixmap>
                     </property>
                     <property name="scaledContents">
                      <bool>true</bool>
@@ -6194,7 +6194,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                           <string/>
                          </property>
                          <property name="pixmap">
-                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/cat1_retina36s.jpg</pixmap>
                          </property>
                          <property name="scaledContents">
                           <bool>true</bool>
@@ -11759,7 +11759,7 @@ border-radius: 5px;
                      <string/>
                     </property>
                     <property name="pixmap">
-                     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/retina_angiograph_03.jpg</pixmap>
                     </property>
                     <property name="scaledContents">
                      <bool>true</bool>
@@ -11839,7 +11839,7 @@ border-radius: 5px;
                    </property>
                    <property name="maximumSize">
                     <size>
-                     <width>16777215</width>
+                     <width>500</width>
                      <height>16777215</height>
                     </size>
                    </property>
@@ -11927,7 +11927,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                           <string/>
                          </property>
                          <property name="pixmap">
-                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg</pixmap>
+                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/square_cat1_retina36s.jpg</pixmap>
                          </property>
                          <property name="scaledContents">
                           <bool>true</bool>
@@ -11950,7 +11950,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                    </property>
                    <property name="maximumSize">
                     <size>
-                     <width>16777215</width>
+                     <width>500</width>
                      <height>16777215</height>
                     </size>
                    </property>
@@ -12038,7 +12038,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                           <string/>
                          </property>
                          <property name="pixmap">
-                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg</pixmap>
+                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/square_retina11.jpg</pixmap>
                          </property>
                          <property name="scaledContents">
                           <bool>true</bool>
@@ -12563,6 +12563,12 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                       <layout class="QGridLayout" name="gridLayout_8">
                        <item row="0" column="0">
                         <widget class="QLabel" name="label_24">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>20</height>
+                          </size>
+                         </property>
                          <property name="font">
                           <font>
                            <weight>75</weight>
@@ -12586,7 +12592,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                           <string/>
                          </property>
                          <property name="pixmap">
-                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg</pixmap>
+                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/retina_angiograph_03.jpg</pixmap>
                          </property>
                          <property name="scaledContents">
                           <bool>true</bool>
