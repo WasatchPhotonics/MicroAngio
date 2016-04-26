@@ -85,9 +85,53 @@ class Controller(object):
                 border-bottom-left-radius: 12px;
         }"""
 
+        self.capture_active = """QPushButton:hover
+        {
+                border: 1px solid #78879b;
+                color: silver;
+        }
+
+        QPushButton {
+                /* Red Active */
+                background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));
+                border-radius: 0px;
+        }"""
+
+        self.capture_inactive = """QPushButton:hover
+        {
+                border: 1px solid #78879b;
+                color: silver;
+        }
+
+        QPushButton {
+                /* Grey Inactive */
+                background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+                border-radius: 0px;
+        }"""
+
+
 
         pbs = self.form.ui.pushButton_setup
-        pbs.setStyleSheet(self.setup_active)
+        pbc = self.form.ui.pushButton_capture
+        pbe = self.form.ui.pushButton_evaluate
+
+        if index_changed == 0:
+            pbs.setStyleSheet(self.setup_active)
+            pbc.setStyleSheet(self.capture_inactive)
+
+            pbs.setEnabled(True)
+            pbc.setEnabled(False)
+            pbe.setEnabled(False)
+
+        elif index_changed == 1:
+            pbs.setStyleSheet(self.setup_inactive)
+            pbc.setStyleSheet(self.capture_active)
+
+            pbs.setEnabled(True)
+            pbc.setEnabled(True)
+            pbe.setEnabled(True)
+
+
 
     def setup_main_event_loop(self):
         """ Create a timer for a continuous event loop, trigger the start.

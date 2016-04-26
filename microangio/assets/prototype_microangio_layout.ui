@@ -1653,11 +1653,6 @@ border-radius: 12px;
     color: silver;
 }
 
-QPushButton
-{
-    border-color: rgb(0,0,0);
-}
-
 QPushButton {
 	background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));
 border-radius: 0px;
