@@ -36,6 +36,7 @@ class Controller(object):
         class ControlSignals(QtCore.QObject):
             initialize = QtCore.Signal(str)
             nav_changed = QtCore.Signal(str)
+            mode_select = QtCore.Signal(str)
 
         self.control_signals = ControlSignals()
 
@@ -49,6 +50,17 @@ class Controller(object):
 
         cmn = self.form.ui.comboBox_mode_navigation
         cmn.currentIndexChanged.connect(self.update_navigation)
+
+        pbs = self.form.ui.pushButton_setup
+        pbs.clicked.connect(self.update_mode_setup)
+
+    def update_mode_setup(self):
+        """ Change the current mode under the currently selected main
+        navigation. This is setup/capture/evalute.
+        """
+
+        log.info("Mode select setup")
+        self.control_signals.mode_select.emit("setup")
 
     def update_navigation(self, index_changed):
         """ Change the main navigation window when the mode navigation

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Tue Apr 26 09:27:57 2016
+# Created: Tue Apr 26 10:49:29 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1294,14 +1294,10 @@ class Ui_MainWindow(object):
 "    color: silver;\n"
 "}\n"
 "\n"
-"QPushButton\n"
-"{\n"
-"    border-color: rgb(0,0,0);\n"
-"}\n"
-"\n"
 "QPushButton {\n"
-"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
-"border-radius: 0px;\n"
+"    /* Grey Inactive */\n"
+"    background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"    border-radius: 0px;\n"
 "    border-top-left-radius: 12px;\n"
 "    border-bottom-left-radius: 12px;\n"
 "}")
@@ -1321,12 +1317,9 @@ class Ui_MainWindow(object):
 "    color: silver;\n"
 "}\n"
 "\n"
-"QPushButton\n"
-"{\n"
-"    border-color: rgb(0,0,0);\n"
-"}\n"
-"\n"
 "QPushButton {\n"
+"    /* Grey Inactive */\n"
+"    border-color: rgb(0,0,0);\n"
 "background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
 "border-radius: 0px;\n"
 "}")
@@ -1348,14 +1341,10 @@ class Ui_MainWindow(object):
 "    color: silver;\n"
 "}\n"
 "\n"
-"QPushButton\n"
-"{\n"
-"    border-color: rgb(0,0,0);\n"
-"}\n"
-"\n"
 "QPushButton {\n"
-"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
-"border-radius: 0px;\n"
+"    /* Grey Inactive */\n"
+"    background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"    border-radius: 0px;\n"
 "    border-top-right-radius: 12px;\n"
 "    border-bottom-right-radius: 12px;\n"
 "}")
@@ -1443,11 +1432,6 @@ class Ui_MainWindow(object):
 "{\n"
 "    border: 1px solid #78879b;\n"
 "    color: silver;\n"
-"}\n"
-"\n"
-"QPushButton\n"
-"{\n"
-"    border-color: rgb(0,0,0);\n"
 "}\n"
 "\n"
 "QPushButton {\n"
