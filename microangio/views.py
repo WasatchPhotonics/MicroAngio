@@ -25,7 +25,7 @@ class BasicWindow(QtGui.QMainWindow):
         # x, y, w, h
         self.setGeometry(geometry[0], geometry[1], geometry[2], geometry[3])
 
-        #self.load_placeholder_images()
+        self.load_placeholder_images()
         self.set_initial_state()
 
         app_icon = QtGui.QIcon(":ui/images/ApplicationIcon.ico")
@@ -50,49 +50,60 @@ class BasicWindow(QtGui.QMainWindow):
         self.ui.stackedWidget_bottom.setCurrentIndex(OCT_CAPTURE)
 
     def load_placeholder_images(self):
-        """ Use the example data 16 bit tiffs, make sure they can be displayed
-        in the qt label. Conversion is from:
-        http://blog.philippklaus.de/2011/08/handle-16bit-tiff-images-in-python/
+        """ Use the example data png files, place them in a pyqtgraph image widget.
         """
-        directory = "autofalloff/assets/example_data"
-        reference_filename = "%s/0.2r.tif" % directory
-        source_filename = "%s/1.0s.tif" % directory
-        combined_filename = "%s/4.0.tif" % directory
+        #self.image_data = get_image_data_from_blob()
+        img_url = ":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"
 
-        # Open the image, convert in place
-        ref_img = Image.open(reference_filename)
-        ref_img.convert("L")
+        #self.qimg = QtGui.QImage.fromData(img_url)
+        #self.pixmap = QtGui.QPixmap.fromImage(self.qimg)
 
-        # Assign it to a numpy array, transpose X and Y dimensions
-        ref_data = numpy.asarray(ref_img, dtype=numpy.uint16).T
+        import numpy
 
-        # Create an imageview control, assign the data and make it visible
-        self.ui.imview_reference = pyqtgraph.ImageView()
-        self.ui.imview_reference.setImage(ref_data)
-        self.ui.stackedWidgetReference.addWidget(self.ui.imview_reference)
-        self.ui.stackedWidgetReference.setCurrentIndex(2)
+        # Generate numpy array from scratch, set pixmap
+        #spectroWidth=1000
+        #spectroHeight=1000
+#
+#        a=numpy.random.random(spectroHeight*spectroWidth)*255
+#        a=numpy.reshape(a,(spectroHeight,spectroWidth))
+#        a=numpy.require(a, numpy.uint8, 'C')
 
-        # source image
-        src_img = Image.open(source_filename)
-        src_img.convert("L")
-        src_data = numpy.asarray(src_img, dtype=numpy.uint16).T
-
-        self.ui.imview_source = pyqtgraph.ImageView()
-        self.ui.imview_source.setImage(src_data)
-        self.ui.stackedWidgetSource.addWidget(self.ui.imview_source)
-        self.ui.stackedWidgetSource.setCurrentIndex(2)
+#        a=numpy.roll(a,-5)
+#        QI=QtGui.QImage(a.data, spectroWidth, spectroHeight, QtGui.QImage.Format_Indexed8)
+#        self.pixmap = QtGui.QPixmap.fromImage(QI)
 
 
-        # Combined image
-        com_img = Image.open(combined_filename)
-        com_img.convert("L")
-        com_data = numpy.asarray(com_img, dtype=numpy.uint16).T
+        # Load from resource, set pixmap
+        #self.qimg = QtGui.QImage(img_url)
+        #self.pixmap = QtGui.QPixmap.fromImage(self.qimg)
 
-        self.ui.imview_combined = pyqtgraph.ImageView()
-        self.ui.imview_combined.setImage(com_data)
-        self.ui.stackedWidgetCombined.addWidget(self.ui.imview_combined)
-        self.ui.stackedWidgetCombined.setCurrentIndex(2)
 
+        # Load from resource into numpy array, add noise
+        incomingImage = QtGui.QImage(img_url)
+        #self.pixmap = QtGui.QPixmap.fromImage(incomingImage)
+
+        incomingImage = incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
+
+        width = incomingImage.width()
+        height = incomingImage.height()
+
+        ptr = incomingImage.constBits()
+        arr = numpy.array(ptr).reshape(height, width, 4)  #  Copies the data
+
+        # Add the noise
+        copy_arr = numpy.copy(arr)
+        arr += copy_arr
+
+        # recreate a qimage from the copied numpy arr
+        QI = QtGui.QImage(arr.data, width, height, QtGui.QImage.Format.Format_RGB32)
+        self.pixmap = QtGui.QPixmap.fromImage(QI)
+
+
+        #self.pixmap = QtGui.QPixmap.fromImage(img_url)
+        self.ui.label_oct_image.setPixmap(self.pixmap)
+
+
+        return
 
     def create_signals(self):
         """ Create signal objects to be used by controller and internal simple

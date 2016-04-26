@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Tue Apr 26 13:21:07 2016
+# Created: Tue Apr 26 14:53:01 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -3321,13 +3321,13 @@ class Ui_MainWindow(object):
         self.frame_button_bar_17.setObjectName("frame_button_bar_17")
         self.gridLayout_32 = QtGui.QGridLayout(self.frame_button_bar_17)
         self.gridLayout_32.setObjectName("gridLayout_32")
-        self.label_8 = QtGui.QLabel(self.frame_button_bar_17)
-        self.label_8.setStyleSheet("border: none;")
-        self.label_8.setText("")
-        self.label_8.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
-        self.label_8.setScaledContents(True)
-        self.label_8.setObjectName("label_8")
-        self.gridLayout_32.addWidget(self.label_8, 0, 0, 1, 1)
+        self.label_oct_image = QtGui.QLabel(self.frame_button_bar_17)
+        self.label_oct_image.setStyleSheet("border: none;")
+        self.label_oct_image.setText("")
+        self.label_oct_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label_oct_image.setScaledContents(True)
+        self.label_oct_image.setObjectName("label_oct_image")
+        self.gridLayout_32.addWidget(self.label_oct_image, 0, 0, 1, 1)
         self.gridLayout_31.addWidget(self.frame_button_bar_17, 0, 0, 1, 1)
         self.verticalLayout_7.addWidget(self.frame_white_border_24)
         self.gridLayout_29.addWidget(self.frame_center_nest_14, 0, 0, 1, 1)
@@ -5961,7 +5961,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget_bottom.setCurrentIndex(4)
+        self.stackedWidget_bottom.setCurrentIndex(2)
         QtCore.QObject.connect(self.comboBox_selector, QtCore.SIGNAL("currentIndexChanged(int)"), self.stackedWidget_bottom.setCurrentIndex)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.comboBox_selector.hide)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.pushButton_capture_hidden_red.hide)

@@ -418,3 +418,12 @@ class TestControl:
             nav_cmb.setCurrentIndex(self.NAV_ANGIO)
         assert bot_wid.currentIndex() == self.ANGIO_CAPTURE
 
+
+    def test_form_creates_simulation_oct_data(self, basic_window, qtbot):
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        pbs = basic_window.form.ui.pushButton_setup
+        pbc = basic_window.form.ui.pushButton_capture
+        pbe = basic_window.form.ui.pushButton_evaluate
+
+        assert nav_cmb.currentIndex() == 1
+        qtbot.wait(3000)
