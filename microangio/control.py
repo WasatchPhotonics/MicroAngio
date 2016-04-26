@@ -310,10 +310,10 @@ class Controller(object):
 
 
         # recreate a qimage from the copied numpy arr
-        QI = QtGui.QImage(copy_sim.data,
+        self.simulated_oct_image = QtGui.QImage(copy_sim.data,
                           self.simulated_oct_width,
                           self.simulated_oct_height, QtGui.QImage.Format.Format_RGB32)
-        self.oct_pixmap = QtGui.QPixmap.fromImage(QI)
+        self.oct_pixmap = QtGui.QPixmap.fromImage(self.simulated_oct_image)
 
         self.form.ui.label_oct_image.setPixmap(self.oct_pixmap)
 
