@@ -14,7 +14,7 @@ class Controller(object):
         log.debug("Control startup")
 
         # Create a separate process for the qt gui event loop
-        self.form = views.BasicWindow()
+        self.form = views.BasicWindow(title="MicroAngio")
 
         self.create_styles()
 
@@ -25,12 +25,18 @@ class Controller(object):
         self.device = devices.LongPollingSimulateSpectra(log_queue)
         self.total_spectra = 0
 
+        self.set_capture_active()
+
         self.setup_main_event_loop()
 
     def create_styles(self):
         """ Location for runtime generated stylesheets. This is hideous.
         This should be done all in the view, somehow. Or even better, in the
         designer, specifying active/inactive themes - somehow
+
+        This is also the location for various customizations specific to the
+        prototype demo.
+
         """
 
         self.NAV_HARDWARE = 0
@@ -42,6 +48,12 @@ class Controller(object):
         self.OCT_CAPTURE = 2
         self.ANGIO_SETUP = 3
         self.ANGIO_CAPTURE = 4
+
+
+        self.form.ui.comboBox_selector.hide()
+        self.form.ui.pushButton_capture_hidden_red.hide()
+
+
         self.setup_active = """QPushButton:hover
         {
                 border: 1px solid #78879b;
@@ -227,12 +239,15 @@ class Controller(object):
 
         if index_changed == 0:
             self.set_setup_active_disable_others()
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(self.HARDWARE_SETUP)
 
         elif index_changed == 1:
             self.set_capture_active()
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(self.OCT_CAPTURE)
 
         elif index_changed == 2:
             self.set_capture_active()
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(self.ANGIO_CAPTURE)
 
 
 

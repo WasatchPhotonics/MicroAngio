@@ -32,9 +32,3 @@ class TestBasicMainWindow:
         assert basic_form.height() >= 700
         qtbot.wait(100000)
 
-    def test_form_starts_in_oct_capture(self, basic_form, qtbot):
-        assert basic_form.ui.stackedWidget_bottom.currentIndex() == 2
-
-        nav = basic_form.ui.comboBox_mode_navigation
-        assert nav.currentIndex() == 1
-

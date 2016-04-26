@@ -16,6 +16,15 @@ from microangio import applog
 
 
 class TestControl:
+    NAV_HARDWARE = 0
+    NAV_OCT = 1
+    NAV_ANGIO = 2
+
+    HARDWARE_SETUP = 0
+    OCT_SETUP = 1
+    OCT_CAPTURE = 2
+    ANGIO_SETUP = 3
+    ANGIO_CAPTURE = 4
 
     def test_control_logs_visible_to_caplog(self, caplog, qtbot):
         main_logger = applog.MainLogger()
@@ -378,3 +387,34 @@ class TestControl:
         assert "/* Grey Inactive */" in pbs.styleSheet()
         assert "/* Red Active */" in pbc.styleSheet()
         assert "/* Grey Inactive */" in pbe.styleSheet()
+
+    def test_form_starts_in_oct_capture(self, basic_window, qtbot):
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        pbs = basic_window.form.ui.pushButton_setup
+        pbc = basic_window.form.ui.pushButton_capture
+        pbe = basic_window.form.ui.pushButton_evaluate
+
+        assert nav_cmb.currentIndex() == 1
+
+        assert "/* Grey Inactive */" in pbs.styleSheet()
+        assert "/* Red Active */" in pbc.styleSheet()
+        assert "/* Grey Inactive */" in pbe.styleSheet()
+
+    def test_combonav_changes_bottom_widget(self, basic_window, qtbot):
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        bot_wid = basic_window.form.ui.stackedWidget_bottom
+
+
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            nav_cmb.setCurrentIndex(self.NAV_HARDWARE)
+        assert bot_wid.currentIndex() == self.HARDWARE_SETUP
+
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            nav_cmb.setCurrentIndex(self.NAV_OCT)
+        assert bot_wid.currentIndex() == self.OCT_CAPTURE
+
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            nav_cmb.setCurrentIndex(self.NAV_ANGIO)
+        assert bot_wid.currentIndex() == self.ANGIO_CAPTURE
+
