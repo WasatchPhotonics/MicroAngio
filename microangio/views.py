@@ -26,11 +26,28 @@ class BasicWindow(QtGui.QMainWindow):
         self.setGeometry(geometry[0], geometry[1], geometry[2], geometry[3])
 
         #self.load_placeholder_images()
+        self.set_initial_state()
 
         app_icon = QtGui.QIcon(":ui/images/ApplicationIcon.ico")
         self.setWindowIcon(app_icon)
         self.setWindowTitle(title)
         self.show()
+
+    def set_initial_state(self):
+        """ Pre-configure the interface by clicking buttons and setting
+        displayed widgets as appropriate.
+        """
+        NAV_HARDWARE = 0
+        NAV_OCT = 1
+        NAV_ANGIO = 2
+        self.ui.comboBox_mode_navigation.setCurrentIndex(NAV_OCT)
+
+        HARDWARE_SETUP = 0
+        OCT_SETUP = 1
+        OCT_CAPTURE = 2
+        ANGIO_SETUP = 3
+        ANGIO_CAPTURE = 4
+        self.ui.stackedWidget_bottom.setCurrentIndex(OCT_CAPTURE)
 
     def load_placeholder_images(self):
         """ Use the example data 16 bit tiffs, make sure they can be displayed

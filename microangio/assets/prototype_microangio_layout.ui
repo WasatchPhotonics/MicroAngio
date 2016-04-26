@@ -1293,7 +1293,7 @@ QSplitter::handle:vertical {
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <widget class="QFrame" name="frame_center_nest_13">
+          <widget class="QFrame" name="frame_nav_buttonbar">
            <property name="geometry">
             <rect>
              <x>260</x>
@@ -1328,7 +1328,7 @@ QSplitter::handle:vertical {
              <number>0</number>
             </property>
             <item>
-             <widget class="QPushButton" name="pushButton_36">
+             <widget class="QPushButton" name="pushButton_setup">
               <property name="minimumSize">
                <size>
                 <width>130</width>
@@ -1373,7 +1373,7 @@ border-radius: 0px;
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_37">
+             <widget class="QPushButton" name="pushButton_capture">
               <property name="minimumSize">
                <size>
                 <width>130</width>
@@ -1407,17 +1407,25 @@ QPushButton
 
 QPushButton {
 background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+/* the red gradient university
 	background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));
+*/
 border-radius: 0px;
 }</string>
               </property>
               <property name="text">
                <string>Capture</string>
               </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_38">
+             <widget class="QPushButton" name="pushButton_evaluate">
               <property name="minimumSize">
                <size>
                 <width>130</width>
@@ -1500,7 +1508,7 @@ border: none;</string>
             <bool>true</bool>
            </property>
           </widget>
-          <widget class="QComboBox" name="comboBox_6">
+          <widget class="QComboBox" name="comboBox_mode_navigation">
            <property name="geometry">
             <rect>
              <x>109</x>
