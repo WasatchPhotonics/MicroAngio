@@ -297,10 +297,10 @@ class Controller(object):
 
         # Get random sample of width and height
         rand_width = numpy.random.choice(self.simulated_oct_width, size=self.simulated_oct_width/18)
-        rand_height = numpy.random.choice(self.simulated_oct_height, size=self.simulated_oct_height/18)
 
         # Assign each of the randomly selected pixels either white or black
         for width_index in rand_width:
+           rand_height = numpy.random.choice(self.simulated_oct_height, size=self.simulated_oct_height/18)
             for height_index in rand_height:
                 #copy_sim[height_index, width_index] = [55, 55, 55, 255]
                 if random.choice([True, False]):
