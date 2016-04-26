@@ -349,3 +349,32 @@ class TestControl:
         assert "/* Grey Inactive */" in pbs.styleSheet()
         assert "/* Red Active */" in pbc.styleSheet()
         assert "/* Grey Inactive */" in pbe.styleSheet()
+
+    def test_view_angio_setup_then_capture_changes_controls(self, basic_window, qtbot):
+
+        # Change to index 0 then back to 1 to activate oct mode
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        pbs = basic_window.form.ui.pushButton_setup
+        pbc = basic_window.form.ui.pushButton_capture
+        pbe = basic_window.form.ui.pushButton_evaluate
+
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            # Set it to hardware then back to oct to get over default
+            nav_cmb.setCurrentIndex(0)
+            qtbot.wait(1000)
+            nav_cmb.setCurrentIndex(2)
+
+        # Click setup, verify it is now red and others are gray
+        qtbot.mouseClick(pbs, QtCore.Qt.LeftButton)
+        qtbot.wait(1000)
+        assert "/* Red Active */" in pbs.styleSheet()
+        assert "/* Grey Inactive */" in pbc.styleSheet()
+        assert "/* Grey Inactive */" in pbe.styleSheet()
+
+        # Click capture, verify it is now red and others are gray
+        qtbot.mouseClick(pbc, QtCore.Qt.LeftButton)
+        qtbot.wait(1000)
+        assert "/* Grey Inactive */" in pbs.styleSheet()
+        assert "/* Red Active */" in pbc.styleSheet()
+        assert "/* Grey Inactive */" in pbe.styleSheet()

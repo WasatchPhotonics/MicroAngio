@@ -140,7 +140,7 @@ class Controller(object):
             self.form.ui.stackedWidget_bottom.setCurrentIndex(self.OCT_CAPTURE)
             self.set_capture_active()
 
-        elif cmn.currentIndex() == NAV_ANGIO:
+        elif cmn.currentIndex() == self.NAV_ANGIO:
             log.info("Switch to Angio setup")
             self.set_capture_active()
             self.form.ui.stackedWidget_bottom.setCurrentIndex(self.ANGIO_CAPTURE)
