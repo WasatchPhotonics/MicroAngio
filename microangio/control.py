@@ -287,7 +287,7 @@ class Controller(object):
         self.main_timer = QtCore.QTimer()
         self.main_timer.setSingleShot(True)
         self.main_timer.timeout.connect(self.event_loop)
-        self.main_timer.start(1000)
+        self.main_timer.start(100)
 
     def event_loop(self):
         """ Process queue events, interface events, then update views.
@@ -295,18 +295,21 @@ class Controller(object):
 
         self.copy_sim = numpy.copy(self.simulated_oct)
 
+        noise_factor = 4
         # Get random sample of width and height
-        rand_width = numpy.random.choice(self.simulated_oct_width, size=self.simulated_oct_width/18)
+        nrc = numpy.random.choice
+        random_width_size = self.simulated_oct_width / noise_factor
+        random_height_size = self.simulated_oct_height/ noise_factor
+        rand_width = nrc(self.simulated_oct_width, size=random_width_size)
 
         # Assign each of the randomly selected pixels either white or black
         for width_index in rand_width:
-           rand_height = numpy.random.choice(self.simulated_oct_height, size=self.simulated_oct_height/18)
+            rand_height = nrc(self.simulated_oct_height, size=random_height_size)
             for height_index in rand_height:
-                #copy_sim[height_index, width_index] = [55, 55, 55, 255]
-                if random.choice([True, False]):
-                    self.copy_sim[height_index, width_index] = [0, 0, 0, 255]
-                else:
-                    self.copy_sim[height_index, width_index] = [55, 55, 55, 255]
+
+                # Differing shades of grade, alpha is apparently ignored
+                br = random.choice([45, 50, 55, 60, 65, 70, 75, 50, 100])
+                self.copy_sim[height_index, width_index] = [br, br, br, br]
 
 
         # recreate a qimage from the copied numpy arr
