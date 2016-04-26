@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Tue Apr 26 10:49:29 2016
+# Created: Tue Apr 26 13:21:07 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!

@@ -16,6 +16,8 @@ class Controller(object):
         # Create a separate process for the qt gui event loop
         self.form = views.BasicWindow()
 
+        self.create_styles()
+
         self.create_signals()
 
         self.bind_view_signals()
@@ -25,50 +27,11 @@ class Controller(object):
 
         self.setup_main_event_loop()
 
-    def create_signals(self):
-        """ Create signals for access by parent process.
+    def create_styles(self):
+        """ Location for runtime generated stylesheets. This is hideous.
+        This should be done all in the view, somehow. Or even better, in the
+        designer, specifying active/inactive themes - somehow
         """
-        class ControlClose(QtCore.QObject):
-            exit = QtCore.Signal(str)
-
-        self.control_exit_signal = ControlClose()
-
-        class ControlSignals(QtCore.QObject):
-            initialize = QtCore.Signal(str)
-            nav_changed = QtCore.Signal(str)
-            mode_select = QtCore.Signal(str)
-
-        self.control_signals = ControlSignals()
-
-    def bind_view_signals(self):
-        """ Connect GUI form signals to control events.
-        """
-        self.form.exit_signal.exit.connect(self.close)
-
-
-        #self.form.ui.buttonInitialize.clicked.connect(self.initialize)
-
-        cmn = self.form.ui.comboBox_mode_navigation
-        cmn.currentIndexChanged.connect(self.update_navigation)
-
-        pbs = self.form.ui.pushButton_setup
-        pbs.clicked.connect(self.update_mode_setup)
-
-    def update_mode_setup(self):
-        """ Change the current mode under the currently selected main
-        navigation. This is setup/capture/evalute.
-        """
-
-        log.info("Mode select setup")
-        self.control_signals.mode_select.emit("setup")
-
-    def update_navigation(self, index_changed):
-        """ Change the main navigation window when the mode navigation
-        combobox is updated.
-        """
-        log.info("Change to: %s", index_changed)
-        self.control_signals.nav_changed.emit(index_changed)
-
         self.setup_active = """QPushButton:hover
         {
                 border: 1px solid #78879b;
@@ -121,19 +84,96 @@ class Controller(object):
                 border-radius: 0px;
         }"""
 
+    def create_signals(self):
+        """ Create signals for access by parent process.
+        """
+        class ControlClose(QtCore.QObject):
+            exit = QtCore.Signal(str)
 
+        self.control_exit_signal = ControlClose()
+
+        class ControlSignals(QtCore.QObject):
+            initialize = QtCore.Signal(str)
+            nav_changed = QtCore.Signal(str)
+            mode_select = QtCore.Signal(str)
+
+        self.control_signals = ControlSignals()
+
+    def bind_view_signals(self):
+        """ Connect GUI form signals to control events.
+        """
+        self.form.exit_signal.exit.connect(self.close)
+
+
+        #self.form.ui.buttonInitialize.clicked.connect(self.initialize)
+
+        cmn = self.form.ui.comboBox_mode_navigation
+        cmn.currentIndexChanged.connect(self.update_navigation)
+
+        pbs = self.form.ui.pushButton_setup
+        pbs.clicked.connect(self.update_mode_setup)
+
+    def update_mode_setup(self):
+        """ Change the current mode under the currently selected main
+        navigation. This is setup/capture/evalute.
+        """
+
+        log.info("Mode select setup")
+        self.control_signals.mode_select.emit("setup")
+
+        # If you're in hardware mode, and you click setup, disable the other
+        # buttons and set setup red
+        cmn = self.form.ui.comboBox_mode_navigation
+        if cmn.currentIndex() == 0:
+            self.set_setup_active_disable_others()
+
+        elif cmn.currentIndex() == 1:
+            log.info("Switch to OCT setup")
+            self.set_setup_active()
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(1)
+
+    def set_setup_active(self):
+        """ Show the setup button as red active, the others as grey active.
+        """
+        pbs = self.form.ui.pushButton_setup
+        pbc = self.form.ui.pushButton_capture
+        pbe = self.form.ui.pushButton_evaluate
+
+        pbs.setStyleSheet(self.setup_active)
+        pbc.setStyleSheet(self.capture_inactive)
+
+        pbs.setEnabled(True)
+        pbc.setEnabled(True)
+        pbe.setEnabled(True)
+
+    def set_setup_active_disable_others(self):
+        """ Used for hardware display of just the setup button
+        """
+        pbs = self.form.ui.pushButton_setup
+        pbc = self.form.ui.pushButton_capture
+        pbe = self.form.ui.pushButton_evaluate
+
+        pbs.setStyleSheet(self.setup_active)
+        pbc.setStyleSheet(self.capture_inactive)
+
+        pbs.setEnabled(True)
+        pbc.setEnabled(False)
+        pbe.setEnabled(False)
+
+
+    def update_navigation(self, index_changed):
+        """ Change the main navigation window when the mode navigation
+        combobox is updated.
+        """
+        log.info("Change to: %s", index_changed)
+        self.control_signals.nav_changed.emit(index_changed)
 
         pbs = self.form.ui.pushButton_setup
         pbc = self.form.ui.pushButton_capture
         pbe = self.form.ui.pushButton_evaluate
 
         if index_changed == 0:
-            pbs.setStyleSheet(self.setup_active)
-            pbc.setStyleSheet(self.capture_inactive)
-
-            pbs.setEnabled(True)
-            pbc.setEnabled(False)
-            pbe.setEnabled(False)
+            self.set_setup_active_disable_others()
 
         elif index_changed == 1:
             pbs.setStyleSheet(self.setup_inactive)
