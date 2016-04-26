@@ -38,11 +38,3 @@ class TestBasicMainWindow:
         nav = basic_form.ui.comboBox_mode_navigation
         assert nav.currentIndex() == 1
 
-        pbc = basic_form.ui.pushButton_capture
-        print pbc.styleSheet()
-
-        color = pbc.palette().color(QtGui.QPalette.Background)
-        print color.red(), color.green(), color.blue()
-        assert "red" in pbc.styleSheet()
-
-

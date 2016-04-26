@@ -33,10 +33,29 @@ class Controller(object):
 
         self.control_exit_signal = ControlClose()
 
+        class ControlSignals(QtCore.QObject):
+            initialize = QtCore.Signal(str)
+            nav_changed = QtCore.Signal(str)
+
+        self.control_signals = ControlSignals()
+
     def bind_view_signals(self):
         """ Connect GUI form signals to control events.
         """
         self.form.exit_signal.exit.connect(self.close)
+
+
+        #self.form.ui.buttonInitialize.clicked.connect(self.initialize)
+
+        cmn = self.form.ui.comboBox_mode_navigation
+        cmn.currentIndexChanged.connect(self.update_navigation)
+
+    def update_navigation(self, index_changed):
+        """ Change the main navigation window when the mode navigation
+        combobox is updated.
+        """
+        log.info("Change to: %s", index_changed)
+        self.control_signals.nav_changed.emit(index_changed)
 
     def setup_main_event_loop(self):
         """ Create a timer for a continuous event loop, trigger the start.
@@ -46,7 +65,7 @@ class Controller(object):
         self.main_timer = QtCore.QTimer()
         self.main_timer.setSingleShot(True)
         self.main_timer.timeout.connect(self.event_loop)
-        self.main_timer.start(0)
+        #self.main_timer.start(0)
 
     def event_loop(self):
         """ Process queue events, interface events, then update views.

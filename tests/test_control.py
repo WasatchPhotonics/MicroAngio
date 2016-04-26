@@ -7,7 +7,9 @@ controller create the top level logger
 
 import time
 
-from PySide import QtTest
+import pytest
+
+from PySide import QtTest, QtCore
 
 from microangio import control
 from microangio import applog
@@ -85,3 +87,56 @@ class TestControl:
         time.sleep(1)
         assert "Control level close" in caplog.text()
         applog.explicit_log_close()
+
+    @pytest.fixture(scope="function")
+    def basic_window(self, qtbot, request, hardware=None):
+        """ Setup the controller the same way the scripts/Application
+        does at every test. Ensure that the teardown is in place
+        regardless of test result.
+        """
+        main_logger = applog.MainLogger()
+
+        app_control = control.Controller(main_logger.log_queue)
+
+        qtbot.addWidget(app_control.form)
+
+        def control_close():
+            app_control.close()
+            main_logger.close()
+            applog.explicit_log_close()
+
+        request.addfinalizer(control_close)
+
+        return app_control
+
+    def test_controller_sees_deafult_state_on_startup(self, basic_window,
+                                                      qtbot, caplog):
+
+        QtTest.QTest.qWaitForWindowShown(basic_window.form)
+        assert basic_window.form.ui.stackedWidget_bottom.currentIndex() == 2
+
+        qtbot.wait(1000)
+
+
+    def test_nav_combobox_emits_signal(self, basic_window, qtbot):
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            qtbot.mouseClick(nav_cmb, QtCore.Qt.LeftButton)
+
+
+        qtbot.wait(3000)
+
+    def test_view_hardware_highlights_setup(self, basic_window, qtbot):
+
+        signal = app_control.control_nav_signal.nav_changed
+        with qtbot.wait_signal(signal, timeout=1):
+            print "Check for red in setup button"
+
+
+
+
+    #def test_view_hardware_disables_capture_and_evaluate(self, qtbot):
+
+    #def test_view_oct_highlights_capture(self, qtbot):
