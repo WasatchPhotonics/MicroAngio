@@ -9,7 +9,7 @@ import time
 
 import pytest
 
-from PySide import QtTest, QtCore
+from PySide import QtTest, QtCore, QtGui
 
 from microangio import control
 from microangio import applog
@@ -420,10 +420,25 @@ class TestControl:
 
 
     def test_form_creates_simulation_oct_data(self, basic_window, qtbot):
-        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
-        pbs = basic_window.form.ui.pushButton_setup
-        pbc = basic_window.form.ui.pushButton_capture
-        pbe = basic_window.form.ui.pushButton_evaluate
+        # Get the pixel value of the oct image at 0, 0
+        loi = basic_window.form.ui.label_oct_image
+        loi_data = loi.pixmap().toImage()
 
-        assert nav_cmb.currentIndex() == 1
-        qtbot.wait(3000)
+        pix_zero = loi_data.pixel(0, 0)
+        start_colors = QtGui.QColor(pix_zero).getRgbF()
+        print "(%s,%s) = %s" % (0, 0, start_colors)
+
+        # Wait for 3 seconds
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=3000, raising=False):
+            print "Just waiting for a signal that should never happen"
+
+
+        loi = basic_window.form.ui.label_oct_image
+        loi_data = loi.pixmap().toImage()
+
+        pix_zero = loi_data.pixel(0, 0)
+        cease_colors = QtGui.QColor(pix_zero).getRgbF()
+        print "(%s,%s) = %s" % (0, 0, cease_colors)
+
+        assert start_colors[0] != cease_colors[0]

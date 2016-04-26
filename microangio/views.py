@@ -25,7 +25,7 @@ class BasicWindow(QtGui.QMainWindow):
         # x, y, w, h
         self.setGeometry(geometry[0], geometry[1], geometry[2], geometry[3])
 
-        self.load_placeholder_images()
+        #self.load_placeholder_images()
         self.set_initial_state()
 
         app_icon = QtGui.QIcon(":ui/images/ApplicationIcon.ico")
@@ -49,65 +49,6 @@ class BasicWindow(QtGui.QMainWindow):
         ANGIO_CAPTURE = 4
         self.ui.stackedWidget_bottom.setCurrentIndex(OCT_CAPTURE)
 
-    def load_placeholder_images(self):
-        """ Use the example data png files, place them in a pyqtgraph image widget.
-        """
-        #self.image_data = get_image_data_from_blob()
-        img_url = ":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"
-
-        #self.qimg = QtGui.QImage.fromData(img_url)
-        #self.pixmap = QtGui.QPixmap.fromImage(self.qimg)
-
-        import numpy
-
-        # Generate numpy array from scratch, set pixmap
-        #spectroWidth=1000
-        #spectroHeight=1000
-#
-#        a=numpy.random.random(spectroHeight*spectroWidth)*255
-#        a=numpy.reshape(a,(spectroHeight,spectroWidth))
-#        a=numpy.require(a, numpy.uint8, 'C')
-
-#        a=numpy.roll(a,-5)
-#        QI=QtGui.QImage(a.data, spectroWidth, spectroHeight, QtGui.QImage.Format_Indexed8)
-#        self.pixmap = QtGui.QPixmap.fromImage(QI)
-
-
-        # Load from resource, set pixmap
-        #self.qimg = QtGui.QImage(img_url)
-        #self.pixmap = QtGui.QPixmap.fromImage(self.qimg)
-
-
-        # Load from resource into numpy array, add noise
-        incomingImage = QtGui.QImage(img_url)
-        #self.pixmap = QtGui.QPixmap.fromImage(incomingImage)
-
-        incomingImage = incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
-
-        width = incomingImage.width()
-        height = incomingImage.height()
-
-        ptr = incomingImage.constBits()
-        arr = numpy.array(ptr).reshape(height, width, 4)  #  Copies the data
-
-        # Add the image to itself - this is a 'burning' effect
-        #copy_arr = numpy.copy(arr)
-        #arr += copy_arr
-
-        # Add zeros or ones for simpler noise
-        noise = numpy.random.randint(0, 1, size=width*height)
-        arr += noise
-
-        # recreate a qimage from the copied numpy arr
-        QI = QtGui.QImage(arr.data, width, height, QtGui.QImage.Format.Format_RGB32)
-        self.pixmap = QtGui.QPixmap.fromImage(QI)
-
-
-        #self.pixmap = QtGui.QPixmap.fromImage(img_url)
-        self.ui.label_oct_image.setPixmap(self.pixmap)
-
-
-        return
 
     def create_signals(self):
         """ Create signal objects to be used by controller and internal simple

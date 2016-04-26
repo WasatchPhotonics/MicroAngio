@@ -2,9 +2,13 @@
 and UI updates with MVC style architecture.
 """
 
-from PySide import QtCore
+import random
 
-from . import views, devices
+import numpy
+
+from PySide import QtCore, QtGui
+
+from . import views
 
 import logging
 log = logging.getLogger(__name__)
@@ -18,11 +22,12 @@ class Controller(object):
 
         self.create_styles()
 
+        self.setup_simulated_imagery()
+
         self.create_signals()
 
         self.bind_view_signals()
 
-        self.device = devices.LongPollingSimulateSpectra(log_queue)
         self.total_spectra = 0
 
         self.set_capture_active()
@@ -105,6 +110,25 @@ class Controller(object):
                 background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
                 border-radius: 0px;
         }"""
+
+    def setup_simulated_imagery(self):
+        """ Load oct imagery from the resource file into numpy arrays for easier
+        noise addition.
+        """
+        # Load from resource into numpy array
+        img_url = ":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"
+        img_url = ":/website/images/oct_gallery/cat1_retina36s.jpg"
+        incomingImage = QtGui.QImage(img_url)
+        incomingImage = incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
+
+        self.simulated_oct_width = incomingImage.width()
+        self.simulated_oct_height = incomingImage.height()
+
+        ptr = incomingImage.constBits()
+        self.simulated_oct = numpy.array(ptr).reshape(
+                                self.simulated_oct_height,
+                                self.simulated_oct_width, 4)  #  Copies the data
+
 
     def create_signals(self):
         """ Create signals for access by parent process.
@@ -259,23 +283,31 @@ class Controller(object):
         self.main_timer = QtCore.QTimer()
         self.main_timer.setSingleShot(True)
         self.main_timer.timeout.connect(self.event_loop)
-        #self.main_timer.start(0)
+        self.main_timer.start(0)
 
     def event_loop(self):
         """ Process queue events, interface events, then update views.
         """
-        result = self.device.read()
-        if result is not None:
-            self.total_spectra += 1
-            self.form.txt_box.append("%s spectra read" \
-                                     % self.total_spectra)
+
+        # Add a value to simulate noise
+        copy_sim = numpy.copy(self.simulated_oct)
+
+        result = random.choice(range(0,10))
+        copy_sim += result
+
+        # recreate a qimage from the copied numpy arr
+        QI = QtGui.QImage(copy_sim.data,
+                          self.simulated_oct_width,
+                          self.simulated_oct_height, QtGui.QImage.Format.Format_RGB32)
+        self.oct_pixmap = QtGui.QPixmap.fromImage(QI)
+
+        self.form.ui.label_oct_image.setPixmap(self.oct_pixmap)
 
         if self.continue_loop:
-            self.main_timer.start(0)
+            self.main_timer.start(500)
 
     def close(self):
         self.continue_loop = False
-        self.device.close()
         log.debug("Control level close")
         self.control_exit_signal.exit.emit("Control level close")
 
