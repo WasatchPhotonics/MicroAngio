@@ -131,6 +131,14 @@ class Controller(object):
             pbc.setEnabled(True)
             pbe.setEnabled(True)
 
+        elif index_changed == 2:
+            pbs.setStyleSheet(self.setup_inactive)
+            pbc.setStyleSheet(self.capture_active)
+
+            pbs.setEnabled(True)
+            pbc.setEnabled(True)
+            pbe.setEnabled(True)
+
 
 
     def setup_main_event_loop(self):

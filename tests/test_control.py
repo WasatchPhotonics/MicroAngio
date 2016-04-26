@@ -171,3 +171,26 @@ class TestControl:
         assert pbs.isEnabled() == True
         assert pbc.isEnabled() == True
         assert pbe.isEnabled() == True
+
+
+
+    def test_view_angio_highlights_capture(self, basic_window, qtbot):
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            # Set it to hardware then back to oct to get over default
+            nav_cmb.setCurrentIndex(0)
+            qtbot.wait(1000)
+            nav_cmb.setCurrentIndex(2)
+
+        pbs = basic_window.form.ui.pushButton_setup
+        pbc = basic_window.form.ui.pushButton_capture
+        pbe = basic_window.form.ui.pushButton_evaluate
+
+        assert "/* Red Active */" not in pbs.styleSheet()
+        assert "/* Red Active */" in pbc.styleSheet()
+        assert "/* Red Active */" not in pbe.styleSheet()
+
+        assert pbs.isEnabled() == True
+        assert pbc.isEnabled() == True
+        assert pbe.isEnabled() == True
