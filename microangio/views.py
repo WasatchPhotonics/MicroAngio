@@ -90,9 +90,13 @@ class BasicWindow(QtGui.QMainWindow):
         ptr = incomingImage.constBits()
         arr = numpy.array(ptr).reshape(height, width, 4)  #  Copies the data
 
-        # Add the noise
-        copy_arr = numpy.copy(arr)
-        arr += copy_arr
+        # Add the image to itself - this is a 'burning' effect
+        #copy_arr = numpy.copy(arr)
+        #arr += copy_arr
+
+        # Add zeros or ones for simpler noise
+        noise = numpy.random.randint(0, 1, size=width*height)
+        arr += noise
 
         # recreate a qimage from the copied numpy arr
         QI = QtGui.QImage(arr.data, width, height, QtGui.QImage.Format.Format_RGB32)
