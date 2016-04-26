@@ -293,7 +293,7 @@ class Controller(object):
         """ Process queue events, interface events, then update views.
         """
 
-        copy_sim = numpy.copy(self.simulated_oct)
+        self.copy_sim = numpy.copy(self.simulated_oct)
 
         # Get random sample of width and height
         rand_width = numpy.random.choice(self.simulated_oct_width, size=self.simulated_oct_width/18)
@@ -304,13 +304,13 @@ class Controller(object):
             for height_index in rand_height:
                 #copy_sim[height_index, width_index] = [55, 55, 55, 255]
                 if random.choice([True, False]):
-                    copy_sim[height_index, width_index] = [0, 0, 0, 255]
+                    self.copy_sim[height_index, width_index] = [0, 0, 0, 255]
                 else:
-                    copy_sim[height_index, width_index] = [55, 55, 55, 255]
+                    self.copy_sim[height_index, width_index] = [55, 55, 55, 255]
 
 
         # recreate a qimage from the copied numpy arr
-        self.simulated_oct_image = QtGui.QImage(copy_sim.data,
+        self.simulated_oct_image = QtGui.QImage(self.copy_sim.data,
                           self.simulated_oct_width,
                           self.simulated_oct_height, QtGui.QImage.Format.Format_RGB32)
         self.oct_pixmap = QtGui.QPixmap.fromImage(self.simulated_oct_image)
