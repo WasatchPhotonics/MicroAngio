@@ -118,20 +118,20 @@ class Controller(object):
         # Load from resource into numpy array
         img_url = ":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"
         img_url = ":/website/images/oct_gallery/cat1_retina36s.jpg"
-        incomingImage = QtGui.QImage(img_url)
-        incomingImage = incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
+        self.incomingImage = QtGui.QImage(img_url)
+        self.incomingImage = self.incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
 
-        self.simulated_oct_width = incomingImage.width()
-        self.simulated_oct_height = incomingImage.height()
+        self.simulated_oct_width = self.incomingImage.width()
+        self.simulated_oct_height = self.incomingImage.height()
 
-        ptr = incomingImage.constBits()
+        ptr = self.incomingImage.constBits()
 
         self.simulated_oct = numpy.array(ptr).reshape(
                                 self.simulated_oct_height,
                                 self.simulated_oct_width, 4)  #  Copies the data
 
-        print self.simulated_oct
-        print self.simulated_oct.shape
+        #print self.simulated_oct
+        #print self.simulated_oct.shape
 
 
     def create_signals(self):
