@@ -125,9 +125,13 @@ class Controller(object):
         self.simulated_oct_height = incomingImage.height()
 
         ptr = incomingImage.constBits()
+
         self.simulated_oct = numpy.array(ptr).reshape(
                                 self.simulated_oct_height,
                                 self.simulated_oct_width, 4)  #  Copies the data
+
+        print self.simulated_oct
+        print self.simulated_oct.shape
 
 
     def create_signals(self):
@@ -289,11 +293,21 @@ class Controller(object):
         """ Process queue events, interface events, then update views.
         """
 
-        # Add a value to simulate noise
         copy_sim = numpy.copy(self.simulated_oct)
 
-        result = random.choice(range(0,10))
-        copy_sim += result
+        # Get random sample of width and height
+        rand_width = numpy.random.choice(self.simulated_oct_width, size=self.simulated_oct_width/18)
+        rand_height = numpy.random.choice(self.simulated_oct_height, size=self.simulated_oct_height/18)
+
+        # Assign each of the randomly selected pixels either white or black
+        for width_index in rand_width:
+            for height_index in rand_height:
+                #copy_sim[height_index, width_index] = [55, 55, 55, 255]
+                if random.choice([True, False]):
+                    copy_sim[height_index, width_index] = [0, 0, 0, 255]
+                else:
+                    copy_sim[height_index, width_index] = [55, 55, 55, 255]
+
 
         # recreate a qimage from the copied numpy arr
         QI = QtGui.QImage(copy_sim.data,
@@ -302,6 +316,8 @@ class Controller(object):
         self.oct_pixmap = QtGui.QPixmap.fromImage(QI)
 
         self.form.ui.label_oct_image.setPixmap(self.oct_pixmap)
+
+
 
         if self.continue_loop:
             self.main_timer.start(500)
