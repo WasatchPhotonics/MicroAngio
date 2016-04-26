@@ -32,6 +32,16 @@ class Controller(object):
         This should be done all in the view, somehow. Or even better, in the
         designer, specifying active/inactive themes - somehow
         """
+
+        self.NAV_HARDWARE = 0
+        self.NAV_OCT = 1
+        self.NAV_ANGIO = 2
+
+        self.HARDWARE_SETUP = 0
+        self.OCT_SETUP = 1
+        self.OCT_CAPTURE = 2
+        self.ANGIO_SETUP = 3
+        self.ANGIO_CAPTURE = 4
         self.setup_active = """QPushButton:hover
         {
                 border: 1px solid #78879b;
@@ -113,9 +123,46 @@ class Controller(object):
         pbs = self.form.ui.pushButton_setup
         pbs.clicked.connect(self.update_mode_setup)
 
+        pbc = self.form.ui.pushButton_capture
+        pbc.clicked.connect(self.update_mode_capture)
+
+    def update_mode_capture(self):
+        """ Activate the appropriate controls for the currently selected main
+        navigation, capture subsection.
+        """
+
+        log.info("Mode select capture")
+        self.control_signals.mode_select.emit("capture")
+
+        cmn = self.form.ui.comboBox_mode_navigation
+        if cmn.currentIndex() == self.NAV_OCT:
+            log.info("Switch to OCT capture")
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(self.OCT_CAPTURE)
+            self.set_capture_active()
+
+        elif cmn.currentIndex() == NAV_ANGIO:
+            log.info("Switch to Angio setup")
+            self.set_capture_active()
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(self.ANGIO_CAPTURE)
+
+    def set_capture_active(self):
+        """ Convenience function for making just the capture button have the
+        red style sheet and all others have grey.
+        """
+        pbs = self.form.ui.pushButton_setup
+        pbc = self.form.ui.pushButton_capture
+        pbe = self.form.ui.pushButton_evaluate
+
+        pbs.setStyleSheet(self.setup_inactive)
+        pbc.setStyleSheet(self.capture_active)
+
+        pbs.setEnabled(True)
+        pbc.setEnabled(True)
+        pbe.setEnabled(True)
+
     def update_mode_setup(self):
         """ Change the current mode under the currently selected main
-        navigation. This is setup/capture/evalute.
+        navigation for the appropriate setup subsection.
         """
 
         log.info("Mode select setup")
@@ -124,13 +171,19 @@ class Controller(object):
         # If you're in hardware mode, and you click setup, disable the other
         # buttons and set setup red
         cmn = self.form.ui.comboBox_mode_navigation
-        if cmn.currentIndex() == 0:
+        if cmn.currentIndex() == self.NAV_HARDWARE:
             self.set_setup_active_disable_others()
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(self.HARDWARE_SETUP)
 
-        elif cmn.currentIndex() == 1:
+        elif cmn.currentIndex() == self.NAV_OCT:
             log.info("Switch to OCT setup")
             self.set_setup_active()
-            self.form.ui.stackedWidget_bottom.setCurrentIndex(1)
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(self.OCT_SETUP)
+
+        elif cmn.currentIndex() == self.NAV_ANGIO:
+            log.info("Switch to Angio setup")
+            self.set_setup_active()
+            self.form.ui.stackedWidget_bottom.setCurrentIndex(self.ANGIO_SETUP)
 
     def set_setup_active(self):
         """ Show the setup button as red active, the others as grey active.
@@ -176,20 +229,10 @@ class Controller(object):
             self.set_setup_active_disable_others()
 
         elif index_changed == 1:
-            pbs.setStyleSheet(self.setup_inactive)
-            pbc.setStyleSheet(self.capture_active)
-
-            pbs.setEnabled(True)
-            pbc.setEnabled(True)
-            pbe.setEnabled(True)
+            self.set_capture_active()
 
         elif index_changed == 2:
-            pbs.setStyleSheet(self.setup_inactive)
-            pbc.setStyleSheet(self.capture_active)
-
-            pbs.setEnabled(True)
-            pbc.setEnabled(True)
-            pbe.setEnabled(True)
+            self.set_capture_active()
 
 
 

@@ -248,7 +248,7 @@ class TestControl:
 
         signal = basic_window.control_signals.nav_changed
         with qtbot.wait_signal(signal, timeout=1000, raising=True):
-            # Set it to hardware then back to oct to get over default
+            # Set it to hardware then back to angio to get over default
             nav_cmb.setCurrentIndex(0)
             qtbot.wait(1000)
             nav_cmb.setCurrentIndex(2)
@@ -266,6 +266,86 @@ class TestControl:
         assert "/* Grey Inactive */" in pbc.styleSheet()
         assert "/* Grey Inactive */" in pbe.styleSheet()
 
-        # Verify that the bottom page changes to oct setup
+        # Verify that the bottom page changes to angio setup
         bot_wid = basic_window.form.ui.stackedWidget_bottom
-        assert bot_wid.currentIndex() == 1
+        assert bot_wid.currentIndex() == 3
+
+    def test_capture_button_emits_signal(self, basic_window, qtbot):
+        pbc = basic_window.form.ui.pushButton_capture
+
+        signal = basic_window.control_signals.mode_select
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            qtbot.mouseClick(pbc, QtCore.Qt.LeftButton)
+
+        qtbot.wait(3000)
+
+    def test_view_oct_then_click_capture_no_change(self, basic_window, qtbot):
+
+        # Change to index 0 then back to 1 to activate oct mode
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        pbs = basic_window.form.ui.pushButton_setup
+        pbc = basic_window.form.ui.pushButton_capture
+        pbe = basic_window.form.ui.pushButton_evaluate
+
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            # Set it to hardware then back to oct to get over default
+            nav_cmb.setCurrentIndex(0)
+            qtbot.wait(1000)
+            nav_cmb.setCurrentIndex(1)
+
+        # verify the capture button is red, and others are gray
+        assert "/* Grey Inactive */" in pbs.styleSheet()
+        assert "/* Red Active */" in pbc.styleSheet()
+        assert "/* Grey Inactive */" in pbe.styleSheet()
+
+
+    def test_view_angio_then_click_capture_no_change(self, basic_window, qtbot):
+
+        # Change to index 0 then back to 1 to activate oct mode
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        pbs = basic_window.form.ui.pushButton_setup
+        pbc = basic_window.form.ui.pushButton_capture
+        pbe = basic_window.form.ui.pushButton_evaluate
+
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            # Set it to hardware then back to angio to get over default
+            nav_cmb.setCurrentIndex(0)
+            qtbot.wait(1000)
+            nav_cmb.setCurrentIndex(2)
+
+        # verify the capture button is red, and others are gray
+        assert "/* Grey Inactive */" in pbs.styleSheet()
+        assert "/* Red Active */" in pbc.styleSheet()
+        assert "/* Grey Inactive */" in pbe.styleSheet()
+
+
+    def test_view_oct_setup_then_capture_changes_controls(self, basic_window, qtbot):
+
+        # Change to index 0 then back to 1 to activate oct mode
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        pbs = basic_window.form.ui.pushButton_setup
+        pbc = basic_window.form.ui.pushButton_capture
+        pbe = basic_window.form.ui.pushButton_evaluate
+
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            # Set it to hardware then back to oct to get over default
+            nav_cmb.setCurrentIndex(0)
+            qtbot.wait(1000)
+            nav_cmb.setCurrentIndex(1)
+
+        # Click setup, verify it is now red and others are gray
+        qtbot.mouseClick(pbs, QtCore.Qt.LeftButton)
+        qtbot.wait(1000)
+        assert "/* Red Active */" in pbs.styleSheet()
+        assert "/* Grey Inactive */" in pbc.styleSheet()
+        assert "/* Grey Inactive */" in pbe.styleSheet()
+
+        # Click capture, verify it is now red and others are gray
+        qtbot.mouseClick(pbc, QtCore.Qt.LeftButton)
+        qtbot.wait(1000)
+        assert "/* Grey Inactive */" in pbs.styleSheet()
+        assert "/* Red Active */" in pbc.styleSheet()
+        assert "/* Grey Inactive */" in pbe.styleSheet()
