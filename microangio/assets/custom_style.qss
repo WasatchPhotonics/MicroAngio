@@ -26,6 +26,14 @@
 main background color: rgb(56, 56, 56)
 vertical slider background none at widget level
 spinbox minimum width to 50 (looks ok if you turn the arrows off)
+
+Red gradient for active navigation bar button is:
+	background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));
+
+
+Gray gradient for inactive navigation bar button is:
+    background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+
 */
 
 QProgressBar:horizontal {

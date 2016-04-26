@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Tue Apr 26 09:16:49 2016
+# Created: Tue Apr 26 09:27:57 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1328,9 +1328,6 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton {\n"
 "background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
-"/* the red gradient university\n"
-"    background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));\n"
-"*/\n"
 "border-radius: 0px;\n"
 "}")
         self.pushButton_capture.setCheckable(False)
@@ -1433,6 +1430,33 @@ class Ui_MainWindow(object):
         self.pushButton_hidden.setStyleSheet("background: none;")
         self.pushButton_hidden.setText("")
         self.pushButton_hidden.setObjectName("pushButton_hidden")
+        self.pushButton_capture_hidden_red = QtGui.QPushButton(self.frame_main_navigation)
+        self.pushButton_capture_hidden_red.setGeometry(QtCore.QRect(860, 10, 130, 30))
+        self.pushButton_capture_hidden_red.setMinimumSize(QtCore.QSize(130, 30))
+        self.pushButton_capture_hidden_red.setMaximumSize(QtCore.QSize(130, 30))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setWeight(75)
+        font.setBold(True)
+        self.pushButton_capture_hidden_red.setFont(font)
+        self.pushButton_capture_hidden_red.setStyleSheet("QPushButton:hover\n"
+"{\n"
+"    border: 1px solid #78879b;\n"
+"    color: silver;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"    border-color: rgb(0,0,0);\n"
+"}\n"
+"\n"
+"QPushButton {\n"
+"    background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));\n"
+"border-radius: 0px;\n"
+"}")
+        self.pushButton_capture_hidden_red.setCheckable(False)
+        self.pushButton_capture_hidden_red.setChecked(False)
+        self.pushButton_capture_hidden_red.setObjectName("pushButton_capture_hidden_red")
         self.horizontalLayout.addWidget(self.frame_main_navigation)
         self.stackedWidget_top.addWidget(self.page)
         self.page_2 = QtGui.QWidget()
@@ -5953,9 +5977,10 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget_bottom.setCurrentIndex(0)
+        self.stackedWidget_bottom.setCurrentIndex(4)
         QtCore.QObject.connect(self.comboBox_selector, QtCore.SIGNAL("currentIndexChanged(int)"), self.stackedWidget_bottom.setCurrentIndex)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.comboBox_selector.hide)
+        QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.pushButton_capture_hidden_red.hide)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -5971,6 +5996,7 @@ class Ui_MainWindow(object):
         self.comboBox_selector.setItemText(2, QtGui.QApplication.translate("MainWindow", "OCTCAP", None, QtGui.QApplication.UnicodeUTF8))
         self.comboBox_selector.setItemText(3, QtGui.QApplication.translate("MainWindow", "ANGIOS", None, QtGui.QApplication.UnicodeUTF8))
         self.comboBox_selector.setItemText(4, QtGui.QApplication.translate("MainWindow", "ANGIOCAP", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_capture_hidden_red.setText(QtGui.QApplication.translate("MainWindow", "Capture", None, QtGui.QApplication.UnicodeUTF8))
         self.label_15.setText(QtGui.QApplication.translate("MainWindow", "Saved Configuration", None, QtGui.QApplication.UnicodeUTF8))
         self.label_30.setText(QtGui.QApplication.translate("MainWindow", "2016-04-29 17:54", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_135.setShortcut(QtGui.QApplication.translate("MainWindow", "Backspace", None, QtGui.QApplication.UnicodeUTF8))
