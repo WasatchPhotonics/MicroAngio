@@ -112,37 +112,32 @@ class Controller(object):
         }"""
 
     def setup_simulated_imagery(self):
+
+        img_url = ":/website/images/oct_gallery/cat1_retina36s.jpg"
+        self.simulated_center_bscan = self.convert_image(img_url)
+
+        img_url = ":/website/images/oct_gallery/retina_angiograph_03.jpg"
+        self.simulated_angio_preview = self.convert_image(img_url)
+
+        img_url = ":/website/images/oct_gallery/square_retina11.jpg"
+        self.simulated_current_bscan = self.convert_image(img_url)
+
+    def convert_image(self, img_url):
         """ Load oct imagery from the resource file into numpy arrays for easier
         noise addition.
         """
         # Load from resource into numpy array
-        img_url = ":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"
-        img_url = ":/website/images/oct_gallery/cat1_retina36s.jpg"
-        self.incomingImage = QtGui.QImage(img_url)
-        self.incomingImage = self.incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
+        incomingImage = QtGui.QImage(img_url)
+        incomingImage = incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
 
-        self.simulated_oct_width = self.incomingImage.width()
-        self.simulated_oct_height = self.incomingImage.height()
+        height = incomingImage.height()
+        width = incomingImage.width()
 
-        ptr = self.incomingImage.constBits()
+        ptr = incomingImage.constBits()
 
-        self.simulated_oct = numpy.array(ptr).reshape(
-                                self.simulated_oct_height,
-                                self.simulated_oct_width, 4)  #  Copies the data
+        temp_array = numpy.array(ptr).reshape(height, width, 4)
+        return temp_array
 
-
-        img_url = ":/website/images/oct_gallery/retina_angiograph_03.jpg"
-        self.incomingImage = QtGui.QImage(img_url)
-        self.incomingImage = self.incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
-
-        self.simulated_angio_preview_width = self.incomingImage.width()
-        self.simulated_angio_preview_height = self.incomingImage.height()
-
-        ptr = self.incomingImage.constBits()
-
-        self.simulated_angio_preview = numpy.array(ptr).reshape(
-                                self.simulated_angio_preview_height,
-                                self.simulated_angio_preview_width, 4)  #  Copies the data
     def create_signals(self):
         """ Create signals for access by parent process.
         """
@@ -315,23 +310,32 @@ class Controller(object):
 
         swb = self.form.ui.stackedWidget_bottom
         if swb.currentIndex() == self.OCT_CAPTURE:
-            self.copy_sim = numpy.copy(self.simulated_oct)
-            width = self.simulated_oct_width
-            height = self.simulated_oct_height
+            self.copy_sim = numpy.copy(self.simulated_center_bscan)
 
             display_label = self.form.ui.label_oct_image
 
+            self.update_image(self.copy_sim, display_label)
+
         elif swb.currentIndex() == self.ANGIO_CAPTURE:
             self.copy_sim = numpy.copy(self.simulated_angio_preview)
-            width = self.simulated_angio_preview_width
-            height = self.simulated_angio_preview_height
-
             display_label = self.form.ui.label_angio_preview_image
+            self.update_image(self.copy_sim, display_label)
+
+            self.copy_sim = numpy.copy(self.simulated_center_bscan)
+            display_label = self.form.ui.label_angio_center_bscan_image
+            self.update_image(self.copy_sim, display_label)
 
         else:
             log.info("Not adding noise to un-displayed imagery")
             return
 
+
+    def update_image(self, copy_sim, display_label):
+        """ Apply the noise to the image, then store the data as a component
+        of the label to make sure the garbage collector doesn't cause a crash.
+        """
+        width = copy_sim.shape[1]
+        height = copy_sim.shape[0]
 
         noise_factor = 4
         # Get random sample of width and height
@@ -347,15 +351,17 @@ class Controller(object):
 
                 # Differing shades of grade, alpha is apparently ignored
                 br = random.choice([45, 50, 55, 60, 65, 70, 75, 50, 100])
-                self.copy_sim[height_index, width_index] = [br, br, br, br]
+                copy_sim[height_index, width_index] = [br, br, br, br]
 
 
         # recreate a qimage from the copied numpy arr
-        self.simulated_oct_image = QtGui.QImage(self.copy_sim.data,
-                          width, height, QtGui.QImage.Format.Format_RGB32)
-        self.oct_pixmap = QtGui.QPixmap.fromImage(self.simulated_oct_image)
+        image = QtGui.QImage(copy_sim.data,
+                             width, height, QtGui.QImage.Format.Format_RGB32)
+        new_pixmap = QtGui.QPixmap.fromImage(image)
 
-        display_label.setPixmap(self.oct_pixmap)
+        new_pixmap.stored_numpy_data = copy_sim
+        new_pixmap.stored_image_data = image
+        display_label.setPixmap(new_pixmap)
 
 
     def close(self):
