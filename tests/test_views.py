@@ -30,5 +30,9 @@ class TestBasicMainWindow:
         #assert basic_form.ui.labelStatus.text() == "Pre-initialization"
         assert basic_form.width() >= 1000
         assert basic_form.height() >= 700
-        qtbot.wait(1000)
+
+        basic_form.ui.comboBox_mode_navigation.setCurrentIndex(0)
+        basic_form.ui.stackedWidget_bottom.setCurrentIndex(0)
+        qtbot.wait(30000)
+
 

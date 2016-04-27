@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Wed Apr 27 08:27:00 2016
+# Created: Wed Apr 27 08:30:53 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1811,13 +1811,26 @@ class Ui_MainWindow(object):
         self.frame_button_bar_12.setObjectName("frame_button_bar_12")
         self.gridLayout_20 = QtGui.QGridLayout(self.frame_button_bar_12)
         self.gridLayout_20.setObjectName("gridLayout_20")
-        self.label_7 = QtGui.QLabel(self.frame_button_bar_12)
+        self.stackedWidget_hardware = QtGui.QStackedWidget(self.frame_button_bar_12)
+        self.stackedWidget_hardware.setObjectName("stackedWidget_hardware")
+        self.page_hardware_static = QtGui.QWidget()
+        self.page_hardware_static.setObjectName("page_hardware_static")
+        self.horizontalLayout_15 = QtGui.QHBoxLayout(self.page_hardware_static)
+        self.horizontalLayout_15.setSpacing(0)
+        self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_15.setObjectName("horizontalLayout_15")
+        self.label_7 = QtGui.QLabel(self.page_hardware_static)
         self.label_7.setStyleSheet("border: none;")
         self.label_7.setText("")
         self.label_7.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/raw_image_pyqtgraph_plot.png"))
         self.label_7.setScaledContents(True)
         self.label_7.setObjectName("label_7")
-        self.gridLayout_20.addWidget(self.label_7, 0, 0, 1, 1)
+        self.horizontalLayout_15.addWidget(self.label_7)
+        self.stackedWidget_hardware.addWidget(self.page_hardware_static)
+        self.page_hardware_simulation = QtGui.QWidget()
+        self.page_hardware_simulation.setObjectName("page_hardware_simulation")
+        self.stackedWidget_hardware.addWidget(self.page_hardware_simulation)
+        self.gridLayout_20.addWidget(self.stackedWidget_hardware, 0, 0, 1, 1)
         self.gridLayout_19.addWidget(self.frame_button_bar_12, 0, 0, 1, 1)
         self.verticalLayout_2.addWidget(self.frame_white_border_13)
         self.gridLayout_17.addWidget(self.frame_center_nest_5, 0, 0, 1, 1)
@@ -5961,7 +5974,8 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget_bottom.setCurrentIndex(2)
+        self.stackedWidget_bottom.setCurrentIndex(0)
+        self.stackedWidget_hardware.setCurrentIndex(1)
         QtCore.QObject.connect(self.comboBox_selector, QtCore.SIGNAL("currentIndexChanged(int)"), self.stackedWidget_bottom.setCurrentIndex)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.comboBox_selector.hide)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.pushButton_capture_hidden_red.hide)

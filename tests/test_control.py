@@ -453,7 +453,7 @@ class TestControl:
         with qtbot.wait_signal(signal, timeout=3000, raising=False):
             print "Just waiting for a signal that should never happen"
 
-
         cease_data = lap.pixmap().toImage()
 
         assert start_data != cease_data
+

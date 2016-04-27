@@ -25,13 +25,35 @@ class BasicWindow(QtGui.QMainWindow):
         # x, y, w, h
         self.setGeometry(geometry[0], geometry[1], geometry[2], geometry[3])
 
-        #self.load_placeholder_images()
+        self.load_placeholder_images()
         self.set_initial_state()
 
         app_icon = QtGui.QIcon(":ui/images/ApplicationIcon.ico")
         self.setWindowIcon(app_icon)
         self.setWindowTitle(title)
         self.show()
+
+    def load_placeholder_images(self):
+        """ Use the example data 16 bit tiffs, make sure they can be displayed
+        in the qt label. Conversion is from:
+        http://blog.philippklaus.de/2011/08/handle-16bit-tiff-images-in-python/
+        """
+        import numpy
+        img_url = "microangio/assets/images/raw_data/2048x1024_repeated.tif"
+
+        # Open the image, convert in place
+        ref_img = Image.open(img_url)
+        ref_img.convert("L")
+
+        # Assign it to a numpy array, transpose X and Y dimensions
+        ref_data = numpy.asarray(ref_img, dtype=numpy.uint16).T
+
+        # Create an imageview control, assign the data and make it visible
+        self.ui.imview_reference = pyqtgraph.ImageView()
+        self.ui.imview_reference.setImage(ref_data)
+        self.ui.stackedWidget_hardware.addWidget(self.ui.imview_reference)
+        self.ui.stackedWidget_hardware.setCurrentIndex(2)
+
 
     def set_initial_state(self):
         """ Pre-configure the interface by clicking buttons and setting
