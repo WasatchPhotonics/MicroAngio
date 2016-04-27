@@ -309,7 +309,13 @@ class Controller(object):
         """
 
         swb = self.form.ui.stackedWidget_bottom
-        if swb.currentIndex() == self.OCT_CAPTURE:
+
+        if swb.currentIndex() == self.HARDWARE_SETUP:
+
+            self.update_pyqtgraph_image(self.simulated_hardware_image,
+                                        self.form.ui.imview_hardware)
+
+        elif swb.currentIndex() == self.OCT_CAPTURE:
 
             display_label = self.form.ui.label_oct_image
             self.update_image(self.simulated_center_bscan, display_label)
@@ -327,6 +333,12 @@ class Controller(object):
         else:
             log.info("Not adding noise to un-displayed imagery")
             return
+
+    def update_pyqtgraph_image(self, input_data, display_image):
+        """ Appy noise to the image, then store the data as a component
+        of the pyqtgraph imageview control for permanence.
+        """
+        return
 
 
     def update_image(self, input_data, display_label):
