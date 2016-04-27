@@ -494,3 +494,4 @@ class TestControl:
             nav_cmb.setCurrentIndex(self.NAV_HARDWARE)
 
         qtbot.wait(3000)
+        assert True==False

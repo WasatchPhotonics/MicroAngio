@@ -45,29 +45,16 @@ class Controller(object):
         May actually be 8 bit tiffs for the prototype, but keep this in place
         so it doesn't bite you later.
         """
-        import numpy
-        img_url = "microangio/assets/images/oct_gallery/2048x1024_repeated.tif"
-        #img_url = ":microangio/assets/images/oct_gallery/2048x1024_repeated.tif"
-
-        # Open the image, convert in place
-        ref_img = Image.open(img_url)
-        ref_img.convert("L")
-
-        # Assign it to a numpy array, transpose X and Y dimensions
-        ref_data = numpy.asarray(ref_img, dtype=numpy.uint16).T
+        self.ref_data = numpy.copy(self.simulated_hardware_raw).T
 
         # Create an imageview control, assign the data and make it visible
         self.form.ui.imview_hardware = pyqtgraph.ImageView()
         imvh = self.form.ui.imview_hardware
-        imvh.setImage(ref_data)
+        imvh.setImage(self.ref_data)
 
         swh = self.form.ui.stackedWidget_hardware
         swh.addWidget(imvh)
         swh.setCurrentIndex(2)
-
-        # This section borrowed almost verbatim from the roiClicked function in
-        # ImageView. This should probably be changed to something closer to
-        # programatically clicking the roi button
 
         # Get the pre-created ROI, set it to full width, in the middle of the
         # image
@@ -75,12 +62,15 @@ class Controller(object):
         imvh.roi.setPos((0, 512))
         imvh.roi.show()
 
+
+        # This section borrowed almost verbatim from the roiClicked function in
+        # ImageView. This should probably be changed to something closer to
+        # programatically clicking the roi button
         imvh.ui.roiPlot.setMouseEnabled(True, True)
         imvh.ui.splitter.setSizes([imvh.height()*0.6, imvh.height()*0.4])
         imvh.roiCurve.show()
         imvh.roiChanged()
         imvh.ui.roiPlot.showAxis('left')
-
         imvh.ui.roiPlot.setVisible(True)
 
 
@@ -162,6 +152,10 @@ class Controller(object):
         }"""
 
     def setup_simulated_imagery(self):
+
+        img_url = ":/website/images/oct_gallery/2048x1024_repeated.tif"
+        #img_url = ":/website/images/oct_gallery/cat1_retina36s.jpg"
+        self.simulated_hardware_raw = self.convert_image(img_url)
 
         img_url = ":/website/images/oct_gallery/cat1_retina36s.jpg"
         self.simulated_center_bscan = self.convert_image(img_url)
@@ -361,8 +355,7 @@ class Controller(object):
         swb = self.form.ui.stackedWidget_bottom
 
         if swb.currentIndex() == self.HARDWARE_SETUP:
-
-            #self.update_pyqtgraph_image(self.simulated_hardware_image,
+            #self.update_pyqtgraph_image(self.simulated_hardware_raw,
                                         #self.form.ui.imview_hardware)
             pass
 
