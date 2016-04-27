@@ -5498,7 +5498,7 @@ border: 2px solid black;
                      <string/>
                     </property>
                     <property name="pixmap">
-                     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/cat1_retina36s.jpg</pixmap>
                     </property>
                     <property name="scaledContents">
                      <bool>true</bool>
@@ -6229,7 +6229,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                           <string/>
                          </property>
                          <property name="pixmap">
-                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/cat1_retina36s.jpg</pixmap>
                          </property>
                          <property name="scaledContents">
                           <bool>true</bool>
@@ -10606,7 +10606,7 @@ border-radius: 5px;
                      <string/>
                     </property>
                     <property name="pixmap">
-                     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg</pixmap>
+                     <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/retina_angiograph_03.jpg</pixmap>
                     </property>
                     <property name="scaledContents">
                      <bool>true</bool>
@@ -10687,7 +10687,7 @@ border-radius: 5px;
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
-                     <height>16777215</height>
+                     <height>500</height>
                     </size>
                    </property>
                    <property name="styleSheet">
@@ -10774,7 +10774,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                           <string/>
                          </property>
                          <property name="pixmap">
-                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/square_cat1_retina36s.jpg</pixmap>
                          </property>
                          <property name="scaledContents">
                           <bool>true</bool>
@@ -10798,7 +10798,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                    <property name="maximumSize">
                     <size>
                      <width>500</width>
-                     <height>16777215</height>
+                     <height>500</height>
                     </size>
                    </property>
                    <property name="styleSheet">
@@ -10885,7 +10885,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                           <string/>
                          </property>
                          <property name="pixmap">
-                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat_retina36.jpg</pixmap>
+                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/square_retina11.jpg</pixmap>
                          </property>
                          <property name="scaledContents">
                           <bool>true</bool>
@@ -11439,7 +11439,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                           <string/>
                          </property>
                          <property name="pixmap">
-                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg</pixmap>
+                          <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/retina_angiograph_03.jpg</pixmap>
                          </property>
                          <property name="scaledContents">
                           <bool>true</bool>

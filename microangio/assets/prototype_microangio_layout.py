@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Wed Apr 27 06:48:28 2016
+# Created: Wed Apr 27 08:27:00 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -2997,7 +2997,7 @@ class Ui_MainWindow(object):
         self.labelSnapshotThumbnail_16.setGeometry(QtCore.QRect(13, 32, 151, 121))
         self.labelSnapshotThumbnail_16.setStyleSheet("border: none;")
         self.labelSnapshotThumbnail_16.setText("")
-        self.labelSnapshotThumbnail_16.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.labelSnapshotThumbnail_16.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/cat1_retina36s.jpg"))
         self.labelSnapshotThumbnail_16.setScaledContents(True)
         self.labelSnapshotThumbnail_16.setObjectName("labelSnapshotThumbnail_16")
         self.label_35 = QtGui.QLabel(self.frame_85)
@@ -3324,7 +3324,7 @@ class Ui_MainWindow(object):
         self.label_oct_image = QtGui.QLabel(self.frame_button_bar_17)
         self.label_oct_image.setStyleSheet("border: none;")
         self.label_oct_image.setText("")
-        self.label_oct_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label_oct_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/cat1_retina36s.jpg"))
         self.label_oct_image.setScaledContents(True)
         self.label_oct_image.setObjectName("label_oct_image")
         self.gridLayout_32.addWidget(self.label_oct_image, 0, 0, 1, 1)
@@ -5113,7 +5113,7 @@ class Ui_MainWindow(object):
         self.labelSnapshotThumbnail_14.setGeometry(QtCore.QRect(13, 60, 161, 131))
         self.labelSnapshotThumbnail_14.setStyleSheet("border: none;")
         self.labelSnapshotThumbnail_14.setText("")
-        self.labelSnapshotThumbnail_14.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"))
+        self.labelSnapshotThumbnail_14.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
         self.labelSnapshotThumbnail_14.setScaledContents(True)
         self.labelSnapshotThumbnail_14.setObjectName("labelSnapshotThumbnail_14")
         self.gridLayout_14.addWidget(self.frame_center_nest_7, 0, 0, 1, 1)
@@ -5148,7 +5148,7 @@ class Ui_MainWindow(object):
         self.gridLayout_9.setObjectName("gridLayout_9")
         self.frame_white_border_4 = QtGui.QFrame(self.frame_center_nest_4)
         self.frame_white_border_4.setMinimumSize(QtCore.QSize(200, 50))
-        self.frame_white_border_4.setMaximumSize(QtCore.QSize(500, 16777215))
+        self.frame_white_border_4.setMaximumSize(QtCore.QSize(500, 500))
         self.frame_white_border_4.setStyleSheet("QFrame {\n"
 "    border: 1px solid rgb(95, 95, 95);\n"
 "    border-radius: 6px;\n"
@@ -5190,7 +5190,7 @@ class Ui_MainWindow(object):
         self.label_angio_center_bscan_image = QtGui.QLabel(self.frame_button_bar_7)
         self.label_angio_center_bscan_image.setStyleSheet("border: none;")
         self.label_angio_center_bscan_image.setText("")
-        self.label_angio_center_bscan_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label_angio_center_bscan_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/square_cat1_retina36s.jpg"))
         self.label_angio_center_bscan_image.setScaledContents(True)
         self.label_angio_center_bscan_image.setObjectName("label_angio_center_bscan_image")
         self.gridLayout.addWidget(self.label_angio_center_bscan_image, 1, 0, 1, 1)
@@ -5198,7 +5198,7 @@ class Ui_MainWindow(object):
         self.gridLayout_9.addWidget(self.frame_white_border_4, 1, 0, 1, 1)
         self.frame_white_border_5 = QtGui.QFrame(self.frame_center_nest_4)
         self.frame_white_border_5.setMinimumSize(QtCore.QSize(200, 50))
-        self.frame_white_border_5.setMaximumSize(QtCore.QSize(500, 16777215))
+        self.frame_white_border_5.setMaximumSize(QtCore.QSize(500, 500))
         self.frame_white_border_5.setStyleSheet("QFrame {\n"
 "    border: 1px solid rgb(95, 95, 95);\n"
 "    border-radius: 6px;\n"
@@ -5240,7 +5240,7 @@ class Ui_MainWindow(object):
         self.label_angio_current_bscan_image = QtGui.QLabel(self.frame_button_bar_8)
         self.label_angio_current_bscan_image.setStyleSheet("border: none;")
         self.label_angio_current_bscan_image.setText("")
-        self.label_angio_current_bscan_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat_retina36.jpg"))
+        self.label_angio_current_bscan_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/square_retina11.jpg"))
         self.label_angio_current_bscan_image.setScaledContents(True)
         self.label_angio_current_bscan_image.setObjectName("label_angio_current_bscan_image")
         self.gridLayout_2.addWidget(self.label_angio_current_bscan_image, 1, 0, 1, 1)
@@ -5479,7 +5479,7 @@ class Ui_MainWindow(object):
         self.label_angio_preview_image = QtGui.QLabel(self.frame_button_bar_9)
         self.label_angio_preview_image.setStyleSheet("border: none;")
         self.label_angio_preview_image.setText("")
-        self.label_angio_preview_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/placeholder_cat1_retina_bv34s.jpg"))
+        self.label_angio_preview_image.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/retina_angiograph_03.jpg"))
         self.label_angio_preview_image.setScaledContents(True)
         self.label_angio_preview_image.setObjectName("label_angio_preview_image")
         self.gridLayout_8.addWidget(self.label_angio_preview_image, 1, 0, 1, 1)
@@ -6008,7 +6008,7 @@ class Ui_MainWindow(object):
         self.checkBox_4.setText(QtGui.QApplication.translate("MainWindow", "OCT Volume", None, QtGui.QApplication.UnicodeUTF8))
         self.label_47.setText(QtGui.QApplication.translate("MainWindow", "Visible Camera", None, QtGui.QApplication.UnicodeUTF8))
         self.label_48.setText(QtGui.QApplication.translate("MainWindow", "Exposure", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_34.setText(QtGui.QApplication.translate("MainWindow", "Saved Configuration", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_34.setText(QtGui.QApplication.translate("MainWindow", "Snapshot", None, QtGui.QApplication.UnicodeUTF8))
         self.label_35.setText(QtGui.QApplication.translate("MainWindow", "2016-04-29 17:54", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_148.setShortcut(QtGui.QApplication.translate("MainWindow", "Backspace", None, QtGui.QApplication.UnicodeUTF8))
         self.label_49.setText(QtGui.QApplication.translate("MainWindow", "Reference Arm", None, QtGui.QApplication.UnicodeUTF8))
