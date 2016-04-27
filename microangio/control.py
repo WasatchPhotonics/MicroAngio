@@ -349,7 +349,7 @@ class Controller(object):
         self.add_noise_to_imagery()
 
         if self.continue_loop:
-            self.main_timer.start(0)
+            self.main_timer.start(500)
 
 
     def add_noise_to_imagery(self):
@@ -395,10 +395,11 @@ class Controller(object):
 
         # This is a hack to make the update take time, yet only update
         # every N entries to show interface mogrification without
-        # apparent memory crashes
-        if self.update_count % 500 != 0:
-            return
-        log.debug("Update pyqtgraph %s", self.update_count)
+        # apparent memory crashes - only for interface updates of delay
+        # 0
+        #if self.update_count % 500 != 0:
+            #return
+        #log.debug("Update pyqtgraph %s", self.update_count)
 
         self.start_data = display_image.getProcessedImage()
         self.start_data += short_rand
