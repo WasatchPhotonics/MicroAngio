@@ -310,30 +310,30 @@ class Controller(object):
 
         swb = self.form.ui.stackedWidget_bottom
         if swb.currentIndex() == self.OCT_CAPTURE:
-            self.copy_sim = numpy.copy(self.simulated_center_bscan)
 
             display_label = self.form.ui.label_oct_image
-
-            self.update_image(self.copy_sim, display_label)
+            self.update_image(self.simulated_center_bscan, display_label)
 
         elif swb.currentIndex() == self.ANGIO_CAPTURE:
-            self.copy_sim = numpy.copy(self.simulated_angio_preview)
             display_label = self.form.ui.label_angio_preview_image
-            self.update_image(self.copy_sim, display_label)
+            self.update_image(self.simulated_angio_preview, display_label)
 
-            self.copy_sim = numpy.copy(self.simulated_center_bscan)
             display_label = self.form.ui.label_angio_center_bscan_image
-            self.update_image(self.copy_sim, display_label)
+            self.update_image(self.simulated_center_bscan, display_label)
+
+            display_label = self.form.ui.label_angio_current_bscan_image
+            self.update_image(self.simulated_current_bscan, display_label)
 
         else:
             log.info("Not adding noise to un-displayed imagery")
             return
 
 
-    def update_image(self, copy_sim, display_label):
+    def update_image(self, input_data, display_label):
         """ Apply the noise to the image, then store the data as a component
         of the label to make sure the garbage collector doesn't cause a crash.
         """
+        copy_sim = numpy.copy(input_data)
         width = copy_sim.shape[1]
         height = copy_sim.shape[0]
 
