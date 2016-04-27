@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MicroAngio</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="wasatch_logo_resources.qrc">
+    <normaloff>:/logos/images/logos/new_wp_with_arch_white.png</normaloff>:/logos/images/logos/new_wp_with_arch_white.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">/*
  * The MIT License (MIT)
@@ -1684,7 +1688,7 @@ border-radius: 0px;
        <string notr="true">border:none;</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="page_hardware_setup">
        <layout class="QHBoxLayout" name="horizontalLayout_8">
