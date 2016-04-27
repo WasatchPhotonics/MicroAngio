@@ -5412,7 +5412,7 @@ border: 2px solid black;
                    <string notr="true">border: none;</string>
                   </property>
                   <property name="text">
-                   <string>Saved Configuration</string>
+                   <string>Snapshot</string>
                   </property>
                  </widget>
                  <widget class="QFrame" name="frame_84">

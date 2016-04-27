@@ -422,28 +422,19 @@ class TestControl:
     def test_form_creates_simulation_oct_data(self, basic_window, qtbot):
         # Get the pixel value of the oct image at 0, 0
         loi = basic_window.form.ui.label_oct_image
-        loi_data = loi.pixmap().toImage()
-
-        pix_zero = loi_data.pixel(0, 0)
-        start_colors = QtGui.QColor(pix_zero).getRgbF()
+        start_data = loi.pixmap().toImage()
 
         # Wait for 3 seconds
         signal = basic_window.control_signals.nav_changed
         with qtbot.wait_signal(signal, timeout=3000, raising=False):
             print "Just waiting for a signal that should never happen"
 
+        cease_data = loi.pixmap().toImage()
 
-        loi = basic_window.form.ui.label_oct_image
-        loi_data = loi.pixmap().toImage()
+        assert start_data != cease_data
 
-        pix_zero = loi_data.pixel(0, 0)
-        cease_colors = QtGui.QColor(pix_zero).getRgbF()
-
-        assert start_colors[0] != cease_colors[0]
-
-    def test_form_creates_simulated_angio_data(self, basic_window, qtbot):
+    def test_form_creates_simulation_angio_data(self, basic_window, qtbot):
         # Activate angio mode
-
         nav_cmb = basic_window.form.ui.comboBox_mode_navigation
 
         signal = basic_window.control_signals.nav_changed
@@ -452,11 +443,7 @@ class TestControl:
 
         # Get the pixel value of the angio image at 0, 0
         lap = basic_window.form.ui.label_angio_preview_image
-        lap_data = lap.pixmap().toImage()
-
-        pix_zero = lap_data.pixel(0, 0)
-        start_colors = QtGui.QColor(pix_zero).getRgbF()
-        print "(%s,%s) = %s" % (0, 0, start_colors)
+        start_data = lap.pixmap().toImage()
 
         # Wait for 3 seconds
         signal = basic_window.control_signals.nav_changed
@@ -464,10 +451,6 @@ class TestControl:
             print "Just waiting for a signal that should never happen"
 
 
-        lap_data = lap.pixmap().toImage()
-        pix_zero = lap_data.pixel(0, 0)
-        start_colors = QtGui.QColor(pix_zero).getRgbF()
-        cease_colors = QtGui.QColor(pix_zero).getRgbF()
-        print "(%s,%s) = %s" % (0, 0, cease_colors)
+        cease_data = lap.pixmap().toImage()
 
-        assert start_colors[0] != cease_colors[0]
+        assert start_data != cease_data
