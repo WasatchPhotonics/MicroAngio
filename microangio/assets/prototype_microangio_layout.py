@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Wed Apr 27 08:30:53 2016
+# Created: Wed Apr 27 13:35:27 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1822,7 +1822,7 @@ class Ui_MainWindow(object):
         self.label_7 = QtGui.QLabel(self.page_hardware_static)
         self.label_7.setStyleSheet("border: none;")
         self.label_7.setText("")
-        self.label_7.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/raw_image_pyqtgraph_plot.png"))
+        self.label_7.setPixmap(QtGui.QPixmap(":/website/images/oct_gallery/2048x1024_repeated.tif"))
         self.label_7.setScaledContents(True)
         self.label_7.setObjectName("label_7")
         self.horizontalLayout_15.addWidget(self.label_7)
@@ -5975,7 +5975,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.stackedWidget_bottom.setCurrentIndex(0)
-        self.stackedWidget_hardware.setCurrentIndex(1)
+        self.stackedWidget_hardware.setCurrentIndex(0)
         QtCore.QObject.connect(self.comboBox_selector, QtCore.SIGNAL("currentIndexChanged(int)"), self.stackedWidget_bottom.setCurrentIndex)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.comboBox_selector.hide)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.pushButton_capture_hidden_red.hide)

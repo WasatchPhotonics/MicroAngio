@@ -40,6 +40,7 @@ class BasicWindow(QtGui.QMainWindow):
         """
         import numpy
         img_url = "microangio/assets/images/raw_data/2048x1024_repeated.tif"
+        img_url = ":microangio/assets/images/oct_gallery/2048x1024_repeated.tif"
 
         # Open the image, convert in place
         ref_img = Image.open(img_url)

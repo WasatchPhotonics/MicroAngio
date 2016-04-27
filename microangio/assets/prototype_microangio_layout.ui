@@ -2534,7 +2534,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                               <string/>
                              </property>
                              <property name="pixmap">
-                              <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/raw_image_pyqtgraph_plot.png</pixmap>
+                              <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/2048x1024_repeated.tif</pixmap>
                              </property>
                              <property name="scaledContents">
                               <bool>true</bool>
