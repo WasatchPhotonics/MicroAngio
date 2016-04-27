@@ -45,7 +45,14 @@ class Controller(object):
         May actually be 8 bit tiffs for the prototype, but keep this in place
         so it doesn't bite you later.
         """
-        self.ref_data = numpy.copy(self.simulated_hardware_raw).T
+        img_url = "microangio/assets/images/oct_gallery/2048x1024_repeated.tif"
+
+        # Open the image, convert in place
+        ref_img = Image.open(img_url)
+        ref_img.convert("L")
+
+        # Assign it to a numpy array, transpose X and Y dimensions
+        self.ref_data = numpy.asarray(ref_img, dtype=numpy.uint16).T
 
         # Create an imageview control, assign the data and make it visible
         self.form.ui.imview_hardware = pyqtgraph.ImageView()
@@ -152,10 +159,6 @@ class Controller(object):
         }"""
 
     def setup_simulated_imagery(self):
-
-        img_url = ":/website/images/oct_gallery/2048x1024_repeated.tif"
-        #img_url = ":/website/images/oct_gallery/cat1_retina36s.jpg"
-        self.simulated_hardware_raw = self.convert_image(img_url)
 
         img_url = ":/website/images/oct_gallery/cat1_retina36s.jpg"
         self.simulated_center_bscan = self.convert_image(img_url)
@@ -355,9 +358,7 @@ class Controller(object):
         swb = self.form.ui.stackedWidget_bottom
 
         if swb.currentIndex() == self.HARDWARE_SETUP:
-            #self.update_pyqtgraph_image(self.simulated_hardware_raw,
-                                        #self.form.ui.imview_hardware)
-            pass
+            self.update_pyqtgraph_image(self.form.ui.imview_hardware)
 
         elif swb.currentIndex() == self.OCT_CAPTURE:
 
@@ -378,10 +379,17 @@ class Controller(object):
             log.info("Not adding noise to un-displayed imagery")
             return
 
-    def update_pyqtgraph_image(self, input_data, display_image):
+    def update_pyqtgraph_image(self, display_image):
         """ Appy noise to the image, then store the data as a component
-        of the pyqtgraph imageview control for permanence.
+        of the pyqtgraph imageview control for permanence. Get and set the raw
+        data from the actual image control.
         """
+        start_data = display_image.getProcessedImage()
+        print "Proc image: %s", start_data
+        start_data += 10
+        display_image.setImage(start_data)
+
+
         return
 
 

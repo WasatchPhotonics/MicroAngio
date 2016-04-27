@@ -470,7 +470,7 @@ class TestControl:
         # The hardware image is part of a pyqtgraph imageview, get the entirety
         # of the raw data
         imv = basic_window.form.ui.imview_hardware
-        start_data = imv.getProcessedImage()
+        start_data = numpy.copy(imv.getProcessedImage())
         print "start data", start_data.shape
 
 
@@ -493,5 +493,5 @@ class TestControl:
         with qtbot.wait_signal(signal, timeout=3000, raising=True):
             nav_cmb.setCurrentIndex(self.NAV_HARDWARE)
 
-        qtbot.wait(3000)
+        qtbot.wait(6000)
         assert True==False
