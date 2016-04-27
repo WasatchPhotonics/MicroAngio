@@ -2,9 +2,6 @@
 """
 from PySide import QtGui, QtCore
 
-from PIL import Image  # for creating placeholder imagery at startup
-import pyqtgraph
-
 from .assets import prototype_microangio_layout as microangio_layout
 
 import logging
@@ -25,61 +22,12 @@ class BasicWindow(QtGui.QMainWindow):
         # x, y, w, h
         self.setGeometry(geometry[0], geometry[1], geometry[2], geometry[3])
 
-        self.load_placeholder_images()
         self.set_initial_state()
 
         app_icon = QtGui.QIcon(":ui/images/ApplicationIcon.ico")
         self.setWindowIcon(app_icon)
         self.setWindowTitle(title)
         self.show()
-
-    def load_placeholder_images(self):
-        """ Use the example data 16 bit tiffs, make sure they can be displayed
-        in the qt label. Conversion is from:
-        http://blog.philippklaus.de/2011/08/handle-16bit-tiff-images-in-python/
-        """
-        import numpy
-        img_url = "microangio/assets/images/raw_data/2048x1024_repeated.tif"
-        img_url = ":microangio/assets/images/oct_gallery/2048x1024_repeated.tif"
-
-        # Open the image, convert in place
-        ref_img = Image.open(img_url)
-        ref_img.convert("L")
-
-        # Assign it to a numpy array, transpose X and Y dimensions
-        ref_data = numpy.asarray(ref_img, dtype=numpy.uint16).T
-
-        # Create an imageview control, assign the data and make it visible
-        self.ui.imview_hardware = pyqtgraph.ImageView()
-        self.ui.imview_hardware.setImage(ref_data)
-
-
-        #self.roi = pyqtgraph.RectROI([20, 20], [20, 20], pen=(0,9))
-        #self.ui.imview_hardware.addItem(self.roi)
-
-
-        self.ui.stackedWidget_hardware.addWidget(self.ui.imview_hardware)
-        self.ui.stackedWidget_hardware.setCurrentIndex(2)
-
-        #self.ui.imview_hardware.ui.roiBtn.setChecked(True)
-        # This section borrowed almost verbatim from the roiClicked function in
-        # ImageView. This should probably be changed to something closer to
-        # programatically clicking the roi button
-
-        # Get the pre-created ROI, set it to full width, in the middle of the
-        # image
-        initial_roi = self.ui.imview_hardware.roi
-        initial_roi.setSize((2048, 20))
-        initial_roi.setPos((0, 512))
-        initial_roi.show()
-
-        self.ui.imview_hardware.ui.roiPlot.setMouseEnabled(True, True)
-        self.ui.imview_hardware.ui.splitter.setSizes([self.height()*0.6, self.height()*0.4])
-        self.ui.imview_hardware.roiCurve.show()
-        self.ui.imview_hardware.roiChanged()
-        self.ui.imview_hardware.ui.roiPlot.showAxis('left')
-
-        self.ui.imview_hardware.ui.roiPlot.setVisible(True)
 
 
     def set_initial_state(self):

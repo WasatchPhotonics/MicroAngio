@@ -6,6 +6,10 @@ import random
 
 import numpy
 
+from PIL import Image
+
+import pyqtgraph
+
 from PySide import QtCore, QtGui
 
 from . import views
@@ -23,16 +27,62 @@ class Controller(object):
         self.create_styles()
 
         self.setup_simulated_imagery()
+        self.load_placeholder_images()
+
 
         self.create_signals()
 
         self.bind_view_signals()
 
-        self.total_spectra = 0
-
         self.set_capture_active()
 
         self.setup_main_event_loop()
+
+    def load_placeholder_images(self):
+        """ Use the example data 16 bit tiffs, make sure they can be displayed
+        in the qt label. Conversion is from:
+        http://blog.philippklaus.de/2011/08/handle-16bit-tiff-images-in-python/
+        May actually be 8 bit tiffs for the prototype, but keep this in place
+        so it doesn't bite you later.
+        """
+        import numpy
+        img_url = "microangio/assets/images/oct_gallery/2048x1024_repeated.tif"
+        #img_url = ":microangio/assets/images/oct_gallery/2048x1024_repeated.tif"
+
+        # Open the image, convert in place
+        ref_img = Image.open(img_url)
+        ref_img.convert("L")
+
+        # Assign it to a numpy array, transpose X and Y dimensions
+        ref_data = numpy.asarray(ref_img, dtype=numpy.uint16).T
+
+        # Create an imageview control, assign the data and make it visible
+        self.form.ui.imview_hardware = pyqtgraph.ImageView()
+        imvh = self.form.ui.imview_hardware
+        imvh.setImage(ref_data)
+
+        swh = self.form.ui.stackedWidget_hardware
+        swh.addWidget(imvh)
+        swh.setCurrentIndex(2)
+
+        # This section borrowed almost verbatim from the roiClicked function in
+        # ImageView. This should probably be changed to something closer to
+        # programatically clicking the roi button
+
+        # Get the pre-created ROI, set it to full width, in the middle of the
+        # image
+        imvh.roi.setSize((2048, 20))
+        imvh.roi.setPos((0, 512))
+        imvh.roi.show()
+
+        imvh.ui.roiPlot.setMouseEnabled(True, True)
+        imvh.ui.splitter.setSizes([imvh.height()*0.6, imvh.height()*0.4])
+        imvh.roiCurve.show()
+        imvh.roiChanged()
+        imvh.ui.roiPlot.showAxis('left')
+
+        imvh.ui.roiPlot.setVisible(True)
+
 
     def create_styles(self):
         """ Location for runtime generated stylesheets. This is hideous.
@@ -312,8 +362,9 @@ class Controller(object):
 
         if swb.currentIndex() == self.HARDWARE_SETUP:
 
-            self.update_pyqtgraph_image(self.simulated_hardware_image,
-                                        self.form.ui.imview_hardware)
+            #self.update_pyqtgraph_image(self.simulated_hardware_image,
+                                        #self.form.ui.imview_hardware)
+            pass
 
         elif swb.currentIndex() == self.OCT_CAPTURE:
 

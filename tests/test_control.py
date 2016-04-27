@@ -487,3 +487,10 @@ class TestControl:
         # simple 'anything changed' test
         assert numpy.equal(start_data.all(), cease_data.all()) == False
 
+    def test_form_reload_temporary_display(self, basic_window, qtbot):
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=3000, raising=True):
+            nav_cmb.setCurrentIndex(self.NAV_HARDWARE)
+
+        qtbot.wait(3000)
