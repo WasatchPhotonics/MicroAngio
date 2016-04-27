@@ -383,23 +383,17 @@ class Controller(object):
     def update_pyqtgraph_image(self, display_image):
         """ Appy noise to the image, then store the data as a component
         of the pyqtgraph imageview control for permanence. Get and set the raw
-        data from the actual image control.
+        data from the actual image control. ImageView will automatically scale
+        values to make a sensible grayscale image. Just roll it over with noise
         """
-        start_data = display_image.getProcessedImage()
 
-        # Imview will automatically scale values to make a sensible grayscale
-        # image - toggle back and forth between global plus and minus for speed
-        # and look for updates in the top and bottom graph
-        toggle_size = 500
-        if random.choice([True, False]):
-            start_data += toggle_size
-        else:
-            start_data += toggle_size / 2
+        rand_ints = numpy.random.randint(low=0, high=5, size=(2048, 1024))
+        short_rand =  numpy.array(rand_ints, dtype=numpy.uint8)
+
+        start_data = display_image.getProcessedImage()
+        start_data += short_rand
 
         display_image.setImage(start_data)
-
-
-        return
 
 
     def update_image(self, input_data, display_label):
