@@ -24,6 +24,7 @@ class BasicWindow(QtGui.QMainWindow):
 
         self.set_initial_state()
 
+
         app_icon = QtGui.QIcon(":logos/images/ApplicationIcon.ico")
         self.setWindowIcon(app_icon)
         self.setWindowTitle(title)
