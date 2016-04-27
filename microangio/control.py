@@ -335,6 +335,7 @@ class Controller(object):
         """ Create a timer for a continuous event loop, trigger the start.
         """
         log.debug("Setup main event loop")
+        self.update_count = 0
         self.continue_loop = True
         self.main_timer = QtCore.QTimer()
         self.main_timer.setSingleShot(True)
@@ -348,7 +349,7 @@ class Controller(object):
         self.add_noise_to_imagery()
 
         if self.continue_loop:
-            self.main_timer.start(500)
+            self.main_timer.start(0)
 
 
     def add_noise_to_imagery(self):
@@ -386,14 +387,23 @@ class Controller(object):
         data from the actual image control. ImageView will automatically scale
         values to make a sensible grayscale image. Just roll it over with noise
         """
+        self.update_count += 1
+
 
         rand_ints = numpy.random.randint(low=0, high=5, size=(2048, 1024))
         short_rand =  numpy.array(rand_ints, dtype=numpy.uint8)
 
-        start_data = display_image.getProcessedImage()
-        start_data += short_rand
+        # This is a hack to make the update take time, yet only update
+        # every N entries to show interface mogrification without
+        # apparent memory crashes
+        if self.update_count % 500 != 0:
+            return
+        log.debug("Update pyqtgraph %s", self.update_count)
 
-        display_image.setImage(start_data)
+        self.start_data = display_image.getProcessedImage()
+        self.start_data += short_rand
+
+        display_image.setImage(self.start_data)
 
 
     def update_image(self, input_data, display_label):
