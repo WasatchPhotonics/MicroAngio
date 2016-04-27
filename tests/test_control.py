@@ -115,6 +115,7 @@ class TestControl:
             app_control.close()
             main_logger.close()
             applog.explicit_log_close()
+            time.sleep(1) # wait for control timers to complete
 
         request.addfinalizer(control_close)
 
