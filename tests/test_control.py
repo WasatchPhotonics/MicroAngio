@@ -491,7 +491,7 @@ class TestControl:
         nav_cmb = basic_window.form.ui.comboBox_mode_navigation
         signal = basic_window.control_signals.nav_changed
         with qtbot.wait_signal(signal, timeout=3000, raising=True):
-            nav_cmb.setCurrentIndex(self.NAV_HARDWARE)
+            nav_cmb.setCurrentIndex(self.NAV_ANGIO)
 
-        qtbot.wait(6000)
+        qtbot.wait(3000)
         assert True==False

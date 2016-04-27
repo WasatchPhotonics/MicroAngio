@@ -374,6 +374,9 @@ class Controller(object):
             display_label = self.form.ui.label_angio_center_bscan_image
             self.update_image(self.simulated_center_bscan, display_label)
 
+            scb = self.simulated_current_bscan
+            self.simulated_current_bscan = numpy.roll(scb, shift=100, axis=0)
+
             display_label = self.form.ui.label_angio_current_bscan_image
             self.update_image(self.simulated_current_bscan, display_label)
 
