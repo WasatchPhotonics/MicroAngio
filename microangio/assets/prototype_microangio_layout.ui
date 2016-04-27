@@ -10766,7 +10766,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         </widget>
                        </item>
                        <item row="1" column="0">
-                        <widget class="QLabel" name="label">
+                        <widget class="QLabel" name="label_angio_center_bscan_image">
                          <property name="styleSheet">
                           <string notr="true">border: none;</string>
                          </property>
@@ -10877,7 +10877,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         </widget>
                        </item>
                        <item row="1" column="0">
-                        <widget class="QLabel" name="label_2">
+                        <widget class="QLabel" name="label_angio_current_bscan_image">
                          <property name="styleSheet">
                           <string notr="true">border: none;</string>
                          </property>
@@ -11431,7 +11431,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                         </widget>
                        </item>
                        <item row="1" column="0">
-                        <widget class="QLabel" name="label_3">
+                        <widget class="QLabel" name="label_angio_preview_image">
                          <property name="styleSheet">
                           <string notr="true">border: none;</string>
                          </property>

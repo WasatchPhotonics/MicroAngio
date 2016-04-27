@@ -130,10 +130,19 @@ class Controller(object):
                                 self.simulated_oct_height,
                                 self.simulated_oct_width, 4)  #  Copies the data
 
-        #print self.simulated_oct
-        #print self.simulated_oct.shape
 
+        img_url = ":/website/images/oct_gallery/retina_angiograph_03.jpg"
+        self.incomingImage = QtGui.QImage(img_url)
+        self.incomingImage = self.incomingImage.convertToFormat(QtGui.QImage.Format.Format_RGB32)
 
+        self.simulated_angio_preview_width = self.incomingImage.width()
+        self.simulated_angio_preview_height = self.incomingImage.height()
+
+        ptr = self.incomingImage.constBits()
+
+        self.simulated_angio_preview = numpy.array(ptr).reshape(
+                                self.simulated_angio_preview_height,
+                                self.simulated_angio_preview_width, 4)  #  Copies the data
     def create_signals(self):
         """ Create signals for access by parent process.
         """
@@ -293,18 +302,47 @@ class Controller(object):
         """ Process queue events, interface events, then update views.
         """
 
-        self.copy_sim = numpy.copy(self.simulated_oct)
+        self.add_noise_to_imagery()
+
+        if self.continue_loop:
+            self.main_timer.start(500)
+
+
+    def add_noise_to_imagery(self):
+        """ For the currently displayed navigation mode, read the resource image,
+        add noise to the numpy array, then display.
+        """
+
+        swb = self.form.ui.stackedWidget_bottom
+        if swb.currentIndex() == self.OCT_CAPTURE:
+            self.copy_sim = numpy.copy(self.simulated_oct)
+            width = self.simulated_oct_width
+            height = self.simulated_oct_height
+
+            display_label = self.form.ui.label_oct_image
+
+        elif swb.currentIndex() == self.ANGIO_CAPTURE:
+            self.copy_sim = numpy.copy(self.simulated_angio_preview)
+            width = self.simulated_angio_preview_width
+            height = self.simulated_angio_preview_height
+
+            display_label = self.form.ui.label_angio_preview_image
+
+        else:
+            log.info("Not adding noise to un-displayed imagery")
+            return
+
 
         noise_factor = 4
         # Get random sample of width and height
         nrc = numpy.random.choice
-        random_width_size = self.simulated_oct_width / noise_factor
-        random_height_size = self.simulated_oct_height/ noise_factor
-        rand_width = nrc(self.simulated_oct_width, size=random_width_size)
+        random_width_size = width / noise_factor
+        random_height_size = height / noise_factor
+        rand_width = nrc(width, size=random_width_size)
 
         # Assign each of the randomly selected pixels either white or black
         for width_index in rand_width:
-            rand_height = nrc(self.simulated_oct_height, size=random_height_size)
+            rand_height = nrc(height, size=random_height_size)
             for height_index in rand_height:
 
                 # Differing shades of grade, alpha is apparently ignored
@@ -314,16 +352,11 @@ class Controller(object):
 
         # recreate a qimage from the copied numpy arr
         self.simulated_oct_image = QtGui.QImage(self.copy_sim.data,
-                          self.simulated_oct_width,
-                          self.simulated_oct_height, QtGui.QImage.Format.Format_RGB32)
+                          width, height, QtGui.QImage.Format.Format_RGB32)
         self.oct_pixmap = QtGui.QPixmap.fromImage(self.simulated_oct_image)
 
-        self.form.ui.label_oct_image.setPixmap(self.oct_pixmap)
+        display_label.setPixmap(self.oct_pixmap)
 
-
-
-        if self.continue_loop:
-            self.main_timer.start(500)
 
     def close(self):
         self.continue_loop = False

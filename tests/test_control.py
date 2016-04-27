@@ -426,7 +426,6 @@ class TestControl:
 
         pix_zero = loi_data.pixel(0, 0)
         start_colors = QtGui.QColor(pix_zero).getRgbF()
-        print "(%s,%s) = %s" % (0, 0, start_colors)
 
         # Wait for 3 seconds
         signal = basic_window.control_signals.nav_changed
@@ -438,6 +437,36 @@ class TestControl:
         loi_data = loi.pixmap().toImage()
 
         pix_zero = loi_data.pixel(0, 0)
+        cease_colors = QtGui.QColor(pix_zero).getRgbF()
+
+        assert start_colors[0] != cease_colors[0]
+
+    def test_form_creates_simulated_angio_data(self, basic_window, qtbot):
+        # Activate angio mode
+
+        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
+
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=1000, raising=True):
+            nav_cmb.setCurrentIndex(2)
+
+        # Get the pixel value of the angio image at 0, 0
+        lap = basic_window.form.ui.label_angio_preview_image
+        lap_data = lap.pixmap().toImage()
+
+        pix_zero = lap_data.pixel(0, 0)
+        start_colors = QtGui.QColor(pix_zero).getRgbF()
+        print "(%s,%s) = %s" % (0, 0, start_colors)
+
+        # Wait for 3 seconds
+        signal = basic_window.control_signals.nav_changed
+        with qtbot.wait_signal(signal, timeout=3000, raising=False):
+            print "Just waiting for a signal that should never happen"
+
+
+        lap_data = lap.pixmap().toImage()
+        pix_zero = lap_data.pixel(0, 0)
+        start_colors = QtGui.QColor(pix_zero).getRgbF()
         cease_colors = QtGui.QColor(pix_zero).getRgbF()
         print "(%s,%s) = %s" % (0, 0, cease_colors)
 
