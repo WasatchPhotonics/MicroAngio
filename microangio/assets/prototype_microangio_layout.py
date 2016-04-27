@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Wed Apr 27 15:34:57 2016
+# Created: Wed Apr 27 15:39:48 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -14,7 +14,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1315, 967)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/logos/images/logos/new_wp_with_arch_white.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/logos/images/ApplicationIcon.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("/*\n"
 " * The MIT License (MIT)\n"

@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="wasatch_logo_resources.qrc">
-    <normaloff>:/logos/images/logos/new_wp_with_arch_white.png</normaloff>:/logos/images/logos/new_wp_with_arch_white.png</iconset>
+    <normaloff>:/logos/images/ApplicationIcon.ico</normaloff>:/logos/images/ApplicationIcon.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">/*

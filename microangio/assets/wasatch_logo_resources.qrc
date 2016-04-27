@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="logos">
+    <file>images/ApplicationIcon.ico</file>
     <file>images/logos/92x30_placeholder_logo.png</file>
     <file>images/logos/92x30_placeholder_logo.png</file>
     <file>images/logos/92x30_placeholder_logo.png</file>
