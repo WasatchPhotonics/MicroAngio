@@ -33,6 +33,6 @@ class TestBasicMainWindow:
 
         basic_form.ui.comboBox_mode_navigation.setCurrentIndex(0)
         basic_form.ui.stackedWidget_bottom.setCurrentIndex(0)
-        qtbot.wait(30000)
+        qtbot.wait(6000)
 
 
