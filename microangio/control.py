@@ -359,8 +359,10 @@ class Controller(object):
                              width, height, QtGui.QImage.Format.Format_RGB32)
         new_pixmap = QtGui.QPixmap.fromImage(image)
 
-        new_pixmap.stored_numpy_data = copy_sim
-        new_pixmap.stored_image_data = image
+        # Store the data as part of the display label to ensure the
+        # garbage collector doens't cause a crash
+        display_label.stored_numpy_data = copy_sim
+        display_label.stored_image_data = image
         display_label.setPixmap(new_pixmap)
 
 
