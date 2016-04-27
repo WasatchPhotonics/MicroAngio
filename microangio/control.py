@@ -390,7 +390,7 @@ class Controller(object):
         self.update_count += 1
 
 
-        rand_ints = numpy.random.randint(low=0, high=5, size=(2048, 1024))
+        rand_ints = numpy.random.randint(low=0, high=2, size=(2048, 1024))
         short_rand =  numpy.array(rand_ints, dtype=numpy.uint8)
 
         # This is a hack to make the update take time, yet only update
