@@ -79,6 +79,7 @@ class Controller(object):
         imvh.roiChanged()
         imvh.ui.roiPlot.showAxis('left')
         imvh.ui.roiPlot.setVisible(True)
+        imvh.ui.roiBtn.setChecked(True)
 
 
     def create_styles(self):
@@ -385,8 +386,16 @@ class Controller(object):
         data from the actual image control.
         """
         start_data = display_image.getProcessedImage()
-        print "Proc image: %s", start_data
-        start_data += 10
+
+        # Imview will automatically scale values to make a sensible grayscale
+        # image - toggle back and forth between global plus and minus for speed
+        # and look for updates in the top and bottom graph
+        toggle_size = 500
+        if random.choice([True, False]):
+            start_data += toggle_size
+        else:
+            start_data += toggle_size / 2
+
         display_image.setImage(start_data)
 
 
