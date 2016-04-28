@@ -2277,13 +2277,8 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
     color: silver;
 }
 
-QPushButton
-{
-    border-color: rgb(0,0,0);
-}
-
 QPushButton {
-background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+	background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));
 border-radius: 5px;
 }</string>
                           </property>
@@ -2546,8 +2541,6 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
                             </widget>
                            </item>
                           </layout>
-                          <zorder>label_7</zorder>
-                          <zorder>label_7</zorder>
                          </widget>
                          <widget class="QWidget" name="page_hardware_simulation"/>
                         </widget>
@@ -6005,13 +5998,9 @@ border-radius: 5px;
     color: silver;
 }
 
-QPushButton
-{
-    border-color: rgb(0,0,0);
-}
-
 QPushButton {
-background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+    /* darker red gradient */
+	background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(106, 7, 7, 255), stop:1 rgba(186, 10, 10, 255));
 border-radius: 5px;
 }</string>
                           </property>
@@ -11075,13 +11064,9 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
     color: silver;
 }
 
-QPushButton
-{
-    border-color: rgb(0,0,0);
-}
-
 QPushButton {
-background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));
+    /* darker red gradient */
+	background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(106, 7, 7, 255), stop:1 rgba(186, 10, 10, 255));
 border-radius: 5px;
 }</string>
                           </property>

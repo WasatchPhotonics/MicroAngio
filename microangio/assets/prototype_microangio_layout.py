@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Wed Apr 27 15:39:48 2016
+# Created: Thu Apr 28 08:37:30 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1701,13 +1701,8 @@ class Ui_MainWindow(object):
 "    color: silver;\n"
 "}\n"
 "\n"
-"QPushButton\n"
-"{\n"
-"    border-color: rgb(0,0,0);\n"
-"}\n"
-"\n"
 "QPushButton {\n"
-"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"    background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(137, 10, 10, 255), stop:1 rgba(186, 10, 10, 255));\n"
 "border-radius: 5px;\n"
 "}")
         self.pushButton_135.setText("")
@@ -3228,13 +3223,9 @@ class Ui_MainWindow(object):
 "    color: silver;\n"
 "}\n"
 "\n"
-"QPushButton\n"
-"{\n"
-"    border-color: rgb(0,0,0);\n"
-"}\n"
-"\n"
 "QPushButton {\n"
-"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"    /* darker red gradient */\n"
+"    background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(106, 7, 7, 255), stop:1 rgba(186, 10, 10, 255));\n"
 "border-radius: 5px;\n"
 "}")
         self.pushButton_148.setText("")
@@ -5320,13 +5311,9 @@ class Ui_MainWindow(object):
 "    color: silver;\n"
 "}\n"
 "\n"
-"QPushButton\n"
-"{\n"
-"    border-color: rgb(0,0,0);\n"
-"}\n"
-"\n"
 "QPushButton {\n"
-"background-color: qlineargradient(spread:pad, x1:0.546341, y1:1, x2:0.512195, y2:0, stop:0 rgba(67, 67, 67, 255), stop:1 rgba(96, 96, 96, 255));\n"
+"    /* darker red gradient */\n"
+"    background-color: qlineargradient(spread:pad, x1:0.512, y1:1, x2:0.512195, y2:0, stop:0 rgba(106, 7, 7, 255), stop:1 rgba(186, 10, 10, 255));\n"
 "border-radius: 5px;\n"
 "}")
         self.pushButton_130.setText("")
