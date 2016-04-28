@@ -3347,6 +3347,12 @@ border-radius: 5px;
                      </property>
                      <item>
                       <widget class="QLabel" name="label_78">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>20</height>
+                        </size>
+                       </property>
                        <property name="font">
                         <font>
                          <weight>75</weight>
@@ -3380,7 +3386,7 @@ background: rgb(74, 74, 74);
                           <x>0</x>
                           <y>0</y>
                           <width>187</width>
-                          <height>1480</height>
+                          <height>1475</height>
                          </rect>
                         </property>
                         <layout class="QVBoxLayout" name="verticalLayout_23">
@@ -3391,7 +3397,7 @@ background: rgb(74, 74, 74);
                           <number>0</number>
                          </property>
                          <property name="topMargin">
-                          <number>10</number>
+                          <number>5</number>
                          </property>
                          <property name="rightMargin">
                           <number>0</number>
@@ -3733,7 +3739,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
 background:none;</string>
                                </property>
                                <property name="text">
-                                <string>2016-04-29 17:54</string>
+                                <string>2016-04-28 07:54</string>
                                </property>
                               </widget>
                               <widget class="QPushButton" name="pushButton_180">
@@ -3811,7 +3817,7 @@ border-radius: 5px;
                                 <string/>
                                </property>
                                <property name="pixmap">
-                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup.png</pixmap>
+                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup_02.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -3974,7 +3980,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
 background:none;</string>
                                </property>
                                <property name="text">
-                                <string>2016-04-29 17:54</string>
+                                <string>2016-04-27 7:54</string>
                                </property>
                               </widget>
                               <widget class="QPushButton" name="pushButton_188">
@@ -4052,7 +4058,7 @@ border-radius: 5px;
                                 <string/>
                                </property>
                                <property name="pixmap">
-                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup.png</pixmap>
+                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup_04.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -4215,7 +4221,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
 background:none;</string>
                                </property>
                                <property name="text">
-                                <string>2016-04-29 17:54</string>
+                                <string>2016-04-26 17:53</string>
                                </property>
                               </widget>
                               <widget class="QPushButton" name="pushButton_186">
@@ -4293,7 +4299,7 @@ border-radius: 5px;
                                 <string/>
                                </property>
                                <property name="pixmap">
-                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup.png</pixmap>
+                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup_06.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -4456,7 +4462,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
 background:none;</string>
                                </property>
                                <property name="text">
-                                <string>2016-04-29 17:54</string>
+                                <string>2016-04-25 11:13</string>
                                </property>
                               </widget>
                               <widget class="QPushButton" name="pushButton_173">
@@ -4534,7 +4540,7 @@ border-radius: 5px;
                                 <string/>
                                </property>
                                <property name="pixmap">
-                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup.png</pixmap>
+                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup_07.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -4697,7 +4703,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
 background:none;</string>
                                </property>
                                <property name="text">
-                                <string>2016-04-29 17:54</string>
+                                <string>2016-04-24 13:11</string>
                                </property>
                               </widget>
                               <widget class="QPushButton" name="pushButton_171">
@@ -4775,7 +4781,7 @@ border-radius: 5px;
                                 <string/>
                                </property>
                                <property name="pixmap">
-                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup.png</pixmap>
+                                <pixmap resource="oct_gallery_resources.qrc">:/website/images/oct_gallery/example_saved_hardware_setup_08.png</pixmap>
                                </property>
                                <property name="scaledContents">
                                 <bool>true</bool>
@@ -4938,7 +4944,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb
 background:none;</string>
                                </property>
                                <property name="text">
-                                <string>2016-04-29 17:54</string>
+                                <string>2016-04-23 08:08</string>
                                </property>
                               </widget>
                               <widget class="QPushButton" name="pushButton_169">

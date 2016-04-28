@@ -1,5 +1,13 @@
 <RCC>
   <qresource prefix="website">
+    <file>images/oct_gallery/example_saved_hardware_setup_01.png</file>
+    <file>images/oct_gallery/example_saved_hardware_setup_02.png</file>
+    <file>images/oct_gallery/example_saved_hardware_setup_03.png</file>
+    <file>images/oct_gallery/example_saved_hardware_setup_04.png</file>
+    <file>images/oct_gallery/example_saved_hardware_setup_05.png</file>
+    <file>images/oct_gallery/example_saved_hardware_setup_06.png</file>
+    <file>images/oct_gallery/example_saved_hardware_setup_07.png</file>
+    <file>images/oct_gallery/example_saved_hardware_setup_08.png</file>
     <file>images/oct_gallery/example_saved_hardware_setup.png</file>
     <file>images/oct_gallery/2048x1024_repeated.tif</file>
     <file>images/oct_gallery/retina_angiograph_02.jpg</file>
