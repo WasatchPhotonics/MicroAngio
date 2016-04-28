@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'microangio/assets/prototype_microangio_layout.ui'
 #
-# Created: Thu Apr 28 08:37:30 2016
+# Created: Thu Apr 28 09:06:14 2016
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -1486,7 +1486,15 @@ class Ui_MainWindow(object):
         self.gridLayout_16.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_16.setSpacing(0)
         self.gridLayout_16.setObjectName("gridLayout_16")
-        self.frame_center_nest_8 = QtGui.QFrame(self.frame_white_border_12)
+        self.stackedWidget_hardware_save = QtGui.QStackedWidget(self.frame_white_border_12)
+        self.stackedWidget_hardware_save.setObjectName("stackedWidget_hardware_save")
+        self.page_13 = QtGui.QWidget()
+        self.page_13.setObjectName("page_13")
+        self.verticalLayout_13 = QtGui.QVBoxLayout(self.page_13)
+        self.verticalLayout_13.setSpacing(0)
+        self.verticalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_13.setObjectName("verticalLayout_13")
+        self.frame_center_nest_8 = QtGui.QFrame(self.page_13)
         self.frame_center_nest_8.setMinimumSize(QtCore.QSize(0, 0))
         self.frame_center_nest_8.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.frame_center_nest_8.setStyleSheet("QFrame {\n"
@@ -1613,7 +1621,12 @@ class Ui_MainWindow(object):
         self.pushButton_70.setIcon(icon2)
         self.pushButton_70.setIconSize(QtCore.QSize(28, 28))
         self.pushButton_70.setObjectName("pushButton_70")
-        self.gridLayout_16.addWidget(self.frame_center_nest_8, 0, 0, 1, 1)
+        self.verticalLayout_13.addWidget(self.frame_center_nest_8)
+        self.stackedWidget_hardware_save.addWidget(self.page_13)
+        self.page_14 = QtGui.QWidget()
+        self.page_14.setObjectName("page_14")
+        self.stackedWidget_hardware_save.addWidget(self.page_14)
+        self.gridLayout_16.addWidget(self.stackedWidget_hardware_save, 0, 0, 1, 1)
         self.horizontalLayout_4.addWidget(self.frame_white_border_12)
         self.frame_white_border_2 = QtGui.QFrame(self.frame_hardware_setup_main)
         self.frame_white_border_2.setMinimumSize(QtCore.QSize(400, 0))
@@ -5964,7 +5977,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget_bottom.setCurrentIndex(2)
+        self.stackedWidget_bottom.setCurrentIndex(0)
         self.stackedWidget_hardware.setCurrentIndex(0)
         QtCore.QObject.connect(self.comboBox_selector, QtCore.SIGNAL("currentIndexChanged(int)"), self.stackedWidget_bottom.setCurrentIndex)
         QtCore.QObject.connect(self.pushButton_hidden, QtCore.SIGNAL("clicked()"), self.comboBox_selector.hide)
