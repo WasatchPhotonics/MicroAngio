@@ -7,3 +7,20 @@ Demonstration interface for the MicroAngio UX project.
 
 PySide and PyQt are required to show svg icons on controls on MS
 Windows.
+
+
+2016-04-27 15:51 Instructions for environment creation on windows 7:
+
+    Install miniconda 2.7 64bit
+    conda update conda
+
+    conda create --name conda_install_only pyside
+    activate conda_install_only
+    conda install pyqt numpy pillow pytest pyqtgraph
+    
+    cd projects\MicroAngio
+    python setup.py develop
+
+    py.test
+
+    python -u scripts\MicroAngio.py
