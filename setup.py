@@ -12,6 +12,7 @@ requires = [
     "pytest-capturelog",
     "pyside",
     "pyqt", # See README
+    "pillow",
     ]
 
 setup(name="microangio",

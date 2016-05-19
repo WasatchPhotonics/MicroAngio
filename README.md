@@ -38,4 +38,6 @@ Windows.
 
     py.test
 
+Run the demo with the command:
+
     python -u scripts\MicroAngio.py
