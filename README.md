@@ -10,6 +10,7 @@ Clickable, navigatable demonstration of the new user experience design
 for OCT Angiography. No actual OCT processing is included. See the
 instructions below for running this demo on your windows 7 system. Also
 runs on Linux, and should run on any environment that supports conda.
+This interface rates approximately 5.8 [TRAUDS](https://github.com/JasonTraud "TRAUDS") of darkness.
 
 ![MicroAngio Screenshot](/microangio/assets/demo_screenshots/thumbnails/Screenshot_2016-04-28_09-38-26.png "MicroAngio Screenshot")
 
