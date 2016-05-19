@@ -459,39 +459,3 @@ class TestControl:
 
         assert start_data != cease_data
 
-    def test_form_creates_simulation_hardware_data(self, basic_window, qtbot):
-        # Activate hardware_mode
-        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
-
-        signal = basic_window.control_signals.nav_changed
-        with qtbot.wait_signal(signal, timeout=1000, raising=True):
-            nav_cmb.setCurrentIndex(self.NAV_HARDWARE)
-
-        # The hardware image is part of a pyqtgraph imageview, get the entirety
-        # of the raw data
-        imv = basic_window.form.ui.imview_hardware
-        start_data = numpy.copy(imv.getProcessedImage())
-        print "start data", start_data.shape
-
-
-        # Wait for 3 seconds
-        signal = basic_window.control_signals.nav_changed
-        with qtbot.wait_signal(signal, timeout=3000, raising=False):
-            print "Just waiting for a signal that should never happen"
-
-        # Get the raw image data again, make sure they are different
-        cease_data = imv.getProcessedImage()
-        print "cease data", cease_data[0]
-
-        # Logical and all of the elements together in order to do a
-        # simple 'anything changed' test
-        assert numpy.equal(start_data.all(), cease_data.all()) == False
-
-    def test_form_reload_temporary_display(self, basic_window, qtbot):
-        nav_cmb = basic_window.form.ui.comboBox_mode_navigation
-        signal = basic_window.control_signals.nav_changed
-        with qtbot.wait_signal(signal, timeout=3000, raising=True):
-            nav_cmb.setCurrentIndex(self.NAV_ANGIO)
-
-        qtbot.wait(3000)
-        assert True==False

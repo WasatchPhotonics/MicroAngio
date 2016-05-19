@@ -5,17 +5,29 @@ Demonstration interface for the MicroAngio UX project.
 [![Build status](https://ci.appveyor.com/api/projects/status/cqsxoj43q9v5jc16/branch/master?svg=true)](https://ci.appveyor.com/project/NathanHarrington/microangio/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/WasatchPhotonics/MicroAngio/badge.svg?branch=master)](https://coveralls.io/github/WasatchPhotonics/MicroAngio?branch=master)
 
+
+
 PySide and PyQt are required to show svg icons on controls on MS
 Windows.
+
+HiDPI displays are not supported with pyqt4. This demonstration was
+developed for a target resolution of 1920x1080.
 
 
 2016-04-27 15:51 Instructions for environment creation on windows 7:
 
     Install miniconda 2.7 64bit
+    export PATH=/home/nharrington/miniconda2/bin:$PATH
     conda update conda
 
     conda create --name conda_install_only pyside
+
+    Windows:
     activate conda_install_only
+
+    Linux:
+    source activate conda_install_only
+
     conda install pyqt numpy pillow pytest pyqtgraph
     
     cd projects\MicroAngio
